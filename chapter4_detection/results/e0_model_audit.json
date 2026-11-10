@@ -1,0 +1,14 @@
+{
+  "model": "yolo11s.pt",
+  "weights": null,
+  "parameters": 9458752,
+  "gflops_at_imgsz": 129.14638848,
+  "imgsz": 1536,
+  "strides": [
+    8.0,
+    16.0,
+    32.0
+  ],
+  "transfer": null,
+  "torch": "2.5.1+cu124"
+}

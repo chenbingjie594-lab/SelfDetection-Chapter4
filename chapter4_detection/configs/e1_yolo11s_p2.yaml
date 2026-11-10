@@ -1,0 +1,6 @@
+experiment: E1
+model: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/models/yolo11s-p2.yaml
+pretrained: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
+protocol: full_image_resize
+imgsz: 1536
+initialization: ultralytics_default_then_shape_compatible_yolo11s_transfer

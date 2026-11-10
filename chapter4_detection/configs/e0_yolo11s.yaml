@@ -1,0 +1,4 @@
+experiment: E0
+model: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
+protocol: full_image_resize
+imgsz: 1536

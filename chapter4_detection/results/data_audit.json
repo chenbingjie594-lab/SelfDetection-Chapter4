@@ -1,0 +1,3012 @@
+{
+  "status": "BLOCKED",
+  "reason": "mandatory data gate failure; formal training forbidden",
+  "data_yaml": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only.yaml",
+  "data_root": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only",
+  "class_names": {
+    "0": "Flash point",
+    "1": "Big black spots"
+  },
+  "summary": {
+    "train_images": 138,
+    "val_images": 46,
+    "train_instances": 168,
+    "val_instances": 64,
+    "train_class_counts": {
+      "1": 80,
+      "0": 88
+    },
+    "val_class_counts": {
+      "1": 44,
+      "0": 20
+    },
+    "sizes": {
+      "4096x1024": 184
+    }
+  },
+  "checks": {
+    "train_images_138": true,
+    "val_images_46": true,
+    "train_instances_168": true,
+    "train_class_counts_88_80": true,
+    "all_images_4096x1024": true,
+    "no_byte_identical_train_val": true,
+    "no_synthetic_name_markers": true,
+    "no_known_source_group_train_val_overlap": false
+  },
+  "failures": [
+    "no_known_source_group_train_val_overlap"
+  ],
+  "warnings": [],
+  "known_source_group_overlaps": [
+    {
+      "source_group": "img_1020",
+      "train": [
+        "img_1020_pre_part_0.jpg"
+      ],
+      "val": [
+        "img_1020_pre_part_1.jpg"
+      ]
+    },
+    {
+      "source_group": "img_9509",
+      "train": [
+        "img_9509_pre_part_0.jpg"
+      ],
+      "val": [
+        "img_9509_pre_part_1.jpg"
+      ]
+    }
+  ],
+  "manifest_sha256": "b5ba97c51a2de1c5af8f5571176af443a0e9e74cf4a5aae056b48ef16759b046",
+  "historical_split_hash_claims": {
+    "train_hash": "b55b0bd2850949bea70a9961d0807618b110be966df80799368815c28136a1f7",
+    "val_hash": "b9b86fcd9db97056a5cb0aa6ba6c90a12da030442999039d2f9e70951d7c4509"
+  },
+  "records": [
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_1.txt",
+      "image_name": "blackinst_1.jpg",
+      "image_sha256": "92498436dc7a37eef980d18b796063e20760a4bfb17b6f4c6352d7ffdf7eb146",
+      "label_sha256": "4458a60a8d07a7c2b93e0ea67695da7883a90e8625ace33f2078a51d82bf8b14",
+      "canonical_image_id": "blackinst_1",
+      "source_group": "blackinst_1",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_10.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_10.txt",
+      "image_name": "blackinst_10.jpg",
+      "image_sha256": "2c43911f5e9aa092bc8a1e590e5f115c2e4de6a40bb0d5fa952a04c84fd85e9b",
+      "label_sha256": "09a9e01fe6eae49f8969eb3c1ab71967b9c388177b734469fb7e30f18a55bfba",
+      "canonical_image_id": "blackinst_10",
+      "source_group": "blackinst_10",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_11.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_11.txt",
+      "image_name": "blackinst_11.jpg",
+      "image_sha256": "4b26a8346905898408559f48230352e1d31c74e4a0882101484d7846af78b68d",
+      "label_sha256": "56db1ccc8c1ca9ff991040be9bc99311d1473dd924e17453a8519ee1e7378e3a",
+      "canonical_image_id": "blackinst_11",
+      "source_group": "blackinst_11",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_12.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_12.txt",
+      "image_name": "blackinst_12.jpg",
+      "image_sha256": "370cafebde98010f643ee4e8858e2e80f83f3683474c6eb2273861f2b5a3a6f6",
+      "label_sha256": "f040151e7cf26da53434a0ba37fb4d390398dff1f2052a3424ab08fbfef97f60",
+      "canonical_image_id": "blackinst_12",
+      "source_group": "blackinst_12",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_13.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_13.txt",
+      "image_name": "blackinst_13.jpg",
+      "image_sha256": "9a23f3e582e1fd642c1f7eb5cbc1526ecc740abaf4934ab7506dfe1b68705967",
+      "label_sha256": "f63a6f0dedc010730c944e3ece89dfab67b7154d82f14c21cfbf66f9026785d0",
+      "canonical_image_id": "blackinst_13",
+      "source_group": "blackinst_13",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_15.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_15.txt",
+      "image_name": "blackinst_15.jpg",
+      "image_sha256": "91f43d5c02c96aedd7a59226c146a3002af538cade8052b77906d5bb41faf0f3",
+      "label_sha256": "82941917a95f9f4a588b9a97976499f30bd98358803a3122b9ae5be3a2f9406a",
+      "canonical_image_id": "blackinst_15",
+      "source_group": "blackinst_15",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_16.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_16.txt",
+      "image_name": "blackinst_16.jpg",
+      "image_sha256": "1f055f43a1d20181038905990b7637ed2fa8bad506e9eb3509d773b047191d5f",
+      "label_sha256": "25154994a2030c0f3617f2cb0dcaf05c902e58ca5398dba3a3d407512e9fd834",
+      "canonical_image_id": "blackinst_16",
+      "source_group": "blackinst_16",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_17.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_17.txt",
+      "image_name": "blackinst_17.jpg",
+      "image_sha256": "7f3f51c15cecbfb52d10db01f6de145d1ae7ec915dc1b2c9516f613abce3244f",
+      "label_sha256": "f3595ce32bb2720d8e6cc290895a1940496b066cb5b3e4e6b81fe78e6d66e110",
+      "canonical_image_id": "blackinst_17",
+      "source_group": "blackinst_17",
+      "width": 4096,
+      "height": 1024,
+      "instances": 4,
+      "class_counts": {
+        "1": 4
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_19.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_19.txt",
+      "image_name": "blackinst_19.jpg",
+      "image_sha256": "47a0d0ca6495a77033edfb23a9a4113755762c5ecd29cbe052d82f1aed21039f",
+      "label_sha256": "06b43a27fd7542eea29978a49a9cf0108134eee7e728585c23127e5c34d06116",
+      "canonical_image_id": "blackinst_19",
+      "source_group": "blackinst_19",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_20.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_20.txt",
+      "image_name": "blackinst_20.jpg",
+      "image_sha256": "7156456acefa34bda1c36dc1a01e0a7f11c2d2e57253eff6f7320e6850e18dd5",
+      "label_sha256": "812cf2ef824d8b93a1d524e2107be63998b3cb7d8502489fe08c7fed6610f83e",
+      "canonical_image_id": "blackinst_20",
+      "source_group": "blackinst_20",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_22.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_22.txt",
+      "image_name": "blackinst_22.jpg",
+      "image_sha256": "8adddb9289dc7ba57d9289bf11d0aea7a8b61beea969ae961299683c28f9f30b",
+      "label_sha256": "d2b00ec61b3a51be7d512d64a2484be4ae608132cd7316680ad15ae1d3fbf1c8",
+      "canonical_image_id": "blackinst_22",
+      "source_group": "blackinst_22",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_23.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_23.txt",
+      "image_name": "blackinst_23.jpg",
+      "image_sha256": "400446a838281e3c1af1f803fdb3f8ba1897fd518b4200b4065900989c522668",
+      "label_sha256": "3dca4163237640ae5e62636cba39b03a0eb424f6d72b113d40c0242d0dce4361",
+      "canonical_image_id": "blackinst_23",
+      "source_group": "blackinst_23",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_24.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_24.txt",
+      "image_name": "blackinst_24.jpg",
+      "image_sha256": "b695193c8708532157742fea4a9b3a5b54aa94f80c1cbb8cb8f8dec13796827a",
+      "label_sha256": "33693010b2e761069af9e5b79abb839c4f046c12a740f035cb4dcbd5a87da6fd",
+      "canonical_image_id": "blackinst_24",
+      "source_group": "blackinst_24",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_26.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_26.txt",
+      "image_name": "blackinst_26.jpg",
+      "image_sha256": "6bd61502a905003e4d19d5a96665e1cf1094c191514ee718381d1a6675de29a0",
+      "label_sha256": "96b81b8f3e8104660eabd32a7b8c141844537cfc7b16ca4cc633b4d09484c474",
+      "canonical_image_id": "blackinst_26",
+      "source_group": "blackinst_26",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_27.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_27.txt",
+      "image_name": "blackinst_27.jpg",
+      "image_sha256": "ebf450df14462a0470df1539c4047bdb63bd44f95f875ddb4aeb46de84c94e23",
+      "label_sha256": "a1161c26541bf6e2b7b65a462ab2585ff8cf58ee6aaae2b948c198194d332d2a",
+      "canonical_image_id": "blackinst_27",
+      "source_group": "blackinst_27",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_28.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_28.txt",
+      "image_name": "blackinst_28.jpg",
+      "image_sha256": "fada635f123813d75afe4a98a3c99dc6038ff9f4311dbd60b7140ae99eb22aec",
+      "label_sha256": "098fdf67bc2f49d1ac302417334cd09941a04f33c95511eea46963b716d651d6",
+      "canonical_image_id": "blackinst_28",
+      "source_group": "blackinst_28",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_30.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_30.txt",
+      "image_name": "blackinst_30.jpg",
+      "image_sha256": "efb2781c815e56d275c0784a7df80f99969f7238e6d3697c66fbba42e7cbca20",
+      "label_sha256": "57064555152fdb400e1e9a25c4bc773ed07366e254f20c89098ddb38a2930d9a",
+      "canonical_image_id": "blackinst_30",
+      "source_group": "blackinst_30",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_32.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_32.txt",
+      "image_name": "blackinst_32.jpg",
+      "image_sha256": "d5f5f4dba5b69aac0bafd09bbdfa81dae92b34e05b14295d499964cb9d9759bd",
+      "label_sha256": "6e246fe16c8c9a13c81b100c9a2fd60fd546115aceb3b71f613059b92a211c1c",
+      "canonical_image_id": "blackinst_32",
+      "source_group": "blackinst_32",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_34.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_34.txt",
+      "image_name": "blackinst_34.jpg",
+      "image_sha256": "47c376f662387fd63f140828f42f9b5d50c22ac32541eb4b631bb08db4c3a077",
+      "label_sha256": "645cbb7a846715d44e3105ff2377045d5e31c3fb503e0820a98e5c4fe111ad98",
+      "canonical_image_id": "blackinst_34",
+      "source_group": "blackinst_34",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_36.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_36.txt",
+      "image_name": "blackinst_36.jpg",
+      "image_sha256": "854e91489cf2d814c6bbd951a2098fb4ee10f444e6c59e29ead1ee851fa29bc3",
+      "label_sha256": "6742f13bd67e30fb8b384a600271291cda8c900d2bc0536f482375c180257fc7",
+      "canonical_image_id": "blackinst_36",
+      "source_group": "blackinst_36",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_37.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_37.txt",
+      "image_name": "blackinst_37.jpg",
+      "image_sha256": "6a81d037ce07beb1e4bdb803cd7daaae3fbf6b7754f71c2495e789eddbcc6a79",
+      "label_sha256": "5fbdc4b009623f23257ffbc06b28f5252b192a8cda61b7567e722f0c3b45b45c",
+      "canonical_image_id": "blackinst_37",
+      "source_group": "blackinst_37",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_4.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_4.txt",
+      "image_name": "blackinst_4.jpg",
+      "image_sha256": "0c826f89c3b46a8a39a3e5e0e700821eef2015e4dadb9ddb5c4c83b7dfd0874e",
+      "label_sha256": "f29113c38ad212682428b05205ae563a34ee75491b99fdd4e2aa68f4da136059",
+      "canonical_image_id": "blackinst_4",
+      "source_group": "blackinst_4",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_7.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_7.txt",
+      "image_name": "blackinst_7.jpg",
+      "image_sha256": "d03e1c68902ec19eebc6feb2a7c5d4be8904a50be6c91d23de3d900e5d268540",
+      "label_sha256": "c34f643eca4e9a0037420babb880bd84cfcc443fc76037ddb217da701fe4cdd2",
+      "canonical_image_id": "blackinst_7",
+      "source_group": "blackinst_7",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_8.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_8.txt",
+      "image_name": "blackinst_8.jpg",
+      "image_sha256": "037c812c1b08753b2a4cde5688700152b40718bce750d610625b80520b57f2d4",
+      "label_sha256": "99ac834a7ae877201f12603321f1e5e55ca694162061d023b1636f5d201a43a1",
+      "canonical_image_id": "blackinst_8",
+      "source_group": "blackinst_8",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/blackinst_9.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/blackinst_9.txt",
+      "image_name": "blackinst_9.jpg",
+      "image_sha256": "7a0331b18c65f462942ba082c19ec5f238c1a32722500d236605185746cec646",
+      "label_sha256": "255f467fa17a37e3072ffd16ee4929285f4cd1f865aafbf1aa5d667de4c31c45",
+      "canonical_image_id": "blackinst_9",
+      "source_group": "blackinst_9",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_10012_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_10012_pre_part_1.txt",
+      "image_name": "img_10012_pre_part_1.jpg",
+      "image_sha256": "4ea989afdf3fbda2ace0c3fcecf48abfb765fb5ee0b72de6f2c206e74339d5ee",
+      "label_sha256": "3f111deaf1c541e0709e216acf51be511749f40cd94feefeb448a694c60e5d27",
+      "canonical_image_id": "img_10012",
+      "source_group": "img_10012",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1013_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1013_pre_part_1.txt",
+      "image_name": "img_1013_pre_part_1.jpg",
+      "image_sha256": "dfbae143eb77dad8d9efbd191459f6d10faedc92827f38826aa76ceaaba8a42b",
+      "label_sha256": "83c82e2da1fcc37255a79ac70fa32d92aa5d2ccaea568e63bc8b64429b892079",
+      "canonical_image_id": "img_1013",
+      "source_group": "img_1013",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1016_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1016_pre_part_0.txt",
+      "image_name": "img_1016_pre_part_0.jpg",
+      "image_sha256": "1c9401cf93fff3139e53f96891fb94d9330fdc6f45dbdb2ebb6d2663e469abc7",
+      "label_sha256": "0e2a6de8d07703a40be478a50b68b36fabf90282430da3ae4d4ca7e3496f6dfe",
+      "canonical_image_id": "img_1016",
+      "source_group": "img_1016",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1020_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1020_pre_part_0.txt",
+      "image_name": "img_1020_pre_part_0.jpg",
+      "image_sha256": "2e0f137a1f73acd9ba827ff127ed8eff42b251e5f8a85e49726139ecb7c26cee",
+      "label_sha256": "8385879620788bde8198b723aefa9e9c286abe775868bcb5ab1b06b0e5127c62",
+      "canonical_image_id": "img_1020",
+      "source_group": "img_1020",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1022_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1022_pre_part_1.txt",
+      "image_name": "img_1022_pre_part_1.jpg",
+      "image_sha256": "cbfb5cbfa53851fea398e9131a1356afe611e769320fbb1dc94c632a06123683",
+      "label_sha256": "4fcd984f3dcda5e1c8fbb37d6eca709a206fb2062905c6af542a761fb829643a",
+      "canonical_image_id": "img_1022",
+      "source_group": "img_1022",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1023_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1023_pre_part_0.txt",
+      "image_name": "img_1023_pre_part_0.jpg",
+      "image_sha256": "10890c4b0c1c4e38b5e6437ee9bf83e80aa845fc13d0d1a020c4af95c0c3b31b",
+      "label_sha256": "6730094f58436ab614ced41e379508734c66409a43fef620984934df556af92f",
+      "canonical_image_id": "img_1023",
+      "source_group": "img_1023",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_10510_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_10510_pre_part_1.txt",
+      "image_name": "img_10510_pre_part_1.jpg",
+      "image_sha256": "4e50a6223a6d695219401055a46c3e878652cc213ca215a71b64dac0e686fb1c",
+      "label_sha256": "df015aba658a93e9bcf99b0d3bb3c64b3af6ee22d9426171405350908fa02812",
+      "canonical_image_id": "img_10510",
+      "source_group": "img_10510",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1083_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1083_pre_part_0.txt",
+      "image_name": "img_1083_pre_part_0.jpg",
+      "image_sha256": "7678f61313b3083f7575dce471a25878c8fd9d7bc0879754c3ecba339d36fadc",
+      "label_sha256": "1d16bfa26b8f54e0252562bca1146488b9dc2facb21a8d92b6c72e26ea887046",
+      "canonical_image_id": "img_1083",
+      "source_group": "img_1083",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1099_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1099_pre_part_1.txt",
+      "image_name": "img_1099_pre_part_1.jpg",
+      "image_sha256": "949be822cbcaa71f6c01e2109445ef6f43baa1eeaab97406a321a8a8a93cfef4",
+      "label_sha256": "8822a92987988a65b95c751dfd02ec730137347f1234483c42759e14b3811b17",
+      "canonical_image_id": "img_1099",
+      "source_group": "img_1099",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_11099_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_11099_pre_part_0.txt",
+      "image_name": "img_11099_pre_part_0.jpg",
+      "image_sha256": "5d74ac758c9e9cd5c81c70a1a2f86946863601727762e9f5a30a682f11d34084",
+      "label_sha256": "e6c9ea7537df755675f6fc4fe47bd6d4d5e4b9cdb1b0198102322a0e161d691b",
+      "canonical_image_id": "img_11099",
+      "source_group": "img_11099",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1113_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1113_pre_part_0.txt",
+      "image_name": "img_1113_pre_part_0.jpg",
+      "image_sha256": "77a33ed4b1fe488639686d15ee8f39dd3262586eaa77533bd432be9ac9d6ab59",
+      "label_sha256": "14304045cebbe17f3647113eb2d41e8f7faa1487a192a8687f872b900678e81a",
+      "canonical_image_id": "img_1113",
+      "source_group": "img_1113",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1113_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1113_pre_part_1.txt",
+      "image_name": "img_1113_pre_part_1.jpg",
+      "image_sha256": "8bc43ace59fd4c2c8e611cddb0a67208b861fd446435f941fde31ef53206b7e7",
+      "label_sha256": "a4634f8d0b2a3f44e07ce526300b1edf02aed69497feef238bed357627b212ab",
+      "canonical_image_id": "img_1113",
+      "source_group": "img_1113",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_11478_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_11478_pre_part_1.txt",
+      "image_name": "img_11478_pre_part_1.jpg",
+      "image_sha256": "ec403570e70f5f8a574f3abc58c9ae48444cbcc159e97de831b4364f587838c2",
+      "label_sha256": "6ea31e5243005164e72c942b083bc173be76eac1319e3608836d8a60f5255ca3",
+      "canonical_image_id": "img_11478",
+      "source_group": "img_11478",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_12185_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_12185_pre_part_1.txt",
+      "image_name": "img_12185_pre_part_1.jpg",
+      "image_sha256": "50865cb76d5585ed5d1f8e7826f5299d1e4c1fc691112369d901955d534e0a2a",
+      "label_sha256": "f5b145d9c43cec3d4265d798fe9a290b337f2b5eecb58d019a0fc9157122c1d2",
+      "canonical_image_id": "img_12185",
+      "source_group": "img_12185",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_12317_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_12317_pre_part_1.txt",
+      "image_name": "img_12317_pre_part_1.jpg",
+      "image_sha256": "69f7e318f119ed8b2102a1ef0f18f9e6e2466274944ee91265ba1a2d17eef60b",
+      "label_sha256": "a231c7829d06e2d085820642a111c3bf3c2e07c769463c8cafe3e544d44bce56",
+      "canonical_image_id": "img_12317",
+      "source_group": "img_12317",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1235_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1235_pre_part_0.txt",
+      "image_name": "img_1235_pre_part_0.jpg",
+      "image_sha256": "f716c031a698d6111bf1726caa5ce80658df802049ab5df7aa5b3eb2ccbda4ce",
+      "label_sha256": "56f92c0d555434792e5b5467de68d52a8990771c4795ba009b7e1f87181a120d",
+      "canonical_image_id": "img_1235",
+      "source_group": "img_1235",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_12458_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_12458_pre_part_1.txt",
+      "image_name": "img_12458_pre_part_1.jpg",
+      "image_sha256": "0a19bb1c5ee955bfb3feb6787ee68802cd7dce3532eadfeeda3f8910057187de",
+      "label_sha256": "8a87b7eeb093ca390947a5c9c890d3c0fd007bd70d4deefca32c7cfd0029c048",
+      "canonical_image_id": "img_12458",
+      "source_group": "img_12458",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1333_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1333_pre_part_1.txt",
+      "image_name": "img_1333_pre_part_1.jpg",
+      "image_sha256": "fc7b75883f7c190934342e7974098119ee10ec21edb8a1ed32f46da854f2d5c7",
+      "label_sha256": "8099d72b2c87f0e0194bb126832c693726605512061d98076a7e831488385661",
+      "canonical_image_id": "img_1333",
+      "source_group": "img_1333",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_13538_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_13538_pre_part_1.txt",
+      "image_name": "img_13538_pre_part_1.jpg",
+      "image_sha256": "843020cff436d71f206ed3b5302d7e2119e78583a958da7971b19259bccc4008",
+      "label_sha256": "9d58815e5d829107bc383fa2c7a91bff7b1ab3bcfb0fc7be8be32027261130fc",
+      "canonical_image_id": "img_13538",
+      "source_group": "img_13538",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_13734_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_13734_pre_part_1.txt",
+      "image_name": "img_13734_pre_part_1.jpg",
+      "image_sha256": "78d05136ea1b8c1950538f1d188d3f57b7b4cf6776bcb6707acc6a528eaad004",
+      "label_sha256": "da1c2d87491211079684ae2b82d7decce7372cb6a206f23823d0d2f3418e054a",
+      "canonical_image_id": "img_13734",
+      "source_group": "img_13734",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1474_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1474_pre_part_1.txt",
+      "image_name": "img_1474_pre_part_1.jpg",
+      "image_sha256": "9ec10ce194cf664fb9bc27a78fff15aa31eec1747767addf124468f49834153a",
+      "label_sha256": "ee235a7fcfa4151383d4e1b3b76da0591c9df041f7cc10e3e409ac305f2bb565",
+      "canonical_image_id": "img_1474",
+      "source_group": "img_1474",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15034_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15034_pre_part_1.txt",
+      "image_name": "img_15034_pre_part_1.jpg",
+      "image_sha256": "a86a397c12e85854bd7a0eb2f62c5ac97a338df59055588ae965d17b511732a8",
+      "label_sha256": "e01bf5138921c54aadf4b5f7daab1fa616d043bad7f97b1d82273648c9abc954",
+      "canonical_image_id": "img_15034",
+      "source_group": "img_15034",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1505_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1505_pre_part_1.txt",
+      "image_name": "img_1505_pre_part_1.jpg",
+      "image_sha256": "f159feac4a69a50dc43984e5f06146868acfd8f155bf440c3a1d08511c43f23a",
+      "label_sha256": "3c7e35928fba481c71d58ee3705560a93f05ce9ebf2fb57d7ae297b0274f3c97",
+      "canonical_image_id": "img_1505",
+      "source_group": "img_1505",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1509_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1509_pre_part_1.txt",
+      "image_name": "img_1509_pre_part_1.jpg",
+      "image_sha256": "905025185b8ec256c66614321cbe181efae6cd667e4a4ce5ec93ad97c11784bc",
+      "label_sha256": "88581f90776ef4f996e52fba2ca61eccc25e40746a9df6b6ccc34d2a07902c3c",
+      "canonical_image_id": "img_1509",
+      "source_group": "img_1509",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15101_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15101_pre_part_1.txt",
+      "image_name": "img_15101_pre_part_1.jpg",
+      "image_sha256": "159ba4726bd6d53e06403387d52447350112ec6bf630e6d345205c4dd725dbdf",
+      "label_sha256": "45756561d0de53c42ce1746a756335724de15a2fecafe59947ac63a8f486f9ca",
+      "canonical_image_id": "img_15101",
+      "source_group": "img_15101",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1515_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1515_pre_part_1.txt",
+      "image_name": "img_1515_pre_part_1.jpg",
+      "image_sha256": "461612c85c0712650a30f976ad659ae427254bb55ec873184f950a08a3854847",
+      "label_sha256": "6e42173fbbb2ddd2a40ca4a27a4144f808d1dd84df4c12629aaad6f79567984b",
+      "canonical_image_id": "img_1515",
+      "source_group": "img_1515",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15170_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15170_pre_part_0.txt",
+      "image_name": "img_15170_pre_part_0.jpg",
+      "image_sha256": "6363792a5decd0e529fcc2482dbf88293524e385e67965d101e1d8d261590314",
+      "label_sha256": "3568a245c26b4abc6973f3d4ea539a809dbd7dfa36261af8770b6c0fa96b6760",
+      "canonical_image_id": "img_15170",
+      "source_group": "img_15170",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15490_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15490_pre_part_1.txt",
+      "image_name": "img_15490_pre_part_1.jpg",
+      "image_sha256": "b1a522fe6f509af59b2b51e8e5e03cbc7856020fbaef1bdc327ec976d545124a",
+      "label_sha256": "429af771a5a7270c2f645ca557e8e5d32dc9be7c3d30befa7bdadaaecb1da098",
+      "canonical_image_id": "img_15490",
+      "source_group": "img_15490",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15545_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15545_pre_part_1.txt",
+      "image_name": "img_15545_pre_part_1.jpg",
+      "image_sha256": "9335c7f4432836bf58d14f5842f3d73bcab1e15bfa6d62b864445bffdfcc63c5",
+      "label_sha256": "54f0e6438a53e4d97886b88b53e5295e3e8326e3ccedfbebe329278b268d852c",
+      "canonical_image_id": "img_15545",
+      "source_group": "img_15545",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15609_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15609_pre_part_1.txt",
+      "image_name": "img_15609_pre_part_1.jpg",
+      "image_sha256": "00d4202387e49d059144d56a1c851785b97633d0dce157a02d49c66867f2a2c1",
+      "label_sha256": "185b40a1dd678526a47e0edabccb42aea7ca4dfc4b6cc007aa99b1c290f2d8f7",
+      "canonical_image_id": "img_15609",
+      "source_group": "img_15609",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1572_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1572_pre_part_1.txt",
+      "image_name": "img_1572_pre_part_1.jpg",
+      "image_sha256": "6affa083daad582e0646ef79f3c9ff1cd8dacdec705c8090d75eba2ee8d070dc",
+      "label_sha256": "b1fa48f35990c2a65a5c893a7e9fe76a2fad81e926fa45aaf3e375ee54e3e30b",
+      "canonical_image_id": "img_1572",
+      "source_group": "img_1572",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15770_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15770_pre_part_1.txt",
+      "image_name": "img_15770_pre_part_1.jpg",
+      "image_sha256": "a940730143970fe385e3b445a3f096fa10930c6ea0803693de07adf4a98f20e8",
+      "label_sha256": "664b78c0dca8c56c3fecfb824e076c82f6d5721bc685ef382c5cde44e517c3be",
+      "canonical_image_id": "img_15770",
+      "source_group": "img_15770",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15890_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15890_pre_part_0.txt",
+      "image_name": "img_15890_pre_part_0.jpg",
+      "image_sha256": "f4157f1d75b5ef69a6230e94f50b043cbc8b1f01d84048a29591f6d06e68cd8b",
+      "label_sha256": "e5ef58a44c7156cf6f0b96700c69ed33ebca9037922684e6684799d97fd347d3",
+      "canonical_image_id": "img_15890",
+      "source_group": "img_15890",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_15996_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_15996_pre_part_1.txt",
+      "image_name": "img_15996_pre_part_1.jpg",
+      "image_sha256": "ed219bf521e22faba46ade787e30127a079a4a0c942ec346b94f844116e58686",
+      "label_sha256": "c9bab572b8410beb39ca4df0d20772acfb04c3e1bdb38f4cb6a648211c4cf79a",
+      "canonical_image_id": "img_15996",
+      "source_group": "img_15996",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_16161_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_16161_pre_part_1.txt",
+      "image_name": "img_16161_pre_part_1.jpg",
+      "image_sha256": "b09b4c38f74c1ae880410905edd534920d505a92e2b0c3d993fb498bd1163d8f",
+      "label_sha256": "f9d260d54f175812fc8a7e99d81e5a07fd70b5c171d65b35a3eb7e76768e7d2a",
+      "canonical_image_id": "img_16161",
+      "source_group": "img_16161",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_16442_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_16442_pre_part_1.txt",
+      "image_name": "img_16442_pre_part_1.jpg",
+      "image_sha256": "678f96ddbbd26cc2d659051701153eab42a2c150997d1266ee7f7d3ba1bb6627",
+      "label_sha256": "502285154f223862521e482e5698987865a9f6737c9c39c9186e4492b1487133",
+      "canonical_image_id": "img_16442",
+      "source_group": "img_16442",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_16871_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_16871_pre_part_0.txt",
+      "image_name": "img_16871_pre_part_0.jpg",
+      "image_sha256": "95d308236cac28859de02e41f7228daa0e0f32ba6bc146d37f34958a446943f8",
+      "label_sha256": "78c6219bfffff11f6786904d7ed09e5fc9b8794c4894bdbef2d8b4ad5417f51d",
+      "canonical_image_id": "img_16871",
+      "source_group": "img_16871",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_17204_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_17204_pre_part_1.txt",
+      "image_name": "img_17204_pre_part_1.jpg",
+      "image_sha256": "40cdd2deae7d6bef760fe27b218e53b009f992d1394bcc85011f9ec136a6d330",
+      "label_sha256": "78702fa2aa17309871c03c448a0324d9282b0c8ecb22cddbe3bc2cd59ad64120",
+      "canonical_image_id": "img_17204",
+      "source_group": "img_17204",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1797_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1797_pre_part_0.txt",
+      "image_name": "img_1797_pre_part_0.jpg",
+      "image_sha256": "27b65082951845153e5309956bd54e8df5742eb0e2d142762533afc0d690cc54",
+      "label_sha256": "456e7f5050670cecc63616e03a7f5390672fa4d289793bb14736a185f82449d4",
+      "canonical_image_id": "img_1797",
+      "source_group": "img_1797",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_18290_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_18290_pre_part_0.txt",
+      "image_name": "img_18290_pre_part_0.jpg",
+      "image_sha256": "617634b714a537d931869be37b81fb3bb94c9ebe3141c6864c30d77cc94b274d",
+      "label_sha256": "0b119669e66e0d42de580b9661a0e2ff8d89260d8781fc5bdc8732c249feff57",
+      "canonical_image_id": "img_18290",
+      "source_group": "img_18290",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_19226_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_19226_pre_part_0.txt",
+      "image_name": "img_19226_pre_part_0.jpg",
+      "image_sha256": "5a829887812abd248f81bef8fc2253a964f8c54205b426b78032b6db4fb5ebe0",
+      "label_sha256": "67cf012673cddd33ad82f438fd5da93749cf75b0124eb89d089f3d5e1445fa04",
+      "canonical_image_id": "img_19226",
+      "source_group": "img_19226",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_1944_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_1944_pre_part_1.txt",
+      "image_name": "img_1944_pre_part_1.jpg",
+      "image_sha256": "e618506fe371b9799a1268c4c3681577fe38095049a4224340dda95c6f3defbb",
+      "label_sha256": "97cf7dc74580276828507034b627affba3f8ae56315cb1782a3d5ede449a7b06",
+      "canonical_image_id": "img_1944",
+      "source_group": "img_1944",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2028_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2028_pre_part_1.txt",
+      "image_name": "img_2028_pre_part_1.jpg",
+      "image_sha256": "298f14d8676dcb11fc8a462973f3d3c11422bff80ef59d58a2b18b6393b9f977",
+      "label_sha256": "98205fcd2bd976ca115c1a651da9baf2cf67fda376cf26786527a824786c7adc",
+      "canonical_image_id": "img_2028",
+      "source_group": "img_2028",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2034_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2034_pre_part_0.txt",
+      "image_name": "img_2034_pre_part_0.jpg",
+      "image_sha256": "a031a89e1006438c36fd540aa600d0bd4e35a0d754574bad424f87475790b137",
+      "label_sha256": "ea42cd1cc0acf98febf66622605171ad7fa7de2d68379f8beedd9bca07967f2c",
+      "canonical_image_id": "img_2034",
+      "source_group": "img_2034",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2037_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2037_pre_part_1.txt",
+      "image_name": "img_2037_pre_part_1.jpg",
+      "image_sha256": "7e8dbe7102cc8697145dc459cbdbc7a3400dfade6d045c91dcb5001efbff4a74",
+      "label_sha256": "c29204b65b6ebdca1754301389164eb6769d7256c84988f5ac2acd50ef248b75",
+      "canonical_image_id": "img_2037",
+      "source_group": "img_2037",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2072_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2072_pre_part_1.txt",
+      "image_name": "img_2072_pre_part_1.jpg",
+      "image_sha256": "553318ea5779b79b934453a9913416b9744ae0b65c39911cd019ddba00fd5484",
+      "label_sha256": "6100b24971fa67ff2d68ab8f1b25122c115fbbf82e561a264669dc2d1647ecb2",
+      "canonical_image_id": "img_2072",
+      "source_group": "img_2072",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2075_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2075_pre_part_1.txt",
+      "image_name": "img_2075_pre_part_1.jpg",
+      "image_sha256": "3a38e32c7d3d62b8864abbee25e698e9a8036169d6c1c123c5656fe978acd830",
+      "label_sha256": "fce80daf16ff7fc5e5a1e1c9d071764db4a99b1a007062f44d9ad8a5028d40ed",
+      "canonical_image_id": "img_2075",
+      "source_group": "img_2075",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "0": 3
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_20948_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_20948_pre_part_1.txt",
+      "image_name": "img_20948_pre_part_1.jpg",
+      "image_sha256": "28bcc1f907cd047e6fdfb756952a7f634475443bb91485417c7b6813da544e28",
+      "label_sha256": "cb8f9b69545c4ada68be5c58c3b64d35715b3d49eca7dc2163cabca482b993eb",
+      "canonical_image_id": "img_20948",
+      "source_group": "img_20948",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2118_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2118_pre_part_1.txt",
+      "image_name": "img_2118_pre_part_1.jpg",
+      "image_sha256": "340e8d7bbbe047a919219f8778cb934bd578273df38f2152ecde8704adec53e4",
+      "label_sha256": "6b93621147c7a8147f91bc8fd2ebac809c8831cc6f10296e4867a7e7d750875c",
+      "canonical_image_id": "img_2118",
+      "source_group": "img_2118",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_21637_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_21637_pre_part_1.txt",
+      "image_name": "img_21637_pre_part_1.jpg",
+      "image_sha256": "074a8121a6584f5f3603b7fdba1756505a5a11cd35d757e7a9f8911f4f1f4e85",
+      "label_sha256": "f66e955f145f6277816d8097505d61c17d522ea6ca832d73da79bbfe91ef7553",
+      "canonical_image_id": "img_21637",
+      "source_group": "img_21637",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2195_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2195_pre_part_1.txt",
+      "image_name": "img_2195_pre_part_1.jpg",
+      "image_sha256": "4143cfcbe98c6d60dcb02e509d6cf0ed39f807ad109e87c743d16a31247690ee",
+      "label_sha256": "c1131a629c8e1146dbf11996537e64a0e90ce661d4fc4a7c3ed43fb5699d9d48",
+      "canonical_image_id": "img_2195",
+      "source_group": "img_2195",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_21979_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_21979_pre_part_1.txt",
+      "image_name": "img_21979_pre_part_1.jpg",
+      "image_sha256": "ac2861e63585fcef2ef8babbcfc5f50230d00d80829d7e2baa1f64c7417b7f04",
+      "label_sha256": "b37912b96f8f709b65a1e59e167c37b20b5bdc90bd6f60a9ae97f6672bc9e3ed",
+      "canonical_image_id": "img_21979",
+      "source_group": "img_21979",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2201_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2201_pre_part_1.txt",
+      "image_name": "img_2201_pre_part_1.jpg",
+      "image_sha256": "abcd205972a838ec5cb11e05d4168a4aa2d04f54335597a60cbc02d16181964a",
+      "label_sha256": "7c41a7f90c8856177700c6fcbbebf5b695c2a212cc1ebb47bfc2438b37a8b703",
+      "canonical_image_id": "img_2201",
+      "source_group": "img_2201",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2248_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2248_pre_part_1.txt",
+      "image_name": "img_2248_pre_part_1.jpg",
+      "image_sha256": "69c85d6707921cff53e7beeea36b009226a59205ba7b3ea1d323ee7ae6693611",
+      "label_sha256": "be3383be5f0a6c32ea2b16a189adcedadccdf24d2ef97db38e2b6728c6dab990",
+      "canonical_image_id": "img_2248",
+      "source_group": "img_2248",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_22666_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_22666_pre_part_1.txt",
+      "image_name": "img_22666_pre_part_1.jpg",
+      "image_sha256": "cd035070693ab83dc8e0ce62e98126979fb21eea0a7334242e1770bea9202ee8",
+      "label_sha256": "bd30b0cad31e13bd5c8eb0ff0c37b7cc8c4bb3b1e0357a8843a0361a3d5338ad",
+      "canonical_image_id": "img_22666",
+      "source_group": "img_22666",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_22731_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_22731_pre_part_0.txt",
+      "image_name": "img_22731_pre_part_0.jpg",
+      "image_sha256": "df1a9a26bb5a17dac283071347bf7d77910cf6cdd07ec18fce569f0145268b5b",
+      "label_sha256": "f3eea548d96f3c5618697062bae64f6647e3c208dd1b183b39e35613688e8912",
+      "canonical_image_id": "img_22731",
+      "source_group": "img_22731",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2273_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2273_pre_part_1.txt",
+      "image_name": "img_2273_pre_part_1.jpg",
+      "image_sha256": "231560646e5a95972d5c88fed19fa5397dff2f900b235ae63d2b1205916b3043",
+      "label_sha256": "0af76398fd5197c9c2f21ba00f76c43d43af22137aca01fe1fd536a8114fd610",
+      "canonical_image_id": "img_2273",
+      "source_group": "img_2273",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_23458_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_23458_pre_part_0.txt",
+      "image_name": "img_23458_pre_part_0.jpg",
+      "image_sha256": "3b7edf227db6371c2ad059f969d401adaeafabe9e591c2520cbee6706d971f75",
+      "label_sha256": "30299421b46457f50747d08a5f8b722b4e87a10b501875fd040157df0d2106ea",
+      "canonical_image_id": "img_23458",
+      "source_group": "img_23458",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_23459_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_23459_pre_part_0.txt",
+      "image_name": "img_23459_pre_part_0.jpg",
+      "image_sha256": "409643674e39a634fa236cd0bca8b81d682fa92bef2888dc7e8365392bb0bcaf",
+      "label_sha256": "f5b8606d16b8233a8a7ae7dbbbcde661f8022c819ab5c3f9d5453a56da554fa0",
+      "canonical_image_id": "img_23459",
+      "source_group": "img_23459",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_24425_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_24425_pre_part_1.txt",
+      "image_name": "img_24425_pre_part_1.jpg",
+      "image_sha256": "1e482155bfe51f1c4da4dd45acbcb06c5872fd8edc03bc70dd92f5da1ecb5111",
+      "label_sha256": "4b62dffff135ca4dfa97dda3aa192306eb3f5728bc460f2721bdd9a3eace09b6",
+      "canonical_image_id": "img_24425",
+      "source_group": "img_24425",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_24459_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_24459_pre_part_1.txt",
+      "image_name": "img_24459_pre_part_1.jpg",
+      "image_sha256": "a5fc107a8731f11116c0816ec6e6ef2a6c58efba471ebbb27b24718f0e4cd7ea",
+      "label_sha256": "6e82eb541ed28aa5632ddc684060aacc00d4b7985db988bedfc1535f4b4b9e27",
+      "canonical_image_id": "img_24459",
+      "source_group": "img_24459",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_24729_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_24729_pre_part_1.txt",
+      "image_name": "img_24729_pre_part_1.jpg",
+      "image_sha256": "4fe5b767a7fb8570736d4a6c21f8f229afab4e3e59c7689fdeebf3bee9746bc1",
+      "label_sha256": "8287f4009e7bb757a1b31e36713839bd02a81ee04fa1fff3c571339e4f4f5526",
+      "canonical_image_id": "img_24729",
+      "source_group": "img_24729",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2500_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2500_pre_part_1.txt",
+      "image_name": "img_2500_pre_part_1.jpg",
+      "image_sha256": "6851c91059e719c6ef2d0bc1ab27fbc7c231d3c57b90dea3ee077322df0f8be5",
+      "label_sha256": "1f2dc298e8cc0a0768ea75effe50f204b016eb2ee8532b0c292e5b2c7d2f65b6",
+      "canonical_image_id": "img_2500",
+      "source_group": "img_2500",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2538_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2538_pre_part_1.txt",
+      "image_name": "img_2538_pre_part_1.jpg",
+      "image_sha256": "077416233f05391ba054f7954ffa6167a3fc1563a9b4752bf3f46648428d3326",
+      "label_sha256": "c71be2c15e89bbb6a27e058759d9e4dde3927a16ba4f19e1b69e008a651a0311",
+      "canonical_image_id": "img_2538",
+      "source_group": "img_2538",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2572_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2572_pre_part_1.txt",
+      "image_name": "img_2572_pre_part_1.jpg",
+      "image_sha256": "98d104a811489f3b355bbc16120874bbf6f86149179ad6c187fb9c748a56fc96",
+      "label_sha256": "5425f192b6d587375b93eaac07f094540468eaa328d95fdaf59bd262049217b0",
+      "canonical_image_id": "img_2572",
+      "source_group": "img_2572",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2871_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2871_pre_part_1.txt",
+      "image_name": "img_2871_pre_part_1.jpg",
+      "image_sha256": "e70a618a4716b367f60f95833d4841884ef664a474570869a6b0bee77d1d67ef",
+      "label_sha256": "0fae838ebdbf754cc7c56212d126d5aa8f64329f11618da137c538cccff5caa7",
+      "canonical_image_id": "img_2871",
+      "source_group": "img_2871",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2872_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2872_pre_part_1.txt",
+      "image_name": "img_2872_pre_part_1.jpg",
+      "image_sha256": "0da79ca6110a56cb9b3d13b6b679ac31ef153fa2ebf81b24a0025b2ae0b7d7ec",
+      "label_sha256": "6878b720eeefbb3789bf734181561d77a49a48e787df2c52220a49782f788871",
+      "canonical_image_id": "img_2872",
+      "source_group": "img_2872",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_2900_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_2900_pre_part_1.txt",
+      "image_name": "img_2900_pre_part_1.jpg",
+      "image_sha256": "5c5dc94b08a864a8ed0f2c6b1304da20305cfbe646270a9995af6ddc404aad4c",
+      "label_sha256": "b2ed80b7eff0b601b085ea291b2458dac11cb8d179b1dc1cfa8a5aac2824b417",
+      "canonical_image_id": "img_2900",
+      "source_group": "img_2900",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3040_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3040_pre_part_1.txt",
+      "image_name": "img_3040_pre_part_1.jpg",
+      "image_sha256": "05901c5af8babc61b592bb492ca04127511b7cc183461a46a7b1505ee5657e0f",
+      "label_sha256": "69c985d9fab11524ca2c0f1d1d2d0a92e44649781a75d5c3bfc6da5fba472e0f",
+      "canonical_image_id": "img_3040",
+      "source_group": "img_3040",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3190_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3190_pre_part_0.txt",
+      "image_name": "img_3190_pre_part_0.jpg",
+      "image_sha256": "c97967dccdfdfe69305f43eabe571db9d8e1b46441bec48e728768425e90a3e8",
+      "label_sha256": "a01d8cd7c2e317c3447111d397d7a227ff4aa361a1620f7eebde479c6f487b61",
+      "canonical_image_id": "img_3190",
+      "source_group": "img_3190",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3207_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3207_pre_part_1.txt",
+      "image_name": "img_3207_pre_part_1.jpg",
+      "image_sha256": "887f13c17d2f24f75e957f5a138f065a314e3a13e1faea74b1f9380c4164cb56",
+      "label_sha256": "8c57302972ae17b0ac76701d6e1c3621c59d38af74b27ec9f2ecd08eb16aeeba",
+      "canonical_image_id": "img_3207",
+      "source_group": "img_3207",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3292_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3292_pre_part_1.txt",
+      "image_name": "img_3292_pre_part_1.jpg",
+      "image_sha256": "8f1e86716815a656ea78fac42b61607a318a597eb9d7f385d79b1e9978a32fa6",
+      "label_sha256": "edd661ce996f798573baf98c94685d4e89108fa689e48b4438c7f92c4e27d6fe",
+      "canonical_image_id": "img_3292",
+      "source_group": "img_3292",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3441_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3441_pre_part_1.txt",
+      "image_name": "img_3441_pre_part_1.jpg",
+      "image_sha256": "2ceeba4ca8ef3b3572425ce3d6a55c3ddffa3acf3532f3535c12242efbdd6b6a",
+      "label_sha256": "ae1a06ef2e86c24ab728decfcf5914869d00679377fbd202e6134647a162cd97",
+      "canonical_image_id": "img_3441",
+      "source_group": "img_3441",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3523_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3523_pre_part_1.txt",
+      "image_name": "img_3523_pre_part_1.jpg",
+      "image_sha256": "6f0b79c1b84a797a28a5640e444aeaf9d9df56ef91ed472d1b8667257aeb65d0",
+      "label_sha256": "abf23b82ac22c203905a76502f77a55a9c9bb9df2d71fe9c3e4b79cfb0fdab90",
+      "canonical_image_id": "img_3523",
+      "source_group": "img_3523",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3539_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3539_pre_part_1.txt",
+      "image_name": "img_3539_pre_part_1.jpg",
+      "image_sha256": "cb47a19dc64f6bc145195ec7ffd2b9e44a7df74e6dd8a813ff0f13c57f9d32b6",
+      "label_sha256": "4053d52912e6f47e875439b403286839f5f1672fd9238fdf2d7e5e875020c858",
+      "canonical_image_id": "img_3539",
+      "source_group": "img_3539",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3598_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3598_pre_part_0.txt",
+      "image_name": "img_3598_pre_part_0.jpg",
+      "image_sha256": "8221e5c8138d83aca36f104b5bfa91a0a599e50a7d1f5360ffb791f07041f62e",
+      "label_sha256": "7547146c5199e3dedf2f1c4178df3aabc7b1b6fe230d05d04de4360268f7114c",
+      "canonical_image_id": "img_3598",
+      "source_group": "img_3598",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3626_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3626_pre_part_1.txt",
+      "image_name": "img_3626_pre_part_1.jpg",
+      "image_sha256": "a77097e5d04f2f502263b5ea0879335f1afa63a1fae5fd29a92216fb2d10636b",
+      "label_sha256": "e8a41836e4402f89b426d963af3748333f3c5c9854336c7047d605bf1e08bc6c",
+      "canonical_image_id": "img_3626",
+      "source_group": "img_3626",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_3889_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_3889_pre_part_1.txt",
+      "image_name": "img_3889_pre_part_1.jpg",
+      "image_sha256": "202610507a1506365a3c987dca3fd3df1db4667bdc3f1dc0aa99dfa9f5f080b4",
+      "label_sha256": "c69a027d238c90c9358b5214819933ff971d2fe1bf93823d9553ce16425327b2",
+      "canonical_image_id": "img_3889",
+      "source_group": "img_3889",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_4108_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_4108_pre_part_1.txt",
+      "image_name": "img_4108_pre_part_1.jpg",
+      "image_sha256": "b2e53e73f1d6157ab13897a4948ab9f2f5810bea30ecbceccf223f8f8d1f3d45",
+      "label_sha256": "565b534b433813962ced02f19d9bc8daad95e773df6292794c6385b2392feb53",
+      "canonical_image_id": "img_4108",
+      "source_group": "img_4108",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_4321_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_4321_pre_part_1.txt",
+      "image_name": "img_4321_pre_part_1.jpg",
+      "image_sha256": "68d8c90029655c60253324fc24078761190e1280e37739bd0b6d811587ee0454",
+      "label_sha256": "33de801c4eb15a20446cf273f9fc4a9b531451eaf32f45cb53baf474ad878ff3",
+      "canonical_image_id": "img_4321",
+      "source_group": "img_4321",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_4462_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_4462_pre_part_1.txt",
+      "image_name": "img_4462_pre_part_1.jpg",
+      "image_sha256": "7143b421fe4c00936057be3aecd44c2689829f10c21a6a46c593f2de1aaafc0e",
+      "label_sha256": "46644ace7e892f68dff6086e1d2cfc9c1c10b5056a840971567cc17f52c6d09d",
+      "canonical_image_id": "img_4462",
+      "source_group": "img_4462",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_4515_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_4515_pre_part_0.txt",
+      "image_name": "img_4515_pre_part_0.jpg",
+      "image_sha256": "4aede67811eff57ef688b31cd7b623e72b79f7ded393561345ad168f827d0310",
+      "label_sha256": "473683c4c7656c16c8a413082e3430eb1c91b8c7e90fa25ac79a25a55ccd4e00",
+      "canonical_image_id": "img_4515",
+      "source_group": "img_4515",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_460_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_460_pre_part_0.txt",
+      "image_name": "img_460_pre_part_0.jpg",
+      "image_sha256": "44f2cc75087edc52d9d22ea4cdc62331c5abf37ab531e81cae5bb57adeea95a9",
+      "label_sha256": "359162f06c849d4fa44766c120ba56c15c8775df04ec4456a8eb47a9d3c69a96",
+      "canonical_image_id": "img_460",
+      "source_group": "img_460",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_4937_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_4937_pre_part_1.txt",
+      "image_name": "img_4937_pre_part_1.jpg",
+      "image_sha256": "d243261a6997e0430735f82b090d2dd456cdee71204fc9e3a3a766ba19c59767",
+      "label_sha256": "5ce20d594d7fa46a0c5b55a65fde92bbfa7f9608f1144df6d4e480695ef38276",
+      "canonical_image_id": "img_4937",
+      "source_group": "img_4937",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_5107_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_5107_pre_part_1.txt",
+      "image_name": "img_5107_pre_part_1.jpg",
+      "image_sha256": "8f58b6ecc877f3be30f2123399f0cf877c2c01ae6a6ca2e2868cec6a98563ff8",
+      "label_sha256": "a4b2663ef8936194a7d23125756472a52abc33c19736b4847c0b9ea71f46ade1",
+      "canonical_image_id": "img_5107",
+      "source_group": "img_5107",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_525_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_525_pre_part_1.txt",
+      "image_name": "img_525_pre_part_1.jpg",
+      "image_sha256": "0791dfbf03de94abd0af4865829d30dbb6badd9fd9887f0023da464a3857a1b3",
+      "label_sha256": "230d29487e074b1616873d4fa43d5c8b2a8dc540b80b46dc5ff65ef39472c027",
+      "canonical_image_id": "img_525",
+      "source_group": "img_525",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_5891_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_5891_pre_part_1.txt",
+      "image_name": "img_5891_pre_part_1.jpg",
+      "image_sha256": "19c38a3d3076c60c4959e25216dfc4fad6ba122acaff846faa9416b4ed2d8d1d",
+      "label_sha256": "ded1b2f85ae118ce58f76df1725eea987e9cd493cb8cdcac742c8f9e912acc3a",
+      "canonical_image_id": "img_5891",
+      "source_group": "img_5891",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_6075_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_6075_pre_part_1.txt",
+      "image_name": "img_6075_pre_part_1.jpg",
+      "image_sha256": "2541d7594955e299cc5bb1b24fe805b57c109b9d46769583e39b597a7f7d98e1",
+      "label_sha256": "4dfc008d1ecde57b6a81f7c751ec13027c2220e8752c40de1cd9f6b9372711f6",
+      "canonical_image_id": "img_6075",
+      "source_group": "img_6075",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_639_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_639_pre_part_1.txt",
+      "image_name": "img_639_pre_part_1.jpg",
+      "image_sha256": "536a18a353f2087dddfb1edebf74cd4a8ab7b0c7dc30bee1a7e8bd3e0da3f90d",
+      "label_sha256": "daa1be4c58117301875bd2bedd9aa5e1b9c89d5b3f3bb533955bf858b39e588a",
+      "canonical_image_id": "img_639",
+      "source_group": "img_639",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_6576_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_6576_pre_part_1.txt",
+      "image_name": "img_6576_pre_part_1.jpg",
+      "image_sha256": "868686a56cee0348ad3a16f6914d0ef96782a7bf1eb2f0e5be25ce88f06ac0fc",
+      "label_sha256": "aa20a363fc8d830c8b4252604a73e471eab45408aa6ee3e0ec1df15bceb4aaa8",
+      "canonical_image_id": "img_6576",
+      "source_group": "img_6576",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_6648_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_6648_pre_part_1.txt",
+      "image_name": "img_6648_pre_part_1.jpg",
+      "image_sha256": "d35911d6c2fa2b728f5a40de3ebbfe31b2659b5cafa6a3a4d28744e88487b191",
+      "label_sha256": "a121e4892ca25f7285ead12540f65843455eb93ec7b9a85b456c434d39fa7275",
+      "canonical_image_id": "img_6648",
+      "source_group": "img_6648",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_6811_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_6811_pre_part_1.txt",
+      "image_name": "img_6811_pre_part_1.jpg",
+      "image_sha256": "b445afa2f4ca38905b6fea522f329b27df9f25de0d1143dfb0d62a9aa9630e6b",
+      "label_sha256": "2b220d5d07d467ccc11a894686d69e6227ade3fd9c716e7c2988153c1b7cb7d6",
+      "canonical_image_id": "img_6811",
+      "source_group": "img_6811",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_693_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_693_pre_part_1.txt",
+      "image_name": "img_693_pre_part_1.jpg",
+      "image_sha256": "e69d126c191fe516e7d9542fb93ecaf097f54a6fc122b59b58628243f6f0ec84",
+      "label_sha256": "4f67ef32bb70f2c9970e6cdfebdadbb4b9c36ccf15d259fc23a0e804c1be72ab",
+      "canonical_image_id": "img_693",
+      "source_group": "img_693",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_7241_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_7241_pre_part_0.txt",
+      "image_name": "img_7241_pre_part_0.jpg",
+      "image_sha256": "ad6b6891f820486c905c1e3d7fba9b8da9b4e0cd8b59b506421c0d7061441d9a",
+      "label_sha256": "17e0e1bfa93c9dcbe244e842ddb7c0ba280279c7d9ff44b97f05ad3e5e5281ae",
+      "canonical_image_id": "img_7241",
+      "source_group": "img_7241",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_7734_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_7734_pre_part_0.txt",
+      "image_name": "img_7734_pre_part_0.jpg",
+      "image_sha256": "12daeb1e5c337046cad76e3c1bd6ee94e79fbc3b2a73e5ea448f5b71830cfe84",
+      "label_sha256": "b8356aed8cef5035ab5301309a6243f93c1501c760d632760fa2766319074088",
+      "canonical_image_id": "img_7734",
+      "source_group": "img_7734",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_7953_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_7953_pre_part_1.txt",
+      "image_name": "img_7953_pre_part_1.jpg",
+      "image_sha256": "49bfc3548c457a568151c6b232da54c8de7caa175f27bb2de63883c28a707d76",
+      "label_sha256": "7b24ce4ca07d967f375560921bf21b8d922674f15f544f0417e1137587b4a616",
+      "canonical_image_id": "img_7953",
+      "source_group": "img_7953",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8297_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8297_pre_part_1.txt",
+      "image_name": "img_8297_pre_part_1.jpg",
+      "image_sha256": "a1574bf63de691f927c3a1d0080af090369d7d4f6993905fd1c292fc4eb9c523",
+      "label_sha256": "db4b2b45ad32247c81c01a43b3c335793b540c3d8bbbb7bf5caa86bce76d95ce",
+      "canonical_image_id": "img_8297",
+      "source_group": "img_8297",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8308_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8308_pre_part_1.txt",
+      "image_name": "img_8308_pre_part_1.jpg",
+      "image_sha256": "3e1077632488ac302dcbb603fbd468a66df6ba7f3f91f588142eefcac7656bb9",
+      "label_sha256": "16abdcc96b806e8456f092066e065c07e1f99324c3ff118a2539c70e60804eab",
+      "canonical_image_id": "img_8308",
+      "source_group": "img_8308",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8363_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8363_pre_part_1.txt",
+      "image_name": "img_8363_pre_part_1.jpg",
+      "image_sha256": "1c114ece5f88188ef2c37651dd2a693988d2b06bf9ad523d42fb657d16ec61e7",
+      "label_sha256": "293d4ea4cbc0cad30faaafe94e8f5642a803cb7d6e5d0cc690f2bd0462f395ef",
+      "canonical_image_id": "img_8363",
+      "source_group": "img_8363",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8507_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8507_pre_part_1.txt",
+      "image_name": "img_8507_pre_part_1.jpg",
+      "image_sha256": "faf2df196e03e9d568b818d52dec826397ee4505d2bb1888d025a8d4cec691c3",
+      "label_sha256": "98f7791762f7a874bc6cf5d973c08388e0956ddc8be85fade43bd2f3eb7eed4d",
+      "canonical_image_id": "img_8507",
+      "source_group": "img_8507",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8747_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8747_pre_part_1.txt",
+      "image_name": "img_8747_pre_part_1.jpg",
+      "image_sha256": "81f782f6b16cbd3034c06209b47af8e3616f66e6a8ceaa8b2cb0b3ca2ebd6ac4",
+      "label_sha256": "d24fba08576d8027f026c9733dfb30115e61a19cd0937c391c5e2ab99be14a17",
+      "canonical_image_id": "img_8747",
+      "source_group": "img_8747",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_879_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_879_pre_part_1.txt",
+      "image_name": "img_879_pre_part_1.jpg",
+      "image_sha256": "2ae1df6f98b71e65e64ebbbdb4b094942f740d2d585b6c5e7f261dcbe81658ae",
+      "label_sha256": "075647c86060bdfeff4c3534277f3a5cc936344f3da0e72dceae6a8b5bf3838a",
+      "canonical_image_id": "img_879",
+      "source_group": "img_879",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_8935_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_8935_pre_part_0.txt",
+      "image_name": "img_8935_pre_part_0.jpg",
+      "image_sha256": "9ac8b0d547c67eb6d2c22ede36cbf5ea64fe50e28bcb8bdbaaf3d5ef49bac04e",
+      "label_sha256": "0aa7a9f61b0be75a2d2f190da1d8a88afb307b6eae682362cfea7aac7ba4d19b",
+      "canonical_image_id": "img_8935",
+      "source_group": "img_8935",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_900_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_900_pre_part_1.txt",
+      "image_name": "img_900_pre_part_1.jpg",
+      "image_sha256": "0fe828b9d43e0f7c1c70c4ae1f66e951e48ab564722a27e9ef747ad6e1a003e6",
+      "label_sha256": "5ce29544ce95c68b8125afa225b93e15c58dc865168dde0ec06ebd45a2ca16a9",
+      "canonical_image_id": "img_900",
+      "source_group": "img_900",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9157_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9157_pre_part_1.txt",
+      "image_name": "img_9157_pre_part_1.jpg",
+      "image_sha256": "29efd2f740c8608258b56f8465b112474058d2336a3cd125d1634726e47c5c5c",
+      "label_sha256": "2663964e05de20461e098132c826088bb3683be5a9e9774202bc5946269775e1",
+      "canonical_image_id": "img_9157",
+      "source_group": "img_9157",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9389_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9389_pre_part_1.txt",
+      "image_name": "img_9389_pre_part_1.jpg",
+      "image_sha256": "b40ec767dec6c4440e1ed66a30a66c0c368b20612fb8dd4e37212ca15011ee53",
+      "label_sha256": "d25bc8051428a199d7cc2f725a613360aedc320bf8679b178cae561f8f843f20",
+      "canonical_image_id": "img_9389",
+      "source_group": "img_9389",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9399_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9399_pre_part_1.txt",
+      "image_name": "img_9399_pre_part_1.jpg",
+      "image_sha256": "85001c2f39f78438a99c4ec07a2969438873c1cf48ece6582b460706a0151ba0",
+      "label_sha256": "9ef88b970a8faf188f442ce6649af5f7fad60f890dd0965c9b633ffdbe75cb0e",
+      "canonical_image_id": "img_9399",
+      "source_group": "img_9399",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9438_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9438_pre_part_0.txt",
+      "image_name": "img_9438_pre_part_0.jpg",
+      "image_sha256": "961056dc270f4eb5d607e2fb756c95739590e13f206d02b642f06ca06fb6c4e2",
+      "label_sha256": "265490d5583c2e11ba7b46377500678564118f63b4d75047dd8783fb950ac47d",
+      "canonical_image_id": "img_9438",
+      "source_group": "img_9438",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9504_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9504_pre_part_1.txt",
+      "image_name": "img_9504_pre_part_1.jpg",
+      "image_sha256": "277c8c4a74049d84fe9b1bc3d7f47abda68f010fcade59d012e44185b01e603a",
+      "label_sha256": "4d7c12aa840c3442166c94d5f7989d1645f3136ad9ebfb8f4727138dc85ad8af",
+      "canonical_image_id": "img_9504",
+      "source_group": "img_9504",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9509_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9509_pre_part_0.txt",
+      "image_name": "img_9509_pre_part_0.jpg",
+      "image_sha256": "82c8f817db6bf45ba0bdd7b71d6ba8ca3f51b3fe225e5e21bc546657543537c1",
+      "label_sha256": "0bfe0db37e1472fa61c1087247f30f6c61cacc3ed3cb9f2b3a604a5955fc40c7",
+      "canonical_image_id": "img_9509",
+      "source_group": "img_9509",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_970_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_970_pre_part_1.txt",
+      "image_name": "img_970_pre_part_1.jpg",
+      "image_sha256": "d992770482da43a782c64c47116f502265bb1449149afcd1632dc18f6d2224a1",
+      "label_sha256": "0b7282b78eb4fde093186d86ac12881839040936249dd6f845abbc99d7e45174",
+      "canonical_image_id": "img_970",
+      "source_group": "img_970",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_9730_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_9730_pre_part_1.txt",
+      "image_name": "img_9730_pre_part_1.jpg",
+      "image_sha256": "0683023e943947ef95ec2f8276471039e78bcbb1014431ba929285aff68ac1c0",
+      "label_sha256": "9651403a34e6ce108a3b3e0d1d341058e773f5084c8d4eb557dd41d6298778ce",
+      "canonical_image_id": "img_9730",
+      "source_group": "img_9730",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "train",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/train/img_995_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/train/img_995_pre_part_1.txt",
+      "image_name": "img_995_pre_part_1.jpg",
+      "image_sha256": "e665891dbdb341c2bd7ac9e97bcb139da1fcbe0d10f74f1792abde0a0a7475d5",
+      "label_sha256": "c0c0cbe3e5fc772c56eadef8cac60d5003c637e47f86260e4c29b279487bb364",
+      "canonical_image_id": "img_995",
+      "source_group": "img_995",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_14.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_14.txt",
+      "image_name": "blackinst_14.jpg",
+      "image_sha256": "93c6a8caef2f8197536ad7fa9007678f150c23785dd8472dff5af4ffde3b3a97",
+      "label_sha256": "ce66315ca42a350110e9cf2a6bd1b35299254db46bbd9081a85c364623eab3f3",
+      "canonical_image_id": "blackinst_14",
+      "source_group": "blackinst_14",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_18.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_18.txt",
+      "image_name": "blackinst_18.jpg",
+      "image_sha256": "ca39cb9a2e7d0414ed3705370fd353eec951fa38d6d5a2333c082e05ea1327ea",
+      "label_sha256": "15ec65aef4637f316201fb0da033611d37138ed014036d8728226c2d61192062",
+      "canonical_image_id": "blackinst_18",
+      "source_group": "blackinst_18",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_21.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_21.txt",
+      "image_name": "blackinst_21.jpg",
+      "image_sha256": "6392f570e264ca819e3750cc9030a62df307474302753c5e5f120baa3116af96",
+      "label_sha256": "2eb2251aacf348598ba3008e49c7a397aac66d300acae47da44193f1ab39b6c3",
+      "canonical_image_id": "blackinst_21",
+      "source_group": "blackinst_21",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_25.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_25.txt",
+      "image_name": "blackinst_25.jpg",
+      "image_sha256": "1e8bf732708ba8217a8931b9fe4be88082eea5517c64f19989ba0ca7a2eb3add",
+      "label_sha256": "76da96b449059307565b8bfc6120fc1ee94e6b7aa0c31850329949b00c8f6d2c",
+      "canonical_image_id": "blackinst_25",
+      "source_group": "blackinst_25",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_29.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_29.txt",
+      "image_name": "blackinst_29.jpg",
+      "image_sha256": "16b5133a931572e0efd0c6adbec747c4409377fbbe7e138573b2c0ff7ff38c7d",
+      "label_sha256": "f3d0b0dd62dacc5f5e663a0759de9e5e6a080cb940abef2d4ba84c84f8a0c49b",
+      "canonical_image_id": "blackinst_29",
+      "source_group": "blackinst_29",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_31.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_31.txt",
+      "image_name": "blackinst_31.jpg",
+      "image_sha256": "5f75ad1110aedcb0e7c759ce32b16ad15c425e430db35fdb6598282d310e9c9e",
+      "label_sha256": "46254fe08c7deae4c5ea090bba641ed516106a8f1fe002cc52f5720a6ce80c80",
+      "canonical_image_id": "blackinst_31",
+      "source_group": "blackinst_31",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_33.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_33.txt",
+      "image_name": "blackinst_33.jpg",
+      "image_sha256": "99095ba043dea52b631268c261a2d457acc60ff01f93345dbc6893768404b224",
+      "label_sha256": "d4593d54ca50a28dd23c3b826f39c47243be91364bbece2641a3682e9df8e73a",
+      "canonical_image_id": "blackinst_33",
+      "source_group": "blackinst_33",
+      "width": 4096,
+      "height": 1024,
+      "instances": 3,
+      "class_counts": {
+        "1": 3
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_35.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_35.txt",
+      "image_name": "blackinst_35.jpg",
+      "image_sha256": "00d475e5878a60b79229eadd73c948a53114b25ebd290d7920eca2507c80e5e5",
+      "label_sha256": "a8e82a1c2a692965cb3357a9d3b50afc291f225643501dbb3e13e2485612ee6a",
+      "canonical_image_id": "blackinst_35",
+      "source_group": "blackinst_35",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_38.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_38.txt",
+      "image_name": "blackinst_38.jpg",
+      "image_sha256": "efda0febc139d58a950c28e4b943bc7e11f2cf99d28775c2b59b21acd9baa0b1",
+      "label_sha256": "10a32889b05e2fc4af0af3e20b6c8b241228927578b05b15c79012d0e7769182",
+      "canonical_image_id": "blackinst_38",
+      "source_group": "blackinst_38",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/blackinst_6.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/blackinst_6.txt",
+      "image_name": "blackinst_6.jpg",
+      "image_sha256": "e1d39e478a790f613adc6be512210055a3b2918a5f3d98a807590a0d3085f2ed",
+      "label_sha256": "e73b86b7e395243adb5d9bd521df34f4722d1da625dad0419c0ca2dae5e1a73a",
+      "canonical_image_id": "blackinst_6",
+      "source_group": "blackinst_6",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_10056_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_10056_pre_part_1.txt",
+      "image_name": "img_10056_pre_part_1.jpg",
+      "image_sha256": "990b652810df3541db4b33bb0b65cc2f628527e1c1fcbbe3d52c5f5115acfa6b",
+      "label_sha256": "6979abfea9e6179ece2ac74c70dd33d01479ccb7bda032ec3eb6d9df1ded02f6",
+      "canonical_image_id": "img_10056",
+      "source_group": "img_10056",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_1020_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_1020_pre_part_1.txt",
+      "image_name": "img_1020_pre_part_1.jpg",
+      "image_sha256": "f1b8d8ca25f35fbf28fda6b0df5c2daf2716cbd8caa69fd17054d23686167993",
+      "label_sha256": "919ed035c1f6a0d338899f2f635a96da2bf94e5f36bd2b908a68b4e9ff06821c",
+      "canonical_image_id": "img_1020",
+      "source_group": "img_1020",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_14894_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_14894_pre_part_1.txt",
+      "image_name": "img_14894_pre_part_1.jpg",
+      "image_sha256": "dba83fe2a9672a6e728ec066b933319e70f0e31283b13c1352ec232f847c5907",
+      "label_sha256": "48649a2a717e64a384a2bfc9ebaae19d15868eeea26282c33132c6299301ffec",
+      "canonical_image_id": "img_14894",
+      "source_group": "img_14894",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_1512_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_1512_pre_part_1.txt",
+      "image_name": "img_1512_pre_part_1.jpg",
+      "image_sha256": "89b7b421763d91834a728610fb0fb3c1702d77b5a4540d4370bc647844d3129e",
+      "label_sha256": "eb09277b00afe0d1258571bff2ed3bf10663e845df0127b9a84ecd9a435ed5aa",
+      "canonical_image_id": "img_1512",
+      "source_group": "img_1512",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_15887_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_15887_pre_part_0.txt",
+      "image_name": "img_15887_pre_part_0.jpg",
+      "image_sha256": "1e66ac5e4e00c53bac38625c19d7e6d515e789685b75b93f2cbe0cd0bcf231d5",
+      "label_sha256": "2e0d312c912cc84b453cca12d247a343a39ac799e026071a738da46a8ac5af3a",
+      "canonical_image_id": "img_15887",
+      "source_group": "img_15887",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_15923_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_15923_pre_part_1.txt",
+      "image_name": "img_15923_pre_part_1.jpg",
+      "image_sha256": "0aadb850787950034a3a58e43ce477683700983985892de8820d67c19fd263e8",
+      "label_sha256": "72d74cd8ebd08e9f94f2634b0358c8f862c18a57e21ea5a452d76846910c952e",
+      "canonical_image_id": "img_15923",
+      "source_group": "img_15923",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_16781_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_16781_pre_part_1.txt",
+      "image_name": "img_16781_pre_part_1.jpg",
+      "image_sha256": "de73b89f3eca16d923736f255160e4abb6131216c4880041d2320593a5ff3394",
+      "label_sha256": "e2394d4fd04f46e4140db73008006a70e1f357654cc31e55f1d46389ed971535",
+      "canonical_image_id": "img_16781",
+      "source_group": "img_16781",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "0": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_17300_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_17300_pre_part_1.txt",
+      "image_name": "img_17300_pre_part_1.jpg",
+      "image_sha256": "8261fc666da111d13f0b4cb8830b4f27c24204ca04dfcc0b86485de6d7f42c1e",
+      "label_sha256": "8bdd653b6ad7353a173ec6dc2ae0b1edf634771ecb780dadf906fccf5ca8cb8b",
+      "canonical_image_id": "img_17300",
+      "source_group": "img_17300",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_18628_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_18628_pre_part_0.txt",
+      "image_name": "img_18628_pre_part_0.jpg",
+      "image_sha256": "ab9ec8c12ba957257beb9826235758d4e0261b392b8245e8142f09d4b6eebfbe",
+      "label_sha256": "7088889376a39308cf5feb32f6927746df6c086dc1a9de68ffbb184c00c3ba60",
+      "canonical_image_id": "img_18628",
+      "source_group": "img_18628",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_19133_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_19133_pre_part_1.txt",
+      "image_name": "img_19133_pre_part_1.jpg",
+      "image_sha256": "9ff4bb50fe8e31d3637bd4c1d4e268a1c4da9848542d546390c11af36f2c9a11",
+      "label_sha256": "fd7907c855f919d61bc037c3a72a5a8abf00d89dbfdca55d49ff2946fb2977c3",
+      "canonical_image_id": "img_19133",
+      "source_group": "img_19133",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_19135_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_19135_pre_part_1.txt",
+      "image_name": "img_19135_pre_part_1.jpg",
+      "image_sha256": "0e09c43ceed520125afa549292cf957043b6f89b4b339dbc79242c52f8517e06",
+      "label_sha256": "26d28d3a7da4dbca012e35d3583fe37943cfc89a192f2b3ce33c157dc478299f",
+      "canonical_image_id": "img_19135",
+      "source_group": "img_19135",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "1": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_19140_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_19140_pre_part_1.txt",
+      "image_name": "img_19140_pre_part_1.jpg",
+      "image_sha256": "0327b18f6d58ea3cd145914de8b1b81eef0d658978f34248d42630230442de95",
+      "label_sha256": "977aae492478d12f25119c23b0f5178e47b319830019d1fb8366b91f44460023",
+      "canonical_image_id": "img_19140",
+      "source_group": "img_19140",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_20553_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_20553_pre_part_1.txt",
+      "image_name": "img_20553_pre_part_1.jpg",
+      "image_sha256": "4815a7ade4f462f6efe2508612299aef13ab97b52a66ae27a04a460641e6ce66",
+      "label_sha256": "13e5fd9bac12ea87502f584f4d99b7222fb4d156d0c88912fd95c4b4f32f5d38",
+      "canonical_image_id": "img_20553",
+      "source_group": "img_20553",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_21287_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_21287_pre_part_0.txt",
+      "image_name": "img_21287_pre_part_0.jpg",
+      "image_sha256": "0d2c7412d6ce3126925aee0f11c5a4e72e33bd18bf7b3e5cf62b42941cf467fb",
+      "label_sha256": "995392bc8dcde987a5a323440e28004d9964903c0062e4fdaaee2a0667756bb7",
+      "canonical_image_id": "img_21287",
+      "source_group": "img_21287",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_22343_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_22343_pre_part_1.txt",
+      "image_name": "img_22343_pre_part_1.jpg",
+      "image_sha256": "a7fbd2db921467b01fe1c5a4d6b716b7718066e0cac31dc460433e72604e1897",
+      "label_sha256": "d3fbd83bf47a0cbd3c2566bf198c427dfe542cb678ce1258e1002c065917f0d1",
+      "canonical_image_id": "img_22343",
+      "source_group": "img_22343",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_24610_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_24610_pre_part_1.txt",
+      "image_name": "img_24610_pre_part_1.jpg",
+      "image_sha256": "d3d6019af18adb97b4df20a179419855ccc0cc8e36d0e52b5d82b5b9ad3909a1",
+      "label_sha256": "3b45ffce3d6b84b9d493a7f24c4fe2479c5173d517a4e019facdc5734e914b09",
+      "canonical_image_id": "img_24610",
+      "source_group": "img_24610",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_2786_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_2786_pre_part_1.txt",
+      "image_name": "img_2786_pre_part_1.jpg",
+      "image_sha256": "12dc653f45d4ed0239b06363c4587ff8fad94f47a97a8790eac52ad7b500214b",
+      "label_sha256": "881f73a37bd78f8e879b8035507b70879e2aca8253fa9f42f5080502f7568995",
+      "canonical_image_id": "img_2786",
+      "source_group": "img_2786",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_3122_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_3122_pre_part_1.txt",
+      "image_name": "img_3122_pre_part_1.jpg",
+      "image_sha256": "c70dadff1417090c72903b868f5012155c01fa198a147fd00424ce2e5c8372dc",
+      "label_sha256": "a0d2ef27a5ccc9045b0502b22304cc2df9a73b3c791e43713212f1b987fba40a",
+      "canonical_image_id": "img_3122",
+      "source_group": "img_3122",
+      "width": 4096,
+      "height": 1024,
+      "instances": 2,
+      "class_counts": {
+        "0": 2
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_3653_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_3653_pre_part_1.txt",
+      "image_name": "img_3653_pre_part_1.jpg",
+      "image_sha256": "c8fb860d0cf743ec9d96408b93aacb8a4539ac253ebe33bb3953bb783fbbda38",
+      "label_sha256": "7b95512ad6476c2aeb2acbcb709d6e4fb784424175bec6273be6fade5458bcd4",
+      "canonical_image_id": "img_3653",
+      "source_group": "img_3653",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_3674_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_3674_pre_part_0.txt",
+      "image_name": "img_3674_pre_part_0.jpg",
+      "image_sha256": "195cbf671eda19fe62fc55e06342ec827fd8f105c28cd9b730f7246681754d6b",
+      "label_sha256": "a57f1333c273dd93602480c5db0ba5b0ecee76cd1c7e04532941eeaa29f9d67f",
+      "canonical_image_id": "img_3674",
+      "source_group": "img_3674",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_4144_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_4144_pre_part_1.txt",
+      "image_name": "img_4144_pre_part_1.jpg",
+      "image_sha256": "ff97aa5fb38c04e3909a7241246106932ed62afbed6dc72a7f335a2d41282124",
+      "label_sha256": "ad43dce4d5216a03dc3332523e665c314b16e265b3634cef3b8af56696fe9f31",
+      "canonical_image_id": "img_4144",
+      "source_group": "img_4144",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_4249_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_4249_pre_part_1.txt",
+      "image_name": "img_4249_pre_part_1.jpg",
+      "image_sha256": "54a3fbf9bb416ba3a1653275f75ac7641619a578e681a6686aa0337a09c48334",
+      "label_sha256": "74c6bbd72d692465b65b69943e1b71ad419a8ace804ec4b88ca7aa2f2b93f349",
+      "canonical_image_id": "img_4249",
+      "source_group": "img_4249",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_4350_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_4350_pre_part_0.txt",
+      "image_name": "img_4350_pre_part_0.jpg",
+      "image_sha256": "31c043d102dfc66512db0a85be911d0b4fda98a3563c4deab31a06d639926986",
+      "label_sha256": "ef0d9c4594b61cb19d981a7838fe3ee5c35ea207a33d04b34608fbdfff792074",
+      "canonical_image_id": "img_4350",
+      "source_group": "img_4350",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_4657_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_4657_pre_part_1.txt",
+      "image_name": "img_4657_pre_part_1.jpg",
+      "image_sha256": "8acbe84b403a9714bad7dfecef511c87f5e8bd385ab919ca1714e12e3cd029e7",
+      "label_sha256": "074feff98f2895bab3b84a3faf7cd9f6bf54a5f728b4a2c22f7b01d7a2e69a27",
+      "canonical_image_id": "img_4657",
+      "source_group": "img_4657",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_488_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_488_pre_part_0.txt",
+      "image_name": "img_488_pre_part_0.jpg",
+      "image_sha256": "6780cfdff5ef0c0b60393fb9992b9e7cf302fb6d8fbdcd4ccc3a162541bf2b9c",
+      "label_sha256": "584405d58ed37ecc6cbb90c3da3c70179818186a3b5cf39d125e7e09793ff644",
+      "canonical_image_id": "img_488",
+      "source_group": "img_488",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_5148_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_5148_pre_part_1.txt",
+      "image_name": "img_5148_pre_part_1.jpg",
+      "image_sha256": "557e81e3b96de2e86bc8daa4f9653957db4cb22fac29f1d7d005205acd203874",
+      "label_sha256": "7f52a579a078a8fe63ca5377aa4306d373090a3206ab045cce8d6b7865dfe3b7",
+      "canonical_image_id": "img_5148",
+      "source_group": "img_5148",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_5181_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_5181_pre_part_1.txt",
+      "image_name": "img_5181_pre_part_1.jpg",
+      "image_sha256": "4a04fc1bdd1361e1025ca95bda28dcb6ebb337c66f4e8b303d0352da4663698b",
+      "label_sha256": "276b48536452d2cbc9742bab1680dd6b9e29354ab9191d17d1eae1ea3f3773fe",
+      "canonical_image_id": "img_5181",
+      "source_group": "img_5181",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_527_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_527_pre_part_1.txt",
+      "image_name": "img_527_pre_part_1.jpg",
+      "image_sha256": "195f543cb1f07b3ec87fdd21724d35583e75175b8e1bcac45f479eeef90e8c4c",
+      "label_sha256": "3f5ddd6498aef39421bcc9242545888636e2fe5c505349cec4b15cd1f5306e20",
+      "canonical_image_id": "img_527",
+      "source_group": "img_527",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_5647_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_5647_pre_part_1.txt",
+      "image_name": "img_5647_pre_part_1.jpg",
+      "image_sha256": "b2a56a051099c1840e8556aa0faedfe54096bb96c223f966995d7fcedac9f78f",
+      "label_sha256": "1fa85a44988a8c74dbcfc53a5a345b9c0e2adb94cfd316a588e83e2838e41afa",
+      "canonical_image_id": "img_5647",
+      "source_group": "img_5647",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_6125_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_6125_pre_part_1.txt",
+      "image_name": "img_6125_pre_part_1.jpg",
+      "image_sha256": "7ac7b65626d2b90d834d8caf97650680ae667a550047dc2eea430b754667c121",
+      "label_sha256": "1a304ec741c189effb426001dac0f7213738834d22a33a67823191d906c324fe",
+      "canonical_image_id": "img_6125",
+      "source_group": "img_6125",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_671_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_671_pre_part_1.txt",
+      "image_name": "img_671_pre_part_1.jpg",
+      "image_sha256": "a39627b77216a1b7ab72ccab01dbe3608c1474b07bf820a0d92c21d000253ea6",
+      "label_sha256": "5c4e5c5fc1143f9eec6db6e915546d9c7329c7f2b2efc5512dba098d5d8588f8",
+      "canonical_image_id": "img_671",
+      "source_group": "img_671",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_7765_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_7765_pre_part_1.txt",
+      "image_name": "img_7765_pre_part_1.jpg",
+      "image_sha256": "4bea5055d5840b28f715a47f53292929c4ec6b653647aa49e03eb7f820103f3f",
+      "label_sha256": "08dfd0b3e2f195f24928da806a88487d65984294eb88bf1662f85b372935cd4f",
+      "canonical_image_id": "img_7765",
+      "source_group": "img_7765",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_8316_pre_part_0.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_8316_pre_part_0.txt",
+      "image_name": "img_8316_pre_part_0.jpg",
+      "image_sha256": "13c633a921fb0270c4d57dc92b7cb520373d50480f83b8682f1a02eee33187c2",
+      "label_sha256": "5b02d17dbacb191ceabc5b73fbf1b2d983fb87e2b88c8feca6657241f86115c1",
+      "canonical_image_id": "img_8316",
+      "source_group": "img_8316",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_8718_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_8718_pre_part_1.txt",
+      "image_name": "img_8718_pre_part_1.jpg",
+      "image_sha256": "5be94d2a7a181438f957a11488ad7c7e5b759fa4ec1f946dbe0f67fe6aec6d74",
+      "label_sha256": "6d4cc4cc497f61267105a91468cf7b21541454113085f5bf4a1fdcca5fcd66c9",
+      "canonical_image_id": "img_8718",
+      "source_group": "img_8718",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_9509_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_9509_pre_part_1.txt",
+      "image_name": "img_9509_pre_part_1.jpg",
+      "image_sha256": "e76e03cd81631af9d4aea6ef2029ceda6d7a8814aea603740f94bfb155360e8e",
+      "label_sha256": "82f05e3d42f1a852a2e473d997fd1f44116e2f92844216fc0316c67e420ebcdf",
+      "canonical_image_id": "img_9509",
+      "source_group": "img_9509",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "1": 1
+      }
+    },
+    {
+      "split": "val",
+      "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/images/val/img_9686_pre_part_1.jpg",
+      "label": "/mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only/labels/val/img_9686_pre_part_1.txt",
+      "image_name": "img_9686_pre_part_1.jpg",
+      "image_sha256": "de0ff52e66ff2844935af6bd6cc89477b5e5a4c8fef1c094902fc9f79f3b6ac1",
+      "label_sha256": "d3776f3984b1014701edee172daadb4d8f9e380fd80de2bb17dbe82a6a91046d",
+      "canonical_image_id": "img_9686",
+      "source_group": "img_9686",
+      "width": 4096,
+      "height": 1024,
+      "instances": 1,
+      "class_counts": {
+        "0": 1
+      }
+    }
+  ]
+}
