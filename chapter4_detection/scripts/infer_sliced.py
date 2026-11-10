@@ -10,7 +10,9 @@ from pathlib import Path
 
 import cv2
 import numpy as np
+import torch
 from ultralytics import YOLO
+from ultralytics.utils.torch_utils import get_flops
 
 from chapter4_detection.scripts.slicing import class_aware_nms, make_tiles, restore_boxes
 
@@ -28,6 +30,9 @@ def main() -> int:
     args = parser.parse_args()
 
     model = YOLO(str(args.weights))
+    use_cuda = str(args.device).lower() != "cpu" and torch.cuda.is_available()
+    if use_cuda:
+        torch.cuda.reset_peak_memory_stats()
     payload, elapsed = {}, []
     image_paths = sorted(p for p in args.images.iterdir() if p.suffix.lower() in {".jpg", ".jpeg", ".png"})
     for image_path in image_paths:
@@ -36,6 +41,8 @@ def main() -> int:
             raise ValueError(f"Unreadable image: {image_path}")
         height, width = image.shape[:2]
         boxes, scores, classes = [], [], []
+        if use_cuda:
+            torch.cuda.synchronize()
         start = time.perf_counter()
         tiles = make_tiles(width, height, args.tile_size, args.overlap)
         for tile in tiles:
@@ -55,10 +62,16 @@ def main() -> int:
             ]
         else:
             predictions = []
+        if use_cuda:
+            torch.cuda.synchronize()
         duration = time.perf_counter() - start
         elapsed.append(duration)
         payload[image_path.name] = {"width": width, "height": height, "tiles": len(tiles), "seconds": duration, "predictions": predictions}
-    output = {"protocol": "original->fixed tiles->restore->whole-image class-aware NMS", "mean_seconds_per_original": float(np.mean(elapsed)), "images": payload}
+    output = {"protocol": "original->fixed tiles->restore->whole-image class-aware NMS",
+              "checkpoint": str(args.weights.resolve()), "parameters": int(sum(p.numel() for p in model.model.parameters())),
+              "gflops_per_tile_at_1024": float(get_flops(model.model, imgsz=args.tile_size)),
+              "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated()) if use_cuda else None,
+              "mean_seconds_per_original": float(np.mean(elapsed)), "images": payload}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"images": len(payload), "mean_seconds_per_original": output["mean_seconds_per_original"]}, indent=2))

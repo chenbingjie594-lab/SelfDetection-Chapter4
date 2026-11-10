@@ -13,7 +13,7 @@ import ultralytics
 import yaml
 from ultralytics import YOLO
 
-from chapter4_detection.scripts.model_audit import compatible_transfer
+from chapter4_detection.scripts.model_audit import semantic_transfer
 
 
 def load_yaml(path: Path) -> dict:
@@ -49,15 +49,22 @@ def main() -> int:
     if args.experiment == "E2" and not args.data:
         raise ValueError("E2 requires --data pointing to the generated slice data.yaml")
 
-    if args.experiment == "E1":
-        model = YOLO(experiment["model"])
-        transfer = compatible_transfer(model, Path(experiment["pretrained"]))
-    else:
-        model = YOLO(experiment["model"])
-        transfer = None
     name = f"{args.experiment.lower()}_seed{args.seed}" + ("_smoke" if args.epochs else "")
     run_dir = Path(common["project"]) / name
     run_dir.mkdir(parents=True, exist_ok=False)
+    if args.experiment == "E1":
+        model = YOLO(experiment["model"])
+        transfer = semantic_transfer(model, Path(experiment["pretrained"]))
+        if not transfer["value_verification_passed"]:
+            raise RuntimeError("E1 semantic transfer value verification failed")
+        # A YAML-created YOLO object has no checkpoint flag; Ultralytics would otherwise rebuild it
+        # in the trainer. Persist and reload so the transferred tensors are the actual train start.
+        initialized_checkpoint = run_dir / "e1_semantic_initialized.pt"
+        model.save(initialized_checkpoint)
+        model = YOLO(str(initialized_checkpoint))
+    else:
+        model = YOLO(experiment["model"])
+        transfer, initialized_checkpoint = None, None
     metadata = {
         "experiment": args.experiment,
         "seed": args.seed,
@@ -70,6 +77,8 @@ def main() -> int:
         "data_summary": audit["summary"],
         "config": {**common, **experiment},
         "transfer": transfer,
+        "initialized_checkpoint": str(initialized_checkpoint) if initialized_checkpoint else None,
+        "checkpoint_selection": experiment["checkpoint_selection"],
     }
     (run_dir / "run_metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     train_keys = (
@@ -78,9 +87,12 @@ def main() -> int:
         "translate", "scale", "fliplr", "mosaic", "mixup", "close_mosaic", "amp", "deterministic",
     )
     kwargs = {key: common[key] for key in train_keys}
+    if args.experiment == "E2":
+        kwargs["patience"] = 0
     kwargs.update(
         data=str(data), epochs=args.epochs or common["epochs"], imgsz=experiment["imgsz"], seed=args.seed,
-        project=str(Path(common["project"])), name=name, exist_ok=False, pretrained=True, val=True, plots=True,
+        project=str(Path(common["project"])), name=name, exist_ok=True, pretrained=True,
+        val=args.experiment != "E2", plots=args.experiment != "E2",
     )
     model.train(**kwargs)
     return 0

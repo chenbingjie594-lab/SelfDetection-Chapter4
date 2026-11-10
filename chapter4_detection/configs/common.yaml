@@ -1,6 +1,6 @@
-data: /mnt/sda/cbj/dataset/Plastic_Bomo/DWBG_v2_final_s42/real_only.yaml
+data: /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/data.yaml
 weights: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
-audit_report: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/data_audit.json
+audit_report: /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/data_audit.json
 project: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs
 epochs: 150
 patience: 40

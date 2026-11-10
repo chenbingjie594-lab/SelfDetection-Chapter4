@@ -32,9 +32,12 @@ def main() -> int:
     parser.add_argument("--min-visibility", type=float, default=0.5)
     args = parser.parse_args()
     report = require_pass(args.audit_report)
+    if args.tile_size != 1024 or args.overlap != 128:
+        raise ValueError("Formal E2 protocol is frozen at tile_size=1024 and overlap=128")
     data = yaml.safe_load(args.data.read_text(encoding="utf-8"))
     root = Path(data["path"])
-    expected_train = {Path(x["image"]).resolve() for x in report["records"] if x["split"] == "train"}
+    approved = {Path(x["image"]).resolve(): x for x in report["records"] if x["split"] == "train"}
+    expected_train = set(approved)
 
     if args.output.exists():
         raise FileExistsError(f"Output already exists: {args.output}")
@@ -47,6 +50,7 @@ def main() -> int:
             continue
         if image_path.resolve() not in expected_train:
             raise RuntimeError(f"Unapproved train image: {image_path}")
+        source_record = approved[image_path.resolve()]
         image = cv2.imread(str(image_path))
         height, width = image.shape[:2]
         rows = [line.split() for line in (root / "labels/train" / f"{image_path.stem}.txt").read_text().splitlines() if line.strip()]
@@ -62,7 +66,10 @@ def main() -> int:
             with (label_out / f"{name}.txt").open("w", encoding="utf-8") as handle:
                 for cls, box in zip(classes[keep], normalized):
                     handle.write(f"{cls} " + " ".join(f"{v:.8f}" for v in box) + "\n")
-            manifest.append({"tile": name, "source": str(image_path), "xyxy": [tile.x1, tile.y1, tile.x2, tile.y2], "instances": len(keep)})
+            manifest.append({"tile": name, "source": str(image_path),
+                             "canonical_image_id": source_record["canonical_image_id"],
+                             "source_group": source_record["source_group"],
+                             "xyxy": [tile.x1, tile.y1, tile.x2, tile.y2], "instances": len(keep)})
         if np.any(per_target_max < args.min_visibility):
             raise RuntimeError(f"Target coverage gate failed for {image_path}: {per_target_max.tolist()}")
         coverage.update({"targets": len(boxes), "fully_covered": int(np.sum(per_target_max >= 1.0 - 1e-9))})
@@ -74,7 +81,10 @@ def main() -> int:
     (args.output / "labels/val").symlink_to((root / "labels/val").resolve(), target_is_directory=True)
     dataset_yaml = {"path": str(args.output.resolve()), "train": "images/train", "val": "images/val", "names": data["names"]}
     (args.output / "data.yaml").write_text(yaml.safe_dump(dataset_yaml, sort_keys=False), encoding="utf-8")
-    summary = {"tiles": len(manifest), "coverage": dict(coverage), "tile_size": args.tile_size, "overlap": args.overlap, "manifest": manifest}
+    summary = {"tiles": len(manifest), "source_images": len(expected_train),
+               "source_groups": len({m["source_group"] for m in manifest}),
+               "coverage": dict(coverage), "tile_size": args.tile_size, "overlap": args.overlap,
+               "data_protocol_sha256": report["protocol_sha256"], "manifest": manifest}
     (args.output / "slice_manifest.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k: summary[k] for k in ("tiles", "coverage", "tile_size", "overlap")}, indent=2))
     return 0

@@ -2,3 +2,4 @@ experiment: E0
 model: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
 protocol: full_image_resize
 imgsz: 1536
+checkpoint_selection: best.pt_by_full_image_validation_mAP50-95

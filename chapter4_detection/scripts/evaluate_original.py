@@ -64,6 +64,11 @@ def main() -> int:
         size_rows.extend({"image": name, "class_id": int(c), "area_px": float(a)} for c, a in zip(target_cls, areas))
     metrics.process(save_dir=args.output.parent, plot=False)
     p, r, map50, map5095 = metrics.mean_results()
+    per_class = {}
+    for cls, name in ((0, "Flash point"), (1, "Big black spots")):
+        cp, cr, cap50, cap = metrics.class_result(cls)
+        per_class[str(cls)] = {"name": name, "precision": float(cp), "recall": float(cr),
+                               "ap50": float(cap50), "ap50_95": float(cap)}
     summary = {
         "precision": p,
         "recall": r,
@@ -71,7 +76,11 @@ def main() -> int:
         "map50_95": map5095,
         "map75": metrics.box.map75,
         "per_class_map50_95": {str(cls): float(metrics.maps[cls]) for cls in range(2)},
+        "per_class": per_class,
         "mean_seconds_per_original": data.get("mean_seconds_per_original"),
+        "parameters": data.get("parameters"),
+        "gflops_per_tile_at_1024": data.get("gflops_per_tile_at_1024"),
+        "peak_gpu_memory_bytes": data.get("peak_gpu_memory_bytes"),
         "size_diagnostic_rows": size_rows,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

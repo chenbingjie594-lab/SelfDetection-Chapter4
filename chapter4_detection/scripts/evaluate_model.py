@@ -22,11 +22,19 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     model = YOLO(str(args.weights))
+    if torch.cuda.is_available():
+        torch.cuda.reset_peak_memory_stats()
     metrics = model.val(data=str(args.data), imgsz=args.imgsz, batch=args.batch, device=args.device, conf=0.001, iou=0.7, plots=True)
+    per_class = {}
+    for cls, name in ((0, "Flash point"), (1, "Big black spots")):
+        p, r, ap50, ap = metrics.box.class_result(cls)
+        per_class[str(cls)] = {"name": name, "precision": float(p), "recall": float(r),
+                               "ap50": float(ap50), "ap50_95": float(ap)}
     summary = {
         "precision": float(metrics.box.mp), "recall": float(metrics.box.mr), "map50": float(metrics.box.map50),
         "map50_95": float(metrics.box.map), "map75": float(metrics.box.map75),
         "per_class_map50_95": {str(i): float(v) for i, v in enumerate(metrics.box.maps)},
+        "per_class": per_class,
         "parameters": int(sum(p.numel() for p in model.model.parameters())),
         "gflops_at_imgsz": float(get_flops(model.model, imgsz=args.imgsz)),
         "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated()) if torch.cuda.is_available() else None,
