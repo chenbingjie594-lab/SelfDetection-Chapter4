@@ -40,6 +40,7 @@ def main() -> int:
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--data", type=Path, help="Required E2 sliced data.yaml; E0/E1 use common data")
     parser.add_argument("--epochs", type=int, help="Smoke-only override; omit for formal protocol")
+    parser.add_argument("--device", help="Runtime CUDA device override; does not change the experiment protocol")
     args = parser.parse_args()
     common, experiment = load_yaml(args.common), load_yaml(args.config)
     if experiment["experiment"] != args.experiment:
@@ -81,12 +82,33 @@ def main() -> int:
         "checkpoint_selection": experiment["checkpoint_selection"],
     }
     (run_dir / "run_metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
+    runtime = {"optimizer_updates": 0}
+
+    def count_optimizer_step(trainer) -> None:
+        runtime["optimizer_updates"] += 1
+
+    def write_runtime(trainer) -> None:
+        device = trainer.device if getattr(trainer.device, "type", None) == "cuda" else None
+        payload = {
+            "completed_epochs": int(trainer.epoch + 1),
+            "optimizer_updates": runtime["optimizer_updates"],
+            "peak_gpu_memory_bytes": int(torch.cuda.max_memory_allocated(device)) if device else None,
+            "checkpoint_selection": experiment["checkpoint_selection"],
+        }
+        (run_dir / "training_runtime.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+    model.add_callback("optimizer_step", count_optimizer_step)
+    model.add_callback("on_train_end", write_runtime)
+    if torch.cuda.is_available():
+        torch.cuda.reset_peak_memory_stats()
     train_keys = (
         "patience", "batch", "device", "workers", "optimizer", "lr0", "lrf", "momentum", "weight_decay",
         "warmup_epochs", "warmup_momentum", "warmup_bias_lr", "box", "cls", "dfl", "hsv_h", "hsv_s", "hsv_v",
         "translate", "scale", "fliplr", "mosaic", "mixup", "close_mosaic", "amp", "deterministic",
     )
     kwargs = {key: common[key] for key in train_keys}
+    if args.device is not None:
+        kwargs["device"] = args.device
     if args.experiment == "E2":
         kwargs["patience"] = 0
     kwargs.update(
