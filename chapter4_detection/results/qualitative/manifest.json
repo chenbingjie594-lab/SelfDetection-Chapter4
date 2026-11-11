@@ -1,0 +1,22 @@
+{
+  "selection_rule": "lexicographic fixed error rules",
+  "files": [
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_blackinst_10.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_blackinst_17.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_blackinst_8.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_img_1113_pre_part_0.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_img_1113_pre_part_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_img_1505_pre_part_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_img_19226_pre_part_0.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/comparison_img_2201_pre_part_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/black_miss_0_blackinst_10.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/black_miss_1_blackinst_10.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/black_miss_2_blackinst_10.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/black_miss_3_blackinst_17.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/flash_localization_0_img_2201_pre_part_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/background_fp_0_blackinst_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/background_fp_1_blackinst_10.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/background_fp_2_img_1505_pre_part_1.jpg",
+    "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative/background_fp_3_img_3889_pre_part_1.jpg"
+  ]
+}

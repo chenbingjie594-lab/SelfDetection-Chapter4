@@ -1,0 +1,2775 @@
+[2026-11-11T08:43:41+00:00] waiting for E1 screen ch4_e1_s42
+
+[2026-11-11T08:59:45+00:00] E1 complete; starting fixed evaluation
+
+{
+
+  "completed_epochs": 106,
+
+  "best_epoch": 66,
+
+  "best_epoch_metrics": {
+
+    "time": 928.385,
+
+    "train/box_loss": 1.61082,
+
+    "train/cls_loss": 1.7883,
+
+    "train/dfl_loss": 0.81509,
+
+    "metrics/precision(B)": 0.81239,
+
+    "metrics/recall(B)": 0.7492,
+
+    "metrics/mAP50(B)": 0.78997,
+
+    "metrics/mAP50-95(B)": 0.41007,
+
+    "val/box_loss": 1.83347,
+
+    "val/cls_loss": 1.47953,
+
+    "val/dfl_loss": 1.03224,
+
+    "lr/pg0": 0.000951857,
+
+    "lr/pg1": 0.000951857,
+
+    "lr/pg2": 0.000951857
+
+  },
+
+  "optimizer_update_attempts": 249,
+
+  "optimizer_update_accounting": "exact protocol schedule; assumes no AMP scaler step was skipped",
+
+  "peak_training_gpu_memory_gib_from_log": 2.55,
+
+  "best_checkpoint_sha256": "33015745adc2e945ada6d80057bb1053b43706866648c2d24b9108e2285ccef1",
+
+  "last_checkpoint_sha256": "d9ec6ae93e4e89c61c56b1a2fbc4d374030e548f0e1ec55dc3759ab841768b6c"
+
+}
+
+Ultralytics 8.4.145 🚀 Python-3.10.20 torch-2.5.1+cu124 CUDA:1 (NVIDIA GeForce RTX 3090, 24253MiB)
+
+YOLO11s-p2 summary (fused): 120 layers, 9,559,640 parameters, 0 gradients, 28.7 GFLOPs
+
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 3914.9±502.5 MB/s, size: 1182.5 KB)
+
+
+val: Scanning /mnt/sda/cbj/dataset/Pla…: 100% ━━━━━━━━━━━━ 46/46 10.7Mit/s 0.0s
+
+
+                 Class     Images  Inst…: 100% ━━━━━━━━━━━━ 46/46 54.9it/s 0.8s
+
+                   all         46         58      0.812      0.749      0.789      0.415
+
+           Flash point         27         27      0.761      0.889      0.877      0.416
+
+       Big black spots         19         31      0.863      0.609      0.701      0.415
+
+Speed: 1.4ms preprocess, 10.9ms inference, 0.0ms loss, 1.0ms postprocess per image
+
+Results saved to /mnt/sda/cbj/SelfDetection-main/runs/detect/val-2
+
+{
+
+  "precision": 0.8118813041130377,
+
+  "recall": 0.749091788512115,
+
+  "map50": 0.7892180899592764,
+
+  "map50_95": 0.4154155404645315,
+
+  "map75": 0.39655123988739727,
+
+  "per_class_map50_95": {
+
+    "0": 0.41561918655723035,
+
+    "1": 0.41521189437183254
+
+  },
+
+  "per_class": {
+
+    "0": {
+
+      "name": "Flash point",
+
+      "precision": 0.7608526385364938,
+
+      "recall": 0.8888888888888888,
+
+      "ap50": 0.8769604837029443,
+
+      "ap50_95": 0.41561918655723035
+
+    },
+
+    "1": {
+
+      "name": "Big black spots",
+
+      "precision": 0.8629099696895817,
+
+      "recall": 0.6092946881353412,
+
+      "ap50": 0.7014756962156086,
+
+      "ap50_95": 0.41521189437183254
+
+    }
+
+  },
+
+  "parameters": 9575032,
+
+  "gflops_at_imgsz": 170.75994624,
+
+  "peak_gpu_memory_bytes": 559283200,
+
+  "speed_ms_per_image": {
+
+    "preprocess": 1.4482025138061978,
+
+    "inference": 10.904913889649123,
+
+    "loss": 0.0077650436888570375,
+
+    "postprocess": 0.989007966026016
+
+  }
+
+}
+
+{
+
+  "schema_version": 1,
+
+  "model": "E1_YOLO11s_P2_seed42",
+
+  "mode": "full",
+
+  "protocol": "all boxes in original 4096x1024 coordinates; conf=0.001; class-aware NMS IoU=0.7",
+
+  "weights": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e1_seed42/weights/best.pt",
+
+  "conf": 0.001,
+
+  "nms_iou": 0.7,
+
+  "images_count": 46,
+
+  "mean_predictions_per_original": 8.5,
+
+  "mean_forward_seconds_per_original": 0.01574877021915239,
+
+  "mean_seconds_per_original": 0.01677845325320959,
+
+  "peak_gpu_memory_bytes": 194489856
+
+}
+
+{
+
+  "kind": "diagnostic_not_official_AP",
+
+  "model": "E1_YOLO11s_P2_seed42",
+
+  "confidence": 0.25,
+
+  "error_priority": [
+
+    "low_confidence",
+
+    "localization",
+
+    "class_confusion",
+
+    "no_effective_response"
+
+  ],
+
+  "matching": "global greedy one-to-one, descending IoU then confidence, class-aware for detections",
+
+  "totals_by_class": {
+
+    "1": 31,
+
+    "0": 27
+
+  },
+
+  "miss_reasons": {
+
+    "class1/low_confidence": 4,
+
+    "class1/localization": 2,
+
+    "class0/low_confidence": 3,
+
+    "class1/no_effective_response": 2,
+
+    "class1/class_confusion": 1
+
+  },
+
+  "match_rates_by_iou": {
+
+    "0.5": {
+
+      "0": 0.8888888888888888,
+
+      "1": 0.7096774193548387
+
+    },
+
+    "0.75": {
+
+      "0": 0.5185185185185185,
+
+      "1": 0.45161290322580644
+
+    },
+
+    "0.9": {
+
+      "0": 0.037037037037037035,
+
+      "1": 0.03225806451612903
+
+    }
+
+  },
+
+  "localization_summary": {
+
+    "0": {
+
+      "center_distance_px": 2.0011564644901685,
+
+      "normalized_center_dx": 0.036091682764043787,
+
+      "normalized_center_dy": 0.050401566763453164,
+
+      "relative_width_error": 0.11719887481232455,
+
+      "relative_height_error": 0.12728240103890084,
+
+      "iou": 0.7511301123891868
+
+    },
+
+    "1": {
+
+      "center_distance_px": 1.9052561438009386,
+
+      "normalized_center_dx": 0.03853548527031523,
+
+      "normalized_center_dy": 0.048977673646300596,
+
+      "relative_width_error": 0.10724330154238321,
+
+      "relative_height_error": 0.0926008091834178,
+
+      "iou": 0.7728253075637916
+
+    }
+
+  },
+
+  "false_prediction_categories": {
+
+    "class1/background": 1,
+
+    "class1/insufficient_localization": 2,
+
+    "class0/duplicate": 4,
+
+    "class0/insufficient_localization": 2,
+
+    "class0/class_confusion": 1,
+
+    "class0/background": 1
+
+  },
+
+  "false_prediction_rows": [
+
+    {
+
+      "image": "blackinst_10.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        2424.759765625,
+
+        882.750732421875,
+
+        2443.453857421875,
+
+        899.583740234375
+
+      ],
+
+      "confidence": 0.26454898715019226,
+
+      "max_gt_iou": 0.0,
+
+      "category": "background",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_1113_pre_part_0.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        3414.5224609375,
+
+        674.6238403320312,
+
+        3442.4150390625,
+
+        701.55029296875
+
+      ],
+
+      "confidence": 0.6274372935295105,
+
+      "max_gt_iou": 0.4793450961837954,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_15996_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        1030.139404296875,
+
+        522.1312255859375,
+
+        1073.7757568359375,
+
+        561.5275268554688
+
+      ],
+
+      "confidence": 0.3983455002307892,
+
+      "max_gt_iou": 0.5956186243719634,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_16442_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        263.7974853515625,
+
+        601.705078125,
+
+        292.3386535644531,
+
+        630.1582641601562
+
+      ],
+
+      "confidence": 0.5903909206390381,
+
+      "max_gt_iou": 0.5949604821603333,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_18290_pre_part_0.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        3847.5673828125,
+
+        626.8599853515625,
+
+        3876.5576171875,
+
+        654.911865234375
+
+      ],
+
+      "confidence": 0.7386597990989685,
+
+      "max_gt_iou": 0.37613349960238396,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_2201_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        3025.8125,
+
+        648.40771484375,
+
+        3059.494873046875,
+
+        678.3900146484375
+
+      ],
+
+      "confidence": 0.3622128665447235,
+
+      "max_gt_iou": 0.4951437317617337,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_3674_pre_part_0.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        3654.248046875,
+
+        576.5719604492188,
+
+        3690.45654296875,
+
+        612.5679931640625
+
+      ],
+
+      "confidence": 0.6746877431869507,
+
+      "max_gt_iou": 0.663386038073354,
+
+      "category": "class_confusion",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_3889_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        1424.5706787109375,
+
+        679.2061767578125,
+
+        1443.845458984375,
+
+        697.4810791015625
+
+      ],
+
+      "confidence": 0.4155787229537964,
+
+      "max_gt_iou": 0.0,
+
+      "category": "background",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_4462_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        3061.10693359375,
+
+        742.0286865234375,
+
+        3087.006591796875,
+
+        769.458984375
+
+      ],
+
+      "confidence": 0.38284915685653687,
+
+      "max_gt_iou": 0.700000087716255,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_5107_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        288.18426513671875,
+
+        535.245849609375,
+
+        318.21630859375,
+
+        564.173583984375
+
+      ],
+
+      "confidence": 0.70485919713974,
+
+      "max_gt_iou": 0.689489849861843,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_9399_pre_part_1.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E1_YOLO11s_P2_seed42",
+
+      "prediction_xyxy": [
+
+        1413.0072021484375,
+
+        990.6398315429688,
+
+        1432.6458740234375,
+
+        1009.9445190429688
+
+      ],
+
+      "confidence": 0.33611011505126953,
+
+      "max_gt_iou": 0.43923652523272466,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    }
+
+  ],
+
+  "groups": {
+
+    "class1/size/medium": {
+
+      "total": 5,
+
+      "detected": 5,
+
+      "recall_iou50": 1.0
+
+    },
+
+    "class1/contrast/medium": {
+
+      "total": 7,
+
+      "detected": 6,
+
+      "recall_iou50": 0.8571428571428571
+
+    },
+
+    "class1/size/small": {
+
+      "total": 11,
+
+      "detected": 5,
+
+      "recall_iou50": 0.45454545454545453
+
+    },
+
+    "class1/contrast/low": {
+
+      "total": 13,
+
+      "detected": 5,
+
+      "recall_iou50": 0.38461538461538464
+
+    },
+
+    "class1/size/large": {
+
+      "total": 15,
+
+      "detected": 12,
+
+      "recall_iou50": 0.8
+
+    },
+
+    "class1/contrast/high": {
+
+      "total": 11,
+
+      "detected": 11,
+
+      "recall_iou50": 1.0
+
+    },
+
+    "class0/size/small": {
+
+      "total": 8,
+
+      "detected": 6,
+
+      "recall_iou50": 0.75
+
+    },
+
+    "class0/contrast/medium": {
+
+      "total": 8,
+
+      "detected": 7,
+
+      "recall_iou50": 0.875
+
+    },
+
+    "class0/size/large": {
+
+      "total": 9,
+
+      "detected": 8,
+
+      "recall_iou50": 0.8888888888888888
+
+    },
+
+    "class0/size/medium": {
+
+      "total": 10,
+
+      "detected": 10,
+
+      "recall_iou50": 1.0
+
+    },
+
+    "class0/contrast/high": {
+
+      "total": 10,
+
+      "detected": 9,
+
+      "recall_iou50": 0.9
+
+    },
+
+    "class0/contrast/low": {
+
+      "total": 9,
+
+      "detected": 8,
+
+      "recall_iou50": 0.8888888888888888
+
+    }
+
+  }
+
+}
+
+[2026-11-11T09:00:18+00:00] starting E2 formal training
+
+New https://pypi.org/project/ultralytics/8.4.210 available 😃 Update with 'pip install -U ultralytics'
+
+Ultralytics 8.4.145 🚀 Python-3.10.20 torch-2.5.1+cu124 CUDA:1 (NVIDIA GeForce RTX 3090, 24253MiB)
+
+engine/trainer: agnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=1, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1_slices_1024_o128/data.yaml, degrees=0.0, deterministic=True, device=1, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=150, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=1024, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/sda/cbj/SelfDetection-main/yolo11s.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=e2_seed42, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=0, perspective=0.0, plots=False, pose=12.0, pretrained=True, profile=False, project=/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=False, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+
+Overriding model.yaml nc=80 with nc=2
+
+
+
+                   from  n    params  module                                       arguments
+
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]
+
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+
+  2                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]
+
+  3                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+
+  4                  -1  1    103360  ultralytics.nn.modules.block.C3k2            [128, 256, 1, False, 0.25]
+
+  5                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+
+  6                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]
+
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]
+
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]
+
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]
+
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]
+
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+
+ 13                  -1  1    443776  ultralytics.nn.modules.block.C3k2            [768, 256, 1, False]
+
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+
+ 16                  -1  1    127680  ultralytics.nn.modules.block.C3k2            [512, 128, 1, False]
+
+ 17                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+
+ 19                  -1  1    345472  ultralytics.nn.modules.block.C3k2            [384, 256, 1, False]
+
+ 20                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+
+ 22                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]
+
+ 23        [16, 19, 22]  1    820182  ultralytics.nn.modules.head.Detect           [2, 16, None, [128, 256, 512]]
+
+YOLO11s summary: 181 layers, 9,428,566 parameters, 9,428,550 gradients, 21.7 GFLOPs
+
+
+
+Transferred 493/499 items from pretrained weights
+
+Freezing layer 'model.23.dfl.conv.weight'
+
+AMP: running Automatic Mixed Precision (AMP) checks...
+
+AMP: checks passed ✅
+
+train: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2378.8±383.4 MB/s, size: 290.3 KB)
+
+
+train: Scanning /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1_slices_1024_o128/labels/train.cache... 690 images, 493 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 690/690 131.5Mit/s 0.0s
+
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1530.8±931.6 MB/s, size: 1169.7 KB)
+
+
+val: Scanning /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val.cache... 46 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 46/46 2.0Mit/s 0.0s
+
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+
+optimizer: AdamW(lr=0.001667, momentum=0.9) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+
+Using 690 train, 46 val images for fraction=1.0 at imgsz=1024
+
+Using 4 dataloader workers
+
+Logging results to /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42
+
+Starting training for 150 epochs...
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      1/150     0.865G     0.7953      8.144     0.4067          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.1it/s 52.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      2/150     0.865G     0.8221     0.9144     0.4344          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 49.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      3/150     0.865G     0.7242     0.7292     0.3908          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      4/150     0.865G      0.719     0.6875     0.3875          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      5/150     0.865G     0.6805     0.5904     0.3786          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      6/150     0.865G     0.7806     0.5455     0.4065          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.0it/s 53.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      7/150     0.865G     0.6814     0.5092     0.3658          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      8/150     0.865G     0.6956     0.4928     0.3785          3       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+      9/150     0.865G     0.6556     0.4934     0.3536          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     10/150     0.865G     0.6713       0.52     0.3542          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     11/150     0.865G     0.6257     0.4786     0.3224          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     12/150     0.865G     0.6909     0.4811     0.3612          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.6it/s 47.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     13/150     0.865G     0.7461     0.4961     0.3953          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     14/150     0.865G     0.6659     0.4326      0.353          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     15/150     0.865G     0.6854     0.5017     0.3834          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     16/150     0.865G     0.6429     0.4574     0.3583          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     17/150     0.865G     0.6718     0.4456     0.3605          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     18/150     0.865G     0.6291     0.4384     0.3565          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     19/150     0.865G     0.6466     0.4591      0.354          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     20/150     0.865G     0.6478     0.4446      0.361          3       1024: 100% ━━━━━━━━━━━━ 690/690 13.5it/s 51.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     21/150     0.865G     0.5871      0.416     0.3185          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     22/150     0.865G     0.6381     0.4188     0.3461          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     23/150     0.865G     0.6485     0.4389     0.3578          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     24/150     0.865G     0.5966     0.4374     0.3436          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     25/150     0.865G     0.6298     0.4214     0.3538          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     26/150     0.865G      0.633     0.4211     0.3458          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     27/150     0.865G     0.6165     0.3913     0.3371          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     28/150     0.865G     0.5999     0.4056     0.3393          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     29/150     0.865G     0.5794     0.4189     0.3212          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     30/150     0.865G     0.6584     0.4063      0.363          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     31/150     0.865G     0.5798     0.3926     0.3184          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     32/150     0.865G     0.6082     0.3985     0.3373          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     33/150     0.865G     0.5563     0.3523     0.3139          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     34/150     0.865G     0.5979     0.3748     0.3315          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     35/150     0.865G     0.5805     0.3739     0.3309          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     36/150     0.865G     0.6372     0.4001     0.3674          3       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     37/150     0.865G     0.5855     0.3614     0.3238          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     38/150     0.865G     0.5792     0.3873     0.3287          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     39/150     0.865G     0.6289     0.3735     0.3534          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     40/150     0.865G     0.5979     0.3751     0.3444          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     41/150     0.865G     0.5817     0.3689     0.3214          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     42/150     0.865G     0.5893     0.3255     0.3188          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     43/150     0.865G     0.5824     0.3513     0.3196          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     44/150     0.865G     0.6241     0.3975     0.3587          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.7it/s 50.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     45/150     0.865G     0.6009     0.3839     0.3482          2       1024: 100% ━━━━━━━━━━━━ 690/690 13.7it/s 50.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     46/150     0.865G     0.5425     0.3556     0.3145          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 49.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     47/150     0.865G     0.6332     0.3963     0.3595          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     48/150     0.865G     0.5254     0.3484     0.3117          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     49/150     0.865G     0.5829     0.3409      0.326          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     50/150     0.865G     0.6078     0.3471     0.3364          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     51/150     0.865G     0.5582     0.3543     0.3308          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     52/150     0.865G     0.5763      0.351     0.3292          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.6it/s 50.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     53/150     0.865G     0.5989     0.3524     0.3453          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     54/150     0.865G     0.5932       0.36     0.3325          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.7it/s 50.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     55/150     0.865G      0.593     0.3628     0.3441          3       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     56/150     0.865G     0.5681     0.3698     0.3402          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     57/150     0.865G     0.5415     0.3381     0.3169          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     58/150     0.865G     0.5363     0.3237     0.3133          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.8it/s 46.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     59/150     0.865G     0.5477     0.3353     0.3232          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     60/150     0.865G     0.5284     0.3498     0.3069          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     61/150     0.865G     0.5207     0.3177     0.3153          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.9it/s 46.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     62/150     0.865G     0.5543     0.3422     0.3245          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     63/150     0.865G     0.5549     0.3674     0.3286          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     64/150     0.865G     0.5534     0.3264     0.3194          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.6it/s 47.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     65/150     0.865G     0.5662     0.3489     0.3404          0       1024: 100% ━━━━━━━━━━━━ 690/690 15.5it/s 44.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     66/150     0.865G     0.5587     0.3473     0.3347          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     67/150     0.865G     0.5556     0.3271     0.3297          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.6it/s 50.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     68/150     0.865G     0.4915        0.3     0.2872          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 49.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     69/150     0.865G     0.6067      0.333     0.3442          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.8it/s 46.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     70/150     0.865G     0.5194     0.3059      0.304          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     71/150     0.865G     0.5303     0.3239     0.3017          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     72/150     0.865G     0.5348       0.31     0.3245          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     73/150     0.865G     0.5104     0.2893     0.3092          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     74/150     0.865G     0.5343     0.3098     0.3128          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     75/150     0.865G     0.5611     0.3305     0.3298          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     76/150     0.865G     0.5585     0.3223     0.3352          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.6it/s 47.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     77/150     0.865G     0.5365     0.3263     0.3197          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.7it/s 46.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     78/150     0.865G     0.5131     0.3047      0.314          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     79/150     0.865G     0.5221     0.3087     0.3088          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     80/150     0.865G     0.5205     0.2978     0.3214          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     81/150     0.865G     0.4814     0.2781     0.2908          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     82/150     0.865G     0.5883     0.3168     0.3424          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     83/150     0.865G     0.5166     0.3095     0.3122          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     84/150     0.865G     0.5769     0.3339     0.3405          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     85/150     0.865G      0.488     0.2862     0.3057          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     86/150     0.865G     0.5029     0.2658     0.2989          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     87/150     0.865G     0.5325     0.2882      0.323          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     88/150     0.865G     0.5352     0.2997     0.3346          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     89/150     0.865G     0.5348     0.2915     0.3289          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     90/150     0.865G     0.5482     0.3047     0.3211          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     91/150     0.865G      0.534     0.3183     0.3234          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     92/150     0.865G     0.5061     0.2983     0.3226          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     93/150     0.865G     0.5266     0.3038     0.3212          3       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     94/150     0.865G     0.5215     0.2715     0.3215          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     95/150     0.865G     0.4949     0.2675     0.2956          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.7it/s 50.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     96/150     0.865G     0.5233     0.2948     0.3304          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.3s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     97/150     0.865G     0.5692     0.3395     0.3505          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     98/150     0.865G     0.5936     0.3353     0.3593          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+     99/150     0.865G     0.5768     0.3353     0.3416          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    100/150     0.865G     0.5288     0.3155     0.3365          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 48.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    101/150     0.865G     0.4773     0.2847     0.2994          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    102/150     0.865G     0.4692      0.246     0.3008          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.7it/s 47.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    103/150     0.865G     0.5038     0.2711     0.3084          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.7it/s 47.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    104/150     0.865G      0.504     0.2706     0.3195          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    105/150     0.865G     0.4862     0.2746     0.2925          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    106/150     0.865G     0.5161     0.2872     0.3154          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    107/150     0.865G     0.4525     0.2535     0.2955          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    108/150     0.865G     0.5295     0.2979     0.3378          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    109/150     0.865G     0.4818     0.2564     0.3048          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    110/150     0.865G     0.5436     0.2932      0.341          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    111/150     0.865G     0.5246      0.274     0.3126          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    112/150     0.865G     0.4921     0.2689     0.3179          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    113/150     0.865G     0.4875     0.2497     0.3021          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    114/150     0.865G     0.4553     0.2388     0.3036          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    115/150     0.865G      0.483     0.2791     0.3094          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    116/150     0.865G     0.5061     0.2689     0.3288          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    117/150     0.865G     0.4967     0.2634     0.3077          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    118/150     0.865G     0.4802     0.2487     0.3042          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.4it/s 47.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    119/150     0.865G     0.5129     0.2495     0.3141          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    120/150     0.865G      0.459     0.2551     0.3085          0       1024: 100% ━━━━━━━━━━━━ 690/690 15.0it/s 46.1s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    121/150     0.865G     0.4377     0.2507     0.2879          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    122/150     0.865G     0.4292     0.2239     0.2863          3       1024: 100% ━━━━━━━━━━━━ 690/690 15.1it/s 45.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    123/150     0.865G      0.416      0.222     0.2775          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 49.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    124/150     0.865G     0.5067     0.2849     0.3273          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.7it/s 50.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    125/150     0.865G     0.4833     0.2816       0.31          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 49.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    126/150     0.865G     0.4939     0.2623     0.3226          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    127/150     0.865G     0.4676     0.2536     0.2975          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    128/150     0.865G     0.4627     0.2479     0.2932          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    129/150     0.865G     0.4756     0.2625     0.3017          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    130/150     0.865G     0.4588      0.245     0.2997          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.8it/s 50.0s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    131/150     0.865G     0.4433     0.2377     0.2965          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    132/150     0.865G     0.4723     0.2506     0.3063          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    133/150     0.865G     0.4717     0.2402      0.308          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    134/150     0.865G     0.4807     0.2623     0.3316          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    135/150     0.865G     0.4581     0.2455     0.3109          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.1it/s 48.9s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    136/150     0.865G     0.4804     0.2442     0.3182          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.4s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    137/150     0.865G     0.4583     0.2436     0.3019          1       1024: 100% ━━━━━━━━━━━━ 690/690 13.9it/s 49.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    138/150     0.865G     0.4622     0.2344     0.3117          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    139/150     0.865G     0.4453     0.2418     0.3035          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    140/150     0.865G     0.4612     0.2562     0.3212          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.5s
+
+Closing dataloader mosaic
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    141/150     0.865G     0.3406     0.1854     0.2431          0       1024: 100% ━━━━━━━━━━━━ 690/690 13.5it/s 51.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    142/150     0.865G     0.3586     0.2042     0.2565          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    143/150     0.865G     0.3443      0.181     0.2417          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.6it/s 47.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    144/150     0.865G     0.3524     0.2014     0.2416          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    145/150     0.865G     0.3537     0.1859     0.2447          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.2it/s 48.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    146/150     0.865G     0.3368     0.1799     0.2488          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.0it/s 49.2s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    147/150     0.865G     0.3253     0.1752     0.2455          0       1024: 100% ━━━━━━━━━━━━ 690/690 15.1it/s 45.8s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    148/150     0.865G     0.3199     0.1724     0.2384          2       1024: 100% ━━━━━━━━━━━━ 690/690 14.8it/s 46.7s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    149/150     0.865G     0.3413       0.17      0.247          0       1024: 100% ━━━━━━━━━━━━ 690/690 14.5it/s 47.6s
+
+
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+    150/150     0.865G      0.355     0.1858     0.2473          1       1024: 100% ━━━━━━━━━━━━ 690/690 14.3it/s 48.2s
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 23/23 1.6it/s 14.4s
+
+                   all         46         58          0          0          0          0
+
+
+
+150 epochs completed in 2.106 hours.
+
+Optimizer stripped from /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42/weights/last.pt, 19.2MB
+
+Optimizer stripped from /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42/weights/best.pt, 19.2MB
+
+
+
+Validating /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42/weights/best.pt...
+
+Ultralytics 8.4.145 🚀 Python-3.10.20 torch-2.5.1+cu124 CUDA:1 (NVIDIA GeForce RTX 3090, 24253MiB)
+
+YOLO11s summary (fused): 100 layers, 9,413,574 parameters, 0 gradients, 21.4 GFLOPs
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 23/23 33.9it/s 0.7s
+
+                   all         46         58          0          0          0          0
+
+           Flash point         27         27          0          0          0          0
+
+       Big black spots         19         31          0          0          0          0
+
+Speed: 0.2ms preprocess, 12.9ms inference, 0.0ms loss, 0.6ms postprocess per image
+
+{
+
+  "completed_epochs": 150,
+
+  "best_epoch": 1,
+
+  "best_epoch_metrics": {
+
+    "time": 52.658,
+
+    "train/box_loss": 0.79525,
+
+    "train/cls_loss": 8.14383,
+
+    "train/dfl_loss": 0.4067,
+
+    "metrics/precision(B)": 0.0,
+
+    "metrics/recall(B)": 0.0,
+
+    "metrics/mAP50(B)": 0.0,
+
+    "metrics/mAP50-95(B)": 0.0,
+
+    "val/box_loss": 0.0,
+
+    "val/cls_loss": 0.0,
+
+    "val/dfl_loss": 0.0,
+
+    "lr/pg0": 0.000554861,
+
+    "lr/pg1": 0.000554861,
+
+    "lr/pg2": 0.000554861
+
+  },
+
+  "optimizer_update_attempts": 1723,
+
+  "optimizer_update_accounting": "exact protocol schedule; assumes no AMP scaler step was skipped",
+
+  "peak_training_gpu_memory_gib_from_log": 0.865,
+
+  "best_checkpoint_sha256": "4a113651814fdd8a84ded7dfc44049d453b2e94c06e0ae85e5fb895de30c74c9",
+
+  "last_checkpoint_sha256": "2a41ef5494ed2e3ebafb7218a7926a64076ac68a583b7034439ce7bb71ff499e"
+
+}
+
+[2026-11-11T11:07:25+00:00] starting required E2 sliced original-image evaluation
+
+{
+
+  "images": 46,
+
+  "mean_seconds_per_original": 0.7153454849536977
+
+}
+
+{
+
+  "precision": 0.7976352943949091,
+
+  "recall": 0.7070880520674369,
+
+  "map50": 0.7297443781870825,
+
+  "map50_95": 0.371625260548354,
+
+  "map75": 0.35455333399609434,
+
+  "per_class_map50_95": {
+
+    "0": 0.37233646566917733,
+
+    "1": 0.3709140554275306
+
+  },
+
+  "per_class": {
+
+    "0": {
+
+      "name": "Flash point",
+
+      "precision": 0.7626866071237013,
+
+      "recall": 0.8335309428445511,
+
+      "ap50": 0.7819873459873459,
+
+      "ap50_95": 0.37233646566917733
+
+    },
+
+    "1": {
+
+      "name": "Big black spots",
+
+      "precision": 0.8325839816661169,
+
+      "recall": 0.5806451612903226,
+
+      "ap50": 0.6775014103868192,
+
+      "ap50_95": 0.3709140554275306
+
+    }
+
+  },
+
+  "mean_seconds_per_original": 0.7153454849536977,
+
+  "parameters": 9428566,
+
+  "gflops_per_tile_at_1024": 55.962370048,
+
+  "peak_gpu_memory_bytes": 184723456
+
+}
+
+[2026-11-11T11:08:42+00:00] exporting unified E2 predictions and diagnostics
+
+{
+
+  "schema_version": 1,
+
+  "model": "E2_YOLO11s_Slice_seed42",
+
+  "mode": "sliced",
+
+  "protocol": "all boxes in original 4096x1024 coordinates; conf=0.001; class-aware NMS IoU=0.7",
+
+  "weights": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e2_seed42/weights/last.pt",
+
+  "conf": 0.001,
+
+  "nms_iou": 0.7,
+
+  "images_count": 46,
+
+  "mean_predictions_per_original": 3.782608695652174,
+
+  "mean_forward_seconds_per_original": 0.05300667173350635,
+
+  "mean_seconds_per_original": 0.05548994621747862,
+
+  "peak_gpu_memory_bytes": 184723456
+
+}
+
+{
+
+  "kind": "diagnostic_not_official_AP",
+
+  "model": "E2_YOLO11s_Slice_seed42",
+
+  "confidence": 0.25,
+
+  "error_priority": [
+
+    "low_confidence",
+
+    "localization",
+
+    "class_confusion",
+
+    "no_effective_response"
+
+  ],
+
+  "matching": "global greedy one-to-one, descending IoU then confidence, class-aware for detections",
+
+  "totals_by_class": {
+
+    "1": 31,
+
+    "0": 27
+
+  },
+
+  "miss_reasons": {
+
+    "class1/no_effective_response": 4,
+
+    "class1/low_confidence": 6,
+
+    "class1/class_confusion": 2,
+
+    "class0/low_confidence": 3,
+
+    "class0/localization": 1
+
+  },
+
+  "match_rates_by_iou": {
+
+    "0.5": {
+
+      "0": 0.8518518518518519,
+
+      "1": 0.6129032258064516
+
+    },
+
+    "0.75": {
+
+      "0": 0.37037037037037035,
+
+      "1": 0.3870967741935484
+
+    },
+
+    "0.9": {
+
+      "0": 0.037037037037037035,
+
+      "1": 0.06451612903225806
+
+    }
+
+  },
+
+  "localization_summary": {
+
+    "0": {
+
+      "center_distance_px": 1.9697089745363403,
+
+      "normalized_center_dx": 0.0414636352278954,
+
+      "normalized_center_dy": 0.04813382570536061,
+
+      "relative_width_error": 0.14599412277448637,
+
+      "relative_height_error": 0.14158818116727545,
+
+      "iou": 0.7134464550326101
+
+    },
+
+    "1": {
+
+      "center_distance_px": 1.924497135636519,
+
+      "normalized_center_dx": 0.0346990962522272,
+
+      "normalized_center_dy": 0.0507710226521949,
+
+      "relative_width_error": 0.09475663898622069,
+
+      "relative_height_error": 0.11046587363957529,
+
+      "iou": 0.7751918549989715
+
+    }
+
+  },
+
+  "false_prediction_categories": {
+
+    "class1/background": 1,
+
+    "class1/insufficient_localization": 4,
+
+    "class0/insufficient_localization": 4,
+
+    "class0/class_confusion": 1,
+
+    "class0/background": 1,
+
+    "class0/duplicate": 3
+
+  },
+
+  "false_prediction_rows": [
+
+    {
+
+      "image": "blackinst_1.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        186.3177490234375,
+
+        723.2555541992188,
+
+        209.33010864257812,
+
+        744.1707153320312
+
+      ],
+
+      "confidence": 0.7486006021499634,
+
+      "max_gt_iou": 0.0,
+
+      "category": "background",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "blackinst_17.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        1792.0,
+
+        518.2418212890625,
+
+        1799.485975265503,
+
+        540.7281494140625
+
+      ],
+
+      "confidence": 0.26542410254478455,
+
+      "max_gt_iou": 0.3000928450332039,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_18290_pre_part_0.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3850.3190307617188,
+
+        629.837158203125,
+
+        3873.7047729492188,
+
+        652.46337890625
+
+      ],
+
+      "confidence": 0.6740555167198181,
+
+      "max_gt_iou": 0.24473241414188546,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_19226_pre_part_0.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3636.8707275390625,
+
+        876.7478637695312,
+
+        3653.768798828125,
+
+        892.2993774414062
+
+      ],
+
+      "confidence": 0.7379829287528992,
+
+      "max_gt_iou": 0.4812899320940132,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_2201_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3027.3440551757812,
+
+        646.3825073242188,
+
+        3059.3992309570312,
+
+        677.5875854492188
+
+      ],
+
+      "confidence": 0.6894073486328125,
+
+      "max_gt_iou": 0.4998911781440444,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_3190_pre_part_0.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3765.37109375,
+
+        13.796333312988281,
+
+        3796.007080078125,
+
+        41.52557373046875
+
+      ],
+
+      "confidence": 0.7479196190834045,
+
+      "max_gt_iou": 0.47197159856290005,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_3674_pre_part_0.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3659.1538696289062,
+
+        584.13623046875,
+
+        3685.1841430664062,
+
+        611.165283203125
+
+      ],
+
+      "confidence": 0.6553459167480469,
+
+      "max_gt_iou": 0.6488208995039103,
+
+      "category": "class_confusion",
+
+      "best_gt_class_id": 1
+
+    },
+
+    {
+
+      "image": "img_3889_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        1424.5369262695312,
+
+        680.044677734375,
+
+        1441.7764282226562,
+
+        697.530029296875
+
+      ],
+
+      "confidence": 0.702085018157959,
+
+      "max_gt_iou": 0.0,
+
+      "category": "background",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_4462_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3072.0,
+
+        742.4788818359375,
+
+        3086.4335165023804,
+
+        770.9844970703125
+
+      ],
+
+      "confidence": 0.6080923080444336,
+
+      "max_gt_iou": 0.6075808706367859,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_4515_pre_part_0.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3132.3084716796875,
+
+        924.94775390625,
+
+        3150.6820678710938,
+
+        942.10205078125
+
+      ],
+
+      "confidence": 0.6302158832550049,
+
+      "max_gt_iou": 0.48643292965230267,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_5107_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        291.42596435546875,
+
+        538.7453002929688,
+
+        314.63922119140625,
+
+        560.9763793945312
+
+      ],
+
+      "confidence": 0.6744059324264526,
+
+      "max_gt_iou": 0.40956722259212214,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_7953_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        3084.5339584350586,
+
+        694.8385009765625,
+
+        3130.82967376709,
+
+        739.064697265625
+
+      ],
+
+      "confidence": 0.2786635756492615,
+
+      "max_gt_iou": 0.632475322520749,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_8718_pre_part_1.jpg",
+
+      "prediction_class_id": 0,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        2949.01953125,
+
+        540.607421875,
+
+        2983.709716796875,
+
+        573.96875
+
+      ],
+
+      "confidence": 0.34449252486228943,
+
+      "max_gt_iou": 0.64281930222839,
+
+      "category": "duplicate",
+
+      "best_gt_class_id": 0
+
+    },
+
+    {
+
+      "image": "img_9509_pre_part_0.jpg",
+
+      "prediction_class_id": 1,
+
+      "model": "E2_YOLO11s_Slice_seed42",
+
+      "prediction_xyxy": [
+
+        4071.447265625,
+
+        440.047607421875,
+
+        4095.9405517578125,
+
+        467.1312255859375
+
+      ],
+
+      "confidence": 0.46205437183380127,
+
+      "max_gt_iou": 0.49260508787982055,
+
+      "category": "insufficient_localization",
+
+      "best_gt_class_id": 1
+
+    }
+
+  ],
+
+  "groups": {
+
+    "class1/size/medium": {
+
+      "total": 5,
+
+      "detected": 3,
+
+      "recall_iou50": 0.6
+
+    },
+
+    "class1/contrast/medium": {
+
+      "total": 7,
+
+      "detected": 6,
+
+      "recall_iou50": 0.8571428571428571
+
+    },
+
+    "class1/size/small": {
+
+      "total": 11,
+
+      "detected": 4,
+
+      "recall_iou50": 0.36363636363636365
+
+    },
+
+    "class1/contrast/low": {
+
+      "total": 13,
+
+      "detected": 2,
+
+      "recall_iou50": 0.15384615384615385
+
+    },
+
+    "class1/size/large": {
+
+      "total": 15,
+
+      "detected": 12,
+
+      "recall_iou50": 0.8
+
+    },
+
+    "class1/contrast/high": {
+
+      "total": 11,
+
+      "detected": 11,
+
+      "recall_iou50": 1.0
+
+    },
+
+    "class0/size/small": {
+
+      "total": 8,
+
+      "detected": 6,
+
+      "recall_iou50": 0.75
+
+    },
+
+    "class0/contrast/medium": {
+
+      "total": 8,
+
+      "detected": 7,
+
+      "recall_iou50": 0.875
+
+    },
+
+    "class0/size/large": {
+
+      "total": 9,
+
+      "detected": 7,
+
+      "recall_iou50": 0.7777777777777778
+
+    },
+
+    "class0/size/medium": {
+
+      "total": 10,
+
+      "detected": 10,
+
+      "recall_iou50": 1.0
+
+    },
+
+    "class0/contrast/high": {
+
+      "total": 10,
+
+      "detected": 8,
+
+      "recall_iou50": 0.8
+
+    },
+
+    "class0/contrast/low": {
+
+      "total": 9,
+
+      "detected": 8,
+
+      "recall_iou50": 0.8888888888888888
+
+    }
+
+  }
+
+}
+
+{
+
+  "created": 17,
+
+  "output": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/qualitative"
+
+}
+
+[2026-11-11T11:08:59+00:00] stage2 seed42 artifacts complete
