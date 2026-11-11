@@ -35,7 +35,8 @@ E1 显式迁移未改变的 backbone/top-down neck、语义相同的 bottom-up P
 - 13 项测试通过：source-group 隔离、已知 sibling、坐标转换、跨切片目标、坐标恢复、
   class-aware NMS、E0/E1 前向、显式迁移及 checkpoint 重载。
 - E2 共 690 个训练切片；174/174 个目标均至少在一个切片中完整覆盖。
-- 当前会话 NVIDIA 驱动不可通信且 CUDA device 数为 0，未运行训练。
+- GPU 后续已恢复。E0 seed42 已完成（第 76 轮早停，最佳第 36 轮）；其固定评估结果见
+  `results/e0_seed42_metrics.json` 和 `results/E0_SEED42_REPORT.md`。E1、E2 与其余种子待运行。
 
 ## 可直接运行的命令
 
