@@ -1,0 +1,8 @@
+experiment: E3
+model: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/models/yolo11s_nbr_de.yaml
+pretrained: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
+nbr_mode: no_gate
+protocol: full_image_resize
+imgsz: 1536
+initialization: ultralytics_default_then_explicit_semantic_yolo11s_transfer
+checkpoint_selection: best.pt_by_full_image_validation_mAP50-95

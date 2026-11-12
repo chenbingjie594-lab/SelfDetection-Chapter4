@@ -13,7 +13,10 @@ import ultralytics
 import yaml
 from ultralytics import YOLO
 
-from chapter4_detection.scripts.model_audit import semantic_transfer
+from chapter4_detection.models.nbr_de import register_nbr_de
+from chapter4_detection.scripts.model_audit import semantic_transfer, semantic_transfer_e3
+
+register_nbr_de()
 
 
 def load_yaml(path: Path) -> dict:
@@ -34,7 +37,7 @@ def require_data_gate(path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", choices=("E0", "E1", "E2"), required=True)
+    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3"), required=True)
     parser.add_argument("--seed", type=int, choices=(42, 3407, 2026), required=True)
     parser.add_argument("--common", type=Path, default=Path("chapter4_detection/configs/common.yaml"))
     parser.add_argument("--config", type=Path, required=True)
@@ -53,14 +56,19 @@ def main() -> int:
     name = f"{args.experiment.lower()}_seed{args.seed}" + ("_smoke" if args.epochs else "")
     run_dir = Path(common["project"]) / name
     run_dir.mkdir(parents=True, exist_ok=False)
-    if args.experiment == "E1":
+    if args.experiment in {"E1", "E3"}:
         model = YOLO(experiment["model"])
-        transfer = semantic_transfer(model, Path(experiment["pretrained"]))
+        if args.experiment == "E3" and experiment.get("nbr_mode"):
+            for module in model.model.modules():
+                if module.__class__.__name__ == "NBRDE":
+                    module.mode = experiment["nbr_mode"]
+        transfer_fn = semantic_transfer if args.experiment == "E1" else semantic_transfer_e3
+        transfer = transfer_fn(model, Path(experiment["pretrained"]))
         if not transfer["value_verification_passed"]:
             raise RuntimeError("E1 semantic transfer value verification failed")
         # A YAML-created YOLO object has no checkpoint flag; Ultralytics would otherwise rebuild it
         # in the trainer. Persist and reload so the transferred tensors are the actual train start.
-        initialized_checkpoint = run_dir / "e1_semantic_initialized.pt"
+        initialized_checkpoint = run_dir / f"{args.experiment.lower()}_semantic_initialized.pt"
         model.save(initialized_checkpoint)
         model = YOLO(str(initialized_checkpoint))
     else:

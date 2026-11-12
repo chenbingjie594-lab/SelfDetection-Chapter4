@@ -73,6 +73,38 @@ def semantic_transfer(model: YOLO, weights: Path) -> dict:
     }
 
 
+def semantic_transfer_e3(model: YOLO, weights: Path) -> dict:
+    """Transfer YOLO11s tensors across the single NBR-DE insertion at layer 17."""
+    source = YOLO(str(weights)).model.state_dict()
+    target = model.model.state_dict()
+    matched, mapping, rejected = {}, [], []
+    for source_key, value in source.items():
+        match = re.match(r"model\.(\d+)\.(.*)", source_key)
+        if not match:
+            rejected.append({"source": source_key, "reason": "not_a_model_layer"})
+            continue
+        layer, suffix = int(match.group(1)), match.group(2)
+        target_layer = layer if layer <= 16 else layer + 1
+        target_key = f"model.{target_layer}.{suffix}"
+        if target_key not in target or target[target_key].shape != value.shape:
+            rejected.append({"source": source_key, "target": target_key, "reason": "absent_or_shape_mismatch"})
+            continue
+        matched[target_key] = value
+        mapping.append({"source": source_key, "target": target_key, "reason": "same_semantic_layer_shifted_after_NBR_DE", "elements": value.numel()})
+    model.model.load_state_dict(matched, strict=False)
+    loaded = model.model.state_dict()
+    failures = [m for m in mapping if not torch.equal(loaded[m["target"]].cpu(), source[m["source"]].cpu())]
+    total = sum(v.numel() for v in target.values())
+    return {
+        "matched_tensors": len(matched), "matched_parameters": sum(v.numel() for v in matched.values()),
+        "matched_parameter_ratio": sum(v.numel() for v in matched.values()) / total,
+        "target_tensors": len(target), "target_parameters": total, "explicit_mapping": mapping,
+        "missing_target_keys": sorted(k for k in target if k not in matched), "unmapped_source": rejected,
+        "value_verification_failures": failures, "value_verification_passed": not failures,
+        "new_parameter_initialization": "NBR-DE defaults with gamma=0; other unmatched tensors retain defaults",
+    }
+
+
 # Backward-compatible import for earlier scripts/tests; implementation is now semantic.
 compatible_transfer = semantic_transfer
 

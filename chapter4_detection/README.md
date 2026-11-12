@@ -32,11 +32,11 @@ E1 显式迁移未改变的 backbone/top-down neck、语义相同的 bottom-up P
 ## 环境与验证
 
 - Python 3.10.20；Ultralytics 8.4.145；PyTorch 2.5.1+cu124。
-- 13 项测试通过：source-group 隔离、已知 sibling、坐标转换、跨切片目标、坐标恢复、
+- 22 项 pytest 测试通过：source-group 隔离、已知 sibling、坐标转换、跨切片目标、坐标恢复、
   class-aware NMS、E0/E1 前向、显式迁移及 checkpoint 重载。
 - E2 共 690 个训练切片；174/174 个目标均至少在一个切片中完整覆盖。
-- GPU 后续已恢复。E0 seed42 已完成（第 76 轮早停，最佳第 36 轮）；其固定评估结果见
-  `results/e0_seed42_metrics.json` 和 `results/E0_SEED42_REPORT.md`。E1、E2 与其余种子待运行。
+- E0/E1 三种子已完成；E2 seed42 已完成。E3 NBR-DE seed42 在第 97 轮早停，
+  最佳第 57 轮，固定评估 mAP50-95 为 0.4377。详见 `NBR_DE_SEED42_RESULTS.md`。
 
 ## 可直接运行的命令
 
@@ -100,6 +100,23 @@ $CH4_PY -m chapter4_detection.scripts.diagnose_predictions --predictions PREDICT
   --images /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/images/val \
   --labels /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val \
   --thresholds chapter4_detection/results/diagnostic_thresholds.json --output DIAGNOSTICS.json
+```
+
+NBR-DE 训练、精确验证器导出及可视化：
+
+```bash
+$CH4_PY -m chapter4_detection.scripts.train --experiment E3 --seed 42 \
+  --config chapter4_detection/configs/e3_yolo11s_nbr_de.yaml
+$CH4_PY -m chapter4_detection.scripts.export_validator_predictions \
+  --weights chapter4_detection/results/runs/e3_seed42/weights/best.pt \
+  --data /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/data.yaml \
+  --images /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/images/val \
+  --output chapter4_detection/results/e3_seed42_validator_predictions.json \
+  --imgsz 1536 --device 0 --name E3_NBR_DE_seed42
+$CH4_PY -m chapter4_detection.scripts.confidence_diagnostics \
+  --predictions chapter4_detection/results/e3_seed42_validator_predictions.json \
+  --labels /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val \
+  --output chapter4_detection/results/e3_seed42_confidence_diagnostics.json
 ```
 
 未完成三个种子前只报告实际值；完成后才能汇总 Mean ± SD。

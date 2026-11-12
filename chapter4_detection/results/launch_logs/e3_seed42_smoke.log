@@ -1,0 +1,71 @@
+New https://pypi.org/project/ultralytics/8.4.210 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.4.145 🚀 Python-3.10.20 torch-2.5.1+cu124 CUDA:0 (NVIDIA GeForce RTX 3090, 24253MiB)
+engine/trainer: agnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=1, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/data.yaml, degrees=0.0, deterministic=True, device=0, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=1, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=1536, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke/e3_semantic_initialized.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=e3_seed42_smoke, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=40, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=42, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=4, workspace=None
+
+                   from  n    params  module                                       arguments
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  2                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]
+  3                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+  4                  -1  1    103360  ultralytics.nn.modules.block.C3k2            [128, 256, 1, False, 0.25]
+  5                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+  6                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 13                  -1  1    443776  ultralytics.nn.modules.block.C3k2            [768, 256, 1, False]
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 16                  -1  1    127680  ultralytics.nn.modules.block.C3k2            [512, 128, 1, False]
+ 17                  -1  1    108033  chapter4_detection.models.nbr_de.NBRDE       [128, 'full']
+ 18                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 19            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 20                  -1  1    345472  ultralytics.nn.modules.block.C3k2            [384, 256, 1, False]
+ 21                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+ 22            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 23                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]
+ 24        [17, 20, 23]  1    820182  ultralytics.nn.modules.head.Detect           [2, 16, None, [128, 256, 512]]
+YOLO11s_nbr_de summary: 189 layers, 9,536,599 parameters, 9,536,583 gradients, 23.0 GFLOPs
+
+Transferred 512/512 items from pretrained weights
+Freezing layer 'model.24.dfl.conv.weight'
+AMP: running Automatic Mixed Precision (AMP) checks...
+AMP: checks passed ✅
+train: Fast image access ✅ (ping: 0.0±0.0 ms, read: 2196.4±1116.1 MB/s, size: 1297.8 KB)
+
+train: Scanning /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/train.cache... 138 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 138/138 20.7Mit/s 0.0s
+val: Fast image access ✅ (ping: 0.0±0.0 ms, read: 1548.4±1110.7 MB/s, size: 1169.7 KB)
+
+val: Scanning /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val.cache... 46 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 46/46 2.7Mit/s 0.0s
+optimizer: 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+optimizer: AdamW(lr=0.001667, momentum=0.9) with parameter groups 82 weight(decay=0.0), 95 weight(decay=0.0005), 89 bias(decay=0.0)
+Plotting labels to /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke/labels.jpg...
+Using 138 train, 46 val images for fraction=1.0 at imgsz=1536
+Using 4 dataloader workers
+Logging results to /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke
+Starting training for 1 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+        1/1      2.07G      2.746      125.7     0.8156          2       1536: 100% ━━━━━━━━━━━━ 138/138 11.4it/s 12.1s
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 23/23 18.2it/s 1.3s
+                   all         46         58   0.000133      0.037   1.85e-05   3.71e-06
+
+1 epochs completed in 0.004 hours.
+Optimizer stripped from /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke/weights/last.pt, 19.4MB
+Optimizer stripped from /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke/weights/best.pt, 19.4MB
+
+Validating /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke/weights/best.pt...
+Ultralytics 8.4.145 🚀 Python-3.10.20 torch-2.5.1+cu124 CUDA:0 (NVIDIA GeForce RTX 3090, 24253MiB)
+YOLO11s_nbr_de summary (fused): 108 layers, 9,521,607 parameters, 0 gradients, 22.8 GFLOPs
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% ━━━━━━━━━━━━ 23/23 31.3it/s 0.7s
+                   all         46         58   0.000133      0.037   1.91e-05   2.44e-06
+           Flash point         27         27   0.000266     0.0741   3.82e-05   4.89e-06
+       Big black spots         19         31          0          0          0          0
+Speed: 0.4ms preprocess, 8.7ms inference, 0.0ms loss, 4.0ms postprocess per image
+Results saved to /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/runs/e3_seed42_smoke

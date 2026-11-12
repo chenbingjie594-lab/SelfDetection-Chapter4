@@ -49,7 +49,10 @@ def main() -> int:
     warm = cv2.imread(str(paths[0]))
     warm = warm if args.mode == "full" else warm[:args.tile_size, :args.tile_size]
     for _ in range(args.warmup):
-        model.predict(warm, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou, device=args.device, verbose=False)
+        model.predict(
+            warm, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou, max_det=300,
+            rect=args.mode != "full", device=args.device, verbose=False,
+        )
 
     payload, totals, forwards, counts = {}, [], [], []
     for path in paths:
@@ -62,8 +65,15 @@ def main() -> int:
         if args.mode == "full":
             synchronize(use_cuda)
             forward_start = time.perf_counter()
-            result = model.predict(image, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou,
-                                   device=args.device, verbose=False)[0]
+            # Ultralytics validation uses square batches when rect=False.  Keep the
+            # full-image export on exactly that preprocessing path so exported
+            # predictions can reproduce model.val() AP.  Sliced inference keeps
+            # rectangular preprocessing because each native-scale tile is already
+            # square (apart from possible edge tiles).
+            result = model.predict(
+                image, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou, max_det=300,
+                rect=False, device=args.device, verbose=False,
+            )[0]
             synchronize(use_cuda)
             forward_seconds = time.perf_counter() - forward_start
             if result.boxes is None:
@@ -81,8 +91,10 @@ def main() -> int:
                 crop = image[tile.y1:tile.y2, tile.x1:tile.x2]
                 synchronize(use_cuda)
                 forward_start = time.perf_counter()
-                result = model.predict(crop, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou,
-                                       device=args.device, verbose=False)[0]
+                result = model.predict(
+                    crop, imgsz=args.imgsz, conf=args.conf, iou=args.nms_iou, max_det=300,
+                    rect=True, device=args.device, verbose=False,
+                )[0]
                 synchronize(use_cuda)
                 forward_seconds += time.perf_counter() - forward_start
                 if result.boxes is not None and len(result.boxes):
