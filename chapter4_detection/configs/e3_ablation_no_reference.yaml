@@ -1,5 +1,6 @@
 experiment: E3
-model: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/models/yolo11s_nbr_de.yaml
+run_name: e3_no_reference
+model: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/models/yolo11s_nbr_de_no_reference.yaml
 pretrained: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
 nbr_mode: no_reference
 protocol: full_image_resize

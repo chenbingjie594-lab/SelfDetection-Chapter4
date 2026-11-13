@@ -1,0 +1,35 @@
+{
+  "freeze_commit": "9f3f8021fbdd2798cb591b8db2cc0da6e39fa497",
+  "frozen_experiment": "E3 Full NBR-DE",
+  "data_yaml": "/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/data.yaml",
+  "data_audit_status": "PASS",
+  "data_protocol_manifest_sha256": "cbbd617ba26d86f8a1afe7349045d43ddd157f1477384dd70b17a92f24f8b728",
+  "sha256": {
+    "pretrained_yolo11s_pt": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "nbr_de_py": "14bbad7226e080d1644c5d52d4c901c4450ff9ec8f58159dc9cb9d8d0e56c5b5",
+    "model_yaml": "d5fb317e400b8f6f5dea9858a9cdd3a3085f83a0fd487ff956e8daa5cea2b418",
+    "e3_config_yaml": "2fff3d064e2d0dba58a2e85750af245dace9e78c20996436006179bfc0ee8e6b",
+    "data_yaml": "afa3be6a95acfdb866f917020a4dbdc282c1a6154cf3500c72629c5ea9880da5",
+    "split_manifest_json": "cbbd617ba26d86f8a1afe7349045d43ddd157f1477384dd70b17a92f24f8b728",
+    "data_audit_json": "dca4e6a70dc3d3a56243deb603064547636a1c90e9709f0b60333b94a5da7635"
+  },
+  "module": {
+    "insertion": "single module after Neck P3 fusion output",
+    "distances": [2, 6],
+    "center_excluded": true,
+    "reference": "Q/K similarity weighted V",
+    "difference": "signed residual plus absolute residual",
+    "gate": "adaptive sigmoid gate",
+    "gamma_initialization": 0.0,
+    "loss_modified": false,
+    "detect_head_modified": false
+  },
+  "training": {
+    "imgsz": 1536,
+    "epochs": 150,
+    "patience": 40,
+    "batch": 1,
+    "optimizer": "auto",
+    "seeds": [42, 3407, 2026]
+  }
+}

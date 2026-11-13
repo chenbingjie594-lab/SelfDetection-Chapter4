@@ -11,3 +11,4 @@ Thumbs.db
 *.swp
 wandb/
 runs/
+chapter4_detection/results/invalid_mode_runs/*_full_mode/

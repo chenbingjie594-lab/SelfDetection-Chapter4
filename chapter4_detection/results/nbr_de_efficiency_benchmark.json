@@ -1,0 +1,118 @@
+{
+  "protocol": {
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "device": "2",
+    "image": "/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/images/val/blackinst_10.jpg",
+    "original_shape": [
+      1024,
+      4096
+    ],
+    "imgsz": 1536,
+    "batch": 1,
+    "warmup_per_precision": 20,
+    "repeats_per_precision": 100,
+    "cuda_synchronize": true,
+    "timing_scope": "Ultralytics predict end-to-end; image already decoded; fp32 uses half=False; amp_fp16 uses half=True"
+  },
+  "models": {
+    "E0": {
+      "weights": "chapter4_detection/results/runs/e0_seed42/weights/best.pt",
+      "parameters": 9428566,
+      "gflops_ultralytics": 128.180256768,
+      "timing": {
+        "fp32": {
+          "end_to_end_ms_mean": 13.254622174426913,
+          "end_to_end_ms_sd": 0.5976767255389092,
+          "throughput_images_s": 75.4453794940584,
+          "peak_gpu_memory_bytes": 135065088
+        },
+        "amp_fp16": {
+          "end_to_end_ms_mean": 16.01090406998992,
+          "end_to_end_ms_sd": 3.42929220696935,
+          "throughput_images_s": 62.4574349848459,
+          "peak_gpu_memory_bytes": 121972736
+        }
+      },
+      "nbr_total_parameters": 0,
+      "nbr_active_parameters": 0
+    },
+    "A1_no_reference": {
+      "weights": "chapter4_detection/results/runs/e3_no_reference_seed42/weights/best.pt",
+      "parameters": 9536599,
+      "gflops_ultralytics": 134.34273792,
+      "timing": {
+        "fp32": {
+          "end_to_end_ms_mean": 22.36957296729088,
+          "end_to_end_ms_sd": 6.001074871155562,
+          "throughput_images_s": 44.70358023652105,
+          "peak_gpu_memory_bytes": 184573952
+        },
+        "amp_fp16": {
+          "end_to_end_ms_mean": 10.545915747061372,
+          "end_to_end_ms_sd": 0.1398663419901759,
+          "throughput_images_s": 94.82343913838406,
+          "peak_gpu_memory_bytes": 168342528
+        }
+      },
+      "nbr_mode": "no_reference",
+      "nbr_total_parameters": 108034,
+      "nbr_active_parameters": 83457,
+      "inactive_parameter_groups": [
+        "key",
+        "query",
+        "value"
+      ]
+    },
+    "A2_no_gate": {
+      "weights": "chapter4_detection/results/runs/e3_no_gate_seed42/weights/best.pt",
+      "parameters": 9536599,
+      "gflops_ultralytics": 132.445863936,
+      "timing": {
+        "fp32": {
+          "end_to_end_ms_mean": 11.060620527714491,
+          "end_to_end_ms_sd": 0.2225657844828469,
+          "throughput_images_s": 90.410840648073,
+          "peak_gpu_memory_bytes": 235211776
+        },
+        "amp_fp16": {
+          "end_to_end_ms_mean": 13.384369341656566,
+          "end_to_end_ms_sd": 3.242555985831876,
+          "throughput_images_s": 74.71401711006813,
+          "peak_gpu_memory_bytes": 199524352
+        }
+      },
+      "nbr_mode": "no_gate",
+      "nbr_total_parameters": 108034,
+      "nbr_active_parameters": 57601,
+      "inactive_parameter_groups": [
+        "gate",
+        "local"
+      ]
+    },
+    "E3_full": {
+      "weights": "chapter4_detection/results/runs/e3_seed42/weights/best.pt",
+      "parameters": 9536599,
+      "gflops_ultralytics": 136.069742592,
+      "timing": {
+        "fp32": {
+          "end_to_end_ms_mean": 11.675093565136194,
+          "end_to_end_ms_sd": 1.1976843698626947,
+          "throughput_images_s": 85.65241849420113,
+          "peak_gpu_memory_bytes": 269520896
+        },
+        "amp_fp16": {
+          "end_to_end_ms_mean": 18.934282679110765,
+          "end_to_end_ms_sd": 0.8824733600840069,
+          "throughput_images_s": 52.814253222449736,
+          "peak_gpu_memory_bytes": 85070848
+        }
+      },
+      "nbr_mode": "full",
+      "nbr_total_parameters": 108034,
+      "nbr_active_parameters": 106881,
+      "inactive_parameter_groups": [
+        "local"
+      ]
+    }
+  }
+}

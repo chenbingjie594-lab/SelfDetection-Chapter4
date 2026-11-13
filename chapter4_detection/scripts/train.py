@@ -53,15 +53,22 @@ def main() -> int:
     if args.experiment == "E2" and not args.data:
         raise ValueError("E2 requires --data pointing to the generated slice data.yaml")
 
-    name = f"{args.experiment.lower()}_seed{args.seed}" + ("_smoke" if args.epochs else "")
+    run_prefix = experiment.get("run_name", args.experiment.lower())
+    name = f"{run_prefix}_seed{args.seed}" + ("_smoke" if args.epochs else "")
     run_dir = Path(common["project"]) / name
     run_dir.mkdir(parents=True, exist_ok=False)
     if args.experiment in {"E1", "E3"}:
         model = YOLO(experiment["model"])
         if args.experiment == "E3" and experiment.get("nbr_mode"):
-            for module in model.model.modules():
-                if module.__class__.__name__ == "NBRDE":
-                    module.mode = experiment["nbr_mode"]
+            modes = [
+                module.mode for module in model.model.modules()
+                if module.__class__.__name__ == "NBRDE"
+            ]
+            if modes != [experiment["nbr_mode"]]:
+                raise RuntimeError(
+                    "E3 YAML/config mode mismatch: "
+                    f"model has {modes}, config requests {experiment['nbr_mode']}"
+                )
         transfer_fn = semantic_transfer if args.experiment == "E1" else semantic_transfer_e3
         transfer = transfer_fn(model, Path(experiment["pretrained"]))
         if not transfer["value_verification_passed"]:
@@ -88,6 +95,8 @@ def main() -> int:
         "transfer": transfer,
         "initialized_checkpoint": str(initialized_checkpoint) if initialized_checkpoint else None,
         "checkpoint_selection": experiment["checkpoint_selection"],
+        "run_name": name,
+        "nbr_mode": experiment.get("nbr_mode"),
     }
     (run_dir / "run_metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     runtime = {"optimizer_updates": 0}
@@ -121,6 +130,9 @@ def main() -> int:
         kwargs["patience"] = 0
     kwargs.update(
         data=str(data), epochs=args.epochs or common["epochs"], imgsz=experiment["imgsz"], seed=args.seed,
+        # Safety is enforced by run_dir.mkdir(exist_ok=False) above before any
+        # artifact is written. The trainer must reuse that freshly guarded
+        # directory because E1/E3 initialization checkpoints live inside it.
         project=str(Path(common["project"])), name=name, exist_ok=True, pretrained=True,
         val=args.experiment != "E2", plots=args.experiment != "E2",
     )
