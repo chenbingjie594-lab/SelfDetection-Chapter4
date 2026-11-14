@@ -14,9 +14,11 @@ import yaml
 from ultralytics import YOLO
 
 from chapter4_detection.models.nbr_de import register_nbr_de
+from chapter4_detection.models.nbr_de_r import register_nbr_de_r
 from chapter4_detection.scripts.model_audit import semantic_transfer, semantic_transfer_e3
 
 register_nbr_de()
+register_nbr_de_r()
 
 
 def load_yaml(path: Path) -> dict:
@@ -37,7 +39,7 @@ def require_data_gate(path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3"), required=True)
+    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4"), required=True)
     parser.add_argument("--seed", type=int, choices=(42, 3407, 2026), required=True)
     parser.add_argument("--common", type=Path, default=Path("chapter4_detection/configs/common.yaml"))
     parser.add_argument("--config", type=Path, required=True)
@@ -57,7 +59,7 @@ def main() -> int:
     name = f"{run_prefix}_seed{args.seed}" + ("_smoke" if args.epochs else "")
     run_dir = Path(common["project"]) / name
     run_dir.mkdir(parents=True, exist_ok=False)
-    if args.experiment in {"E1", "E3"}:
+    if args.experiment in {"E1", "E3", "E4"}:
         model = YOLO(experiment["model"])
         if args.experiment == "E3" and experiment.get("nbr_mode"):
             modes = [
@@ -72,7 +74,7 @@ def main() -> int:
         transfer_fn = semantic_transfer if args.experiment == "E1" else semantic_transfer_e3
         transfer = transfer_fn(model, Path(experiment["pretrained"]))
         if not transfer["value_verification_passed"]:
-            raise RuntimeError("E1 semantic transfer value verification failed")
+            raise RuntimeError(f"{args.experiment} semantic transfer value verification failed")
         # A YAML-created YOLO object has no checkpoint flag; Ultralytics would otherwise rebuild it
         # in the trainer. Persist and reload so the transferred tensors are the actual train start.
         initialized_checkpoint = run_dir / f"{args.experiment.lower()}_semantic_initialized.pt"
@@ -132,7 +134,7 @@ def main() -> int:
         data=str(data), epochs=args.epochs or common["epochs"], imgsz=experiment["imgsz"], seed=args.seed,
         # Safety is enforced by run_dir.mkdir(exist_ok=False) above before any
         # artifact is written. The trainer must reuse that freshly guarded
-        # directory because E1/E3 initialization checkpoints live inside it.
+        # directory because E1/E3/E4 initialization checkpoints live inside it.
         project=str(Path(common["project"])), name=name, exist_ok=True, pretrained=True,
         val=args.experiment != "E2", plots=args.experiment != "E2",
     )

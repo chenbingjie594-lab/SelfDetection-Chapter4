@@ -39,6 +39,7 @@ def main() -> int:
     parser.add_argument("--log", type=Path, required=True)
     parser.add_argument("--train-samples", type=int, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--curve-output", type=Path, help="Optional auditable copy of the per-epoch results CSV")
     args = parser.parse_args()
     rows = list(csv.DictReader((args.run / "results.csv").open()))
     if not rows:
@@ -63,6 +64,9 @@ def main() -> int:
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2) + "\n")
+    if args.curve_output:
+        args.curve_output.parent.mkdir(parents=True, exist_ok=True)
+        args.curve_output.write_text((args.run / "results.csv").read_text(), encoding="utf-8")
     print(json.dumps({key: value for key, value in output.items() if key != "args"}, indent=2))
     return 0
 
