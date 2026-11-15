@@ -65,6 +65,25 @@ def test_ablation_forward_paths_are_distinct():
     assert not torch.equal(outputs[0], outputs[2])
 
 
+def test_inference_interventions_preserve_checkpoint_parameters():
+    torch.manual_seed(11)
+    module = NBRDE(16).eval()
+    module.gamma.data.fill_(0.5)
+    x = torch.randn(1, 16, 11, 17)
+    state_before = {k: v.clone() for k, v in module.state_dict().items()}
+    with torch.no_grad():
+        module.inference_intervention = "full"
+        full = module(x)
+        module.inference_intervention = "gate_bypass"
+        no_gate = module(x)
+        module.inference_intervention = "residual_bypass"
+        no_residual = module(x)
+    assert torch.equal(no_residual, x)
+    assert not torch.equal(full, no_gate)
+    assert all(torch.equal(v, state_before[k]) for k, v in module.state_dict().items())
+    assert "inference_intervention" not in module.state_dict()
+
+
 @pytest.mark.parametrize(
     ("yaml_path", "expected_mode"),
     [

@@ -25,6 +25,9 @@ class NBRDE(nn.Module):
         self.gate = nn.Conv2d(3 * channels, channels, 1)
         self.gamma = nn.Parameter(torch.zeros(1))
         self.export_features = False
+        # Inference-only mechanism intervention. This is deliberately not part
+        # of state_dict and therefore cannot alter a trained checkpoint.
+        self.inference_intervention = "full"
         self.last_features: dict[str, torch.Tensor] = {}
 
     @staticmethod
@@ -57,7 +60,15 @@ class NBRDE(nn.Module):
         residual = x - background
         difference = self.difference(torch.cat((residual, residual.abs()), 1))
         gate = torch.ones_like(difference) if self.mode == "no_gate" else torch.sigmoid(self.gate(torch.cat((x, difference, background), 1)))
-        output = x + self.gamma * gate * difference
+        intervention = self.inference_intervention
+        if intervention == "full":
+            output = x + self.gamma * gate * difference
+        elif intervention == "gate_bypass":
+            output = x + self.gamma * difference
+        elif intervention == "residual_bypass":
+            output = x
+        else:
+            raise ValueError(f"Unknown inference intervention: {intervention}")
         if self.export_features:
             self.last_features = {"F": x.detach(), "B": background.detach(), "D": difference.detach(), "G": gate.detach()}
         return output

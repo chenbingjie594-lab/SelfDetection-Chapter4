@@ -1,0 +1,502 @@
+{
+  "overall_status": "UNKNOWN",
+  "decision": "No candidate qualifies for formal independent testing.",
+  "criteria": "PASS_UNSEEN requires real-image proof, compatible labels, SHA/pixel/source-group isolation, provenance, and evidence of no historical model-development use.",
+  "candidates": [
+    {
+      "directory": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test",
+      "image_count": 261,
+      "exact_file_overlap": [],
+      "known_source_name_overlap": [],
+      "decoded_pixel_overlap": [],
+      "near_duplicate_candidates_hamming_le_8": [
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/006.png",
+          "known": "img_3674_pre_part_0.jpg",
+          "source_group": "src_370f73fc1950c005",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/009.png",
+          "known": "img_3674_pre_part_0.jpg",
+          "source_group": "src_370f73fc1950c005",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/012.png",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/013.png",
+          "known": "blackinst_6.jpg",
+          "source_group": "black_source_6",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/016.png",
+          "known": "blackinst_7.jpg",
+          "source_group": "black_source_7",
+          "hamming_distance": 1
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/017.png",
+          "known": "blackinst_8.jpg",
+          "source_group": "black_source_8",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/018.png",
+          "known": "img_7241_pre_part_0.jpg",
+          "source_group": "src_79e3ddd67d460f2f",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/019.png",
+          "known": "blackinst_9.jpg",
+          "source_group": "black_source_9",
+          "hamming_distance": 1
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/020.png",
+          "known": "blackinst_10.jpg",
+          "source_group": "black_source_10",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/021.png",
+          "known": "blackinst_19.jpg",
+          "source_group": "black_source_19",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/022.png",
+          "known": "blackinst_20.jpg",
+          "source_group": "black_source_20",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/023.png",
+          "known": "blackinst_21.jpg",
+          "source_group": "black_source_21",
+          "hamming_distance": 3
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/025.png",
+          "known": "blackinst_23.jpg",
+          "source_group": "black_source_23",
+          "hamming_distance": 3
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/029.png",
+          "known": "blackinst_24.jpg",
+          "source_group": "black_source_24",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/032.png",
+          "known": "blackinst_13.jpg",
+          "source_group": "black_source_13",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/039.png",
+          "known": "img_9509_pre_part_0.jpg",
+          "source_group": "src_56802462427bf036",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/044.png",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/058.png",
+          "known": "img_4350_pre_part_0.jpg",
+          "source_group": "src_3ab5e011697232bf",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/069.png",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/094.png",
+          "known": "img_9438_pre_part_0.jpg",
+          "source_group": "src_de44f46fec435eb6",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/099.png",
+          "known": "blackinst_6.jpg",
+          "source_group": "black_source_6",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_png/Plastic_Bomo/test/good/101.png",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 8
+        }
+      ],
+      "decoded_check": "completed",
+      "has_xml": 0,
+      "status": "UNKNOWN",
+      "reason": "no complete source-group provenance and no evidence of non-use during historical development"
+    },
+    {
+      "directory": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test",
+      "image_count": 261,
+      "exact_file_overlap": [],
+      "known_source_name_overlap": [],
+      "decoded_pixel_overlap": [],
+      "near_duplicate_candidates_hamming_le_8": [
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/006.jpg",
+          "known": "img_3674_pre_part_0.jpg",
+          "source_group": "src_370f73fc1950c005",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/009.jpg",
+          "known": "img_3674_pre_part_0.jpg",
+          "source_group": "src_370f73fc1950c005",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/012.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/013.jpg",
+          "known": "blackinst_6.jpg",
+          "source_group": "black_source_6",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/016.jpg",
+          "known": "blackinst_7.jpg",
+          "source_group": "black_source_7",
+          "hamming_distance": 1
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/017.jpg",
+          "known": "blackinst_8.jpg",
+          "source_group": "black_source_8",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/018.jpg",
+          "known": "img_7241_pre_part_0.jpg",
+          "source_group": "src_79e3ddd67d460f2f",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/019.jpg",
+          "known": "blackinst_9.jpg",
+          "source_group": "black_source_9",
+          "hamming_distance": 1
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/020.jpg",
+          "known": "blackinst_10.jpg",
+          "source_group": "black_source_10",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/021.jpg",
+          "known": "blackinst_19.jpg",
+          "source_group": "black_source_19",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/022.jpg",
+          "known": "blackinst_20.jpg",
+          "source_group": "black_source_20",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/023.jpg",
+          "known": "blackinst_21.jpg",
+          "source_group": "black_source_21",
+          "hamming_distance": 3
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/025.jpg",
+          "known": "blackinst_23.jpg",
+          "source_group": "black_source_23",
+          "hamming_distance": 3
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/029.jpg",
+          "known": "blackinst_24.jpg",
+          "source_group": "black_source_24",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/032.jpg",
+          "known": "blackinst_13.jpg",
+          "source_group": "black_source_13",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/039.jpg",
+          "known": "img_9509_pre_part_0.jpg",
+          "source_group": "src_56802462427bf036",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/044.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/058.jpg",
+          "known": "img_4350_pre_part_0.jpg",
+          "source_group": "src_3ab5e011697232bf",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/069.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/094.jpg",
+          "known": "img_9438_pre_part_0.jpg",
+          "source_group": "src_de44f46fec435eb6",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/099.jpg",
+          "known": "blackinst_6.jpg",
+          "source_group": "black_source_6",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_mvtec_ready/Plastic_Bomo/test/good/101.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 8
+        }
+      ],
+      "decoded_check": "completed",
+      "has_xml": 0,
+      "status": "UNKNOWN",
+      "reason": "no complete source-group provenance and no evidence of non-use during historical development"
+    },
+    {
+      "directory": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval",
+      "image_count": 514,
+      "exact_file_overlap": [],
+      "known_source_name_overlap": [],
+      "decoded_pixel_overlap": [],
+      "near_duplicate_candidates_hamming_le_8": [
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/011.jpg",
+          "known": "img_15887_pre_part_0.jpg",
+          "source_group": "src_9a81727b056f7a4d",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/039.jpg",
+          "known": "img_9509_pre_part_0.jpg",
+          "source_group": "src_56802462427bf036",
+          "hamming_distance": 5
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/044.jpg",
+          "known": "img_15887_pre_part_0.jpg",
+          "source_group": "src_9a81727b056f7a4d",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/049.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 5
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/054.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/056.jpg",
+          "known": "img_15170_pre_part_0.jpg",
+          "source_group": "src_29ef447e1f0b5514",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/059.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 2
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/071.jpg",
+          "known": "img_9438_pre_part_0.jpg",
+          "source_group": "src_de44f46fec435eb6",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/085.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/101.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/115.jpg",
+          "known": "img_15170_pre_part_0.jpg",
+          "source_group": "src_29ef447e1f0b5514",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/122.jpg",
+          "known": "img_21287_pre_part_0.jpg",
+          "source_group": "src_67009584de9a2f2f",
+          "hamming_distance": 3
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/125.jpg",
+          "known": "img_1083_pre_part_0.jpg",
+          "source_group": "src_0c92e0767ac50eee",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/128.jpg",
+          "known": "img_21287_pre_part_0.jpg",
+          "source_group": "src_67009584de9a2f2f",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/131.jpg",
+          "known": "img_21287_pre_part_0.jpg",
+          "source_group": "src_67009584de9a2f2f",
+          "hamming_distance": 5
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/137.jpg",
+          "known": "img_15170_pre_part_0.jpg",
+          "source_group": "src_29ef447e1f0b5514",
+          "hamming_distance": 6
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/139.jpg",
+          "known": "img_15170_pre_part_0.jpg",
+          "source_group": "src_29ef447e1f0b5514",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/141.jpg",
+          "known": "img_21287_pre_part_0.jpg",
+          "source_group": "src_67009584de9a2f2f",
+          "hamming_distance": 4
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/143.jpg",
+          "known": "img_7241_pre_part_0.jpg",
+          "source_group": "src_79e3ddd67d460f2f",
+          "hamming_distance": 5
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/179.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/189.jpg",
+          "known": "img_7241_pre_part_0.jpg",
+          "source_group": "src_79e3ddd67d460f2f",
+          "hamming_distance": 5
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/193.jpg",
+          "known": "img_3190_pre_part_0.jpg",
+          "source_group": "src_3af7fd21789aa0d3",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/228.jpg",
+          "known": "img_3190_pre_part_0.jpg",
+          "source_group": "src_3af7fd21789aa0d3",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/409.jpg",
+          "known": "blackinst_1.jpg",
+          "source_group": "black_source_1",
+          "hamming_distance": 0
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/410.jpg",
+          "known": "img_8935_pre_part_0.jpg",
+          "source_group": "src_d4557424f4f9460f",
+          "hamming_distance": 7
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/416.jpg",
+          "known": "img_16871_pre_part_0.jpg",
+          "source_group": "src_bb695faaaff64150",
+          "hamming_distance": 1
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/417.jpg",
+          "known": "img_1023_pre_part_0.jpg",
+          "source_group": "src_ebcf4748970484f8",
+          "hamming_distance": 8
+        },
+        {
+          "candidate": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/train/good/419.jpg",
+          "known": "blackinst_4.jpg",
+          "source_group": "black_source_4",
+          "hamming_distance": 0
+        }
+      ],
+      "decoded_check": "completed",
+      "has_xml": 0,
+      "status": "UNKNOWN",
+      "reason": "no complete source-group provenance and no evidence of non-use during historical development"
+    },
+    {
+      "directory": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/eval/Plastic_Bomo/test",
+      "image_count": 47,
+      "exact_file_overlap": [],
+      "known_source_name_overlap": [],
+      "decoded_pixel_overlap": [],
+      "near_duplicate_candidates_hamming_le_8": [],
+      "decoded_check": "completed",
+      "has_xml": 0,
+      "status": "UNKNOWN",
+      "reason": "no complete source-group provenance and no evidence of non-use during historical development"
+    },
+    {
+      "directory": "/mnt/sda/cbj/dataset/Plastic_Bomo/Plastic_Bomo_split70_seed42/train/Plastic_Bomo/test",
+      "image_count": 112,
+      "exact_file_overlap": [],
+      "known_source_name_overlap": [],
+      "decoded_pixel_overlap": [],
+      "near_duplicate_candidates_hamming_le_8": [],
+      "decoded_check": "completed",
+      "has_xml": 0,
+      "status": "UNKNOWN",
+      "reason": "no complete source-group provenance and no evidence of non-use during historical development"
+    }
+  ]
+}

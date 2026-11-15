@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 42,
+    "common": 46,
+    "e3_better": 24,
+    "e3_worse": 22,
+    "mean_iou_delta": 0.00993621158244641
+  },
+  {
+    "seed": 3407,
+    "common": 47,
+    "e3_better": 25,
+    "e3_worse": 22,
+    "mean_iou_delta": -0.0020281053309213056
+  },
+  {
+    "seed": 2026,
+    "common": 44,
+    "e3_better": 25,
+    "e3_worse": 19,
+    "mean_iou_delta": 0.01344833083423737
+  }
+]

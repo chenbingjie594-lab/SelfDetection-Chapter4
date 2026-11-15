@@ -1,0 +1,5 @@
+# Stage-6 reproducibility commands
+PYTHONPATH=. /mnt/sda/cbj/miniconda3/envs/yolo11/bin/python chapter4_detection/scripts/audit_independent_test.py --root /mnt/sda/cbj/dataset/Plastic_Bomo --manifest /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/split_manifest.json --output chapter4_detection/results/stage6/independent_test_audit.json
+PYTHONPATH=. /mnt/sda/cbj/miniconda3/envs/yolo11/bin/python chapter4_detection/scripts/paired_group_bootstrap.py --manifest /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/split_manifest.json --labels /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val --output-dir chapter4_detection/results/stage6 --repeats 5000 --seed 20261115
+bash chapter4_detection/scripts/run_stage6_interventions.sh
+PYTHONPATH=. /mnt/sda/cbj/miniconda3/envs/yolo11/bin/python chapter4_detection/scripts/localization_error_analysis.py --results chapter4_detection/results --labels /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/labels/val --images /mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/images/val --output-dir chapter4_detection/results/stage6
