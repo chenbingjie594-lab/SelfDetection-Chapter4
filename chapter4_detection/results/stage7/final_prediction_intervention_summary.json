@@ -1,0 +1,50 @@
+{
+  "gate_bypass": {
+    "confidence_threshold": 0.25,
+    "images": 138,
+    "full_detections": 171,
+    "bypass_detections": 171,
+    "matched_detections": 171,
+    "unmatched_full": 0,
+    "unmatched_bypass": 0,
+    "matched_box_iou": {
+      "mean": 0.9997907752803881,
+      "sd": 0.00018359200440202933,
+      "max": 0.9999951682184723
+    },
+    "confidence_abs_delta": {
+      "mean": 0.00016665487116529742,
+      "sd": 0.00015090188106691558,
+      "max": 0.0008373856544494629
+    },
+    "box_coordinate_abs_delta_px": {
+      "mean": 0.0014132270376190884,
+      "sd": 0.0012873943960953667,
+      "max": 0.00498199462890625
+    }
+  },
+  "residual_bypass": {
+    "confidence_threshold": 0.25,
+    "images": 138,
+    "full_detections": 171,
+    "bypass_detections": 171,
+    "matched_detections": 171,
+    "unmatched_full": 0,
+    "unmatched_bypass": 0,
+    "matched_box_iou": {
+      "mean": 0.9999050347314592,
+      "sd": 6.039976784341433e-05,
+      "max": 0.9999999999999984
+    },
+    "confidence_abs_delta": {
+      "mean": 0.00014880149798235517,
+      "sd": 0.00015334673667904026,
+      "max": 0.0009318888187408447
+    },
+    "box_coordinate_abs_delta_px": {
+      "mean": 0.0006408551873748235,
+      "sd": 0.0004164831116999025,
+      "max": 0.0021209716796875
+    }
+  }
+}

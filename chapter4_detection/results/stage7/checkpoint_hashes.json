@@ -1,0 +1,38 @@
+{
+  "matched_e0_seed42_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_e0_seed42/weights/best.pt",
+    "sha256": "ba3d16f103d213b46d3c9a46a90ef76cc75caf92cd8ab8d1ab26bbd210cf26b6"
+  },
+  "matched_e0_seed3407_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_e0_seed3407/weights/best.pt",
+    "sha256": "e8db0d0ce4405331e75cb78479753a464881c27180e17d6a31dfceeeebee8d43"
+  },
+  "matched_e0_seed2026_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_e0_seed2026/weights/best.pt",
+    "sha256": "83488e64f36b8a37c3fa4201838bf1e7bcb017728ba43be2350f632f87e98c76"
+  },
+  "matched_identity_seed42_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_identity_seed42/weights/best.pt",
+    "sha256": "a7de1dd119590dd08ef4184ff0de3bdcdcae5788ba99f18f622b26ae3101309a"
+  },
+  "matched_identity_seed3407_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_identity_seed3407/weights/best.pt",
+    "sha256": "f75bad14c89ec901a54627d0e6b81cf90fe3b1617f1b53396cd382cfd40b1f93"
+  },
+  "matched_identity_seed2026_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_identity_seed2026/weights/best.pt",
+    "sha256": "0647db4cb76e42e423364d568a6c76233bac65df7a6b574b23910e0758dc5c03"
+  },
+  "matched_full_seed42_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_full_seed42/weights/best.pt",
+    "sha256": "63f8109aac7ef60445ddee3afb6453cd0bb48aa60b856d72813ec76802615b07"
+  },
+  "matched_full_seed3407_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_full_seed3407/weights/best.pt",
+    "sha256": "0cec4020c1edb2eedac844be1ffc761a94090247ebf61cf81076784afa2ebad5"
+  },
+  "matched_full_seed2026_best": {
+    "path": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs/matched_full_seed2026/weights/best.pt",
+    "sha256": "20016694cb1ca06aac6c0eda97a40725ab1aa8889ee6d43bfe65f321c6fb7420"
+  }
+}

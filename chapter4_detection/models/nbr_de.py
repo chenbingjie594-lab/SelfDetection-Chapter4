@@ -12,7 +12,7 @@ class NBRDE(nn.Module):
 
     def __init__(self, channels: int = 128, mode: str = "full", distances=(2, 6)):
         super().__init__()
-        if mode not in {"full", "no_reference", "no_gate"}:
+        if mode not in {"full", "no_reference", "no_gate", "identity_train"}:
             raise ValueError(f"Unknown NBR-DE mode: {mode}")
         self.channels, self.mode = channels, mode
         hidden = max(16, channels // 4)
@@ -29,6 +29,8 @@ class NBRDE(nn.Module):
         # of state_dict and therefore cannot alter a trained checkpoint.
         self.inference_intervention = "full"
         self.last_features: dict[str, torch.Tensor] = {}
+        self.last_dynamics: dict[str, float] = {}
+        self.dynamics_enabled = False
 
     @staticmethod
     def _sample(x: torch.Tensor, dy: int, dx: int, pad: int) -> torch.Tensor:
@@ -56,11 +58,16 @@ class NBRDE(nn.Module):
         return background
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
+        if self.mode == "identity_train":
+            if self.export_features:
+                self.last_features = {"F": x.detach(), "B": x.detach(), "D": torch.zeros_like(x), "G": torch.zeros_like(x)}
+            self.last_dynamics = {"relative_output_change": 0.0, "injection_ratio": 0.0, "gate_mean": 0.0}
+            return x
         background = self._reference(x)
         residual = x - background
         difference = self.difference(torch.cat((residual, residual.abs()), 1))
         gate = torch.ones_like(difference) if self.mode == "no_gate" else torch.sigmoid(self.gate(torch.cat((x, difference, background), 1)))
-        intervention = self.inference_intervention
+        intervention = getattr(self, "inference_intervention", "full")
         if intervention == "full":
             output = x + self.gamma * gate * difference
         elif intervention == "gate_bypass":
@@ -69,6 +76,15 @@ class NBRDE(nn.Module):
             output = x
         else:
             raise ValueError(f"Unknown inference intervention: {intervention}")
+        if getattr(self, "dynamics_enabled", False):
+            with torch.no_grad():
+                eps = torch.finfo(x.dtype).eps
+                injection = output - x
+                self.last_dynamics = {
+                    "relative_output_change": float(injection.float().norm() / (x.float().norm() + eps)),
+                    "injection_ratio": float((self.gamma * gate * difference).float().norm() / (x.float().norm() + eps)),
+                    "gate_mean": float(gate.float().mean()),
+                }
         if self.export_features:
             self.last_features = {"F": x.detach(), "B": background.detach(), "D": difference.detach(), "G": gate.detach()}
         return output

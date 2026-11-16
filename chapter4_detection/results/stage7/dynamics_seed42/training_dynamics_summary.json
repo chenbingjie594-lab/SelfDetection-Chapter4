@@ -1,0 +1,7 @@
+{
+  "diagnostic_only": true,
+  "requested_successful_updates": 300,
+  "successful_updates": 300,
+  "optimizer_attempts": 312,
+  "note": "fresh seed42 diagnostic run; not a reconstruction of historical E3"
+}

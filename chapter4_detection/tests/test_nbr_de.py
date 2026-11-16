@@ -84,6 +84,43 @@ def test_inference_interventions_preserve_checkpoint_parameters():
     assert "inference_intervention" not in module.state_dict()
 
 
+def test_gamma_zero_gradient_routing_then_branch_activation():
+    torch.manual_seed(13)
+    upstream = torch.nn.Conv2d(3, 16, 1)
+    module = NBRDE(16).train()
+    downstream = torch.nn.Conv2d(16, 4, 1)
+    x = torch.randn(2, 3, 9, 11)
+    loss = downstream(module(upstream(x))).square().mean()
+    loss.backward()
+    assert module.gamma.grad is not None and module.gamma.grad.abs().item() > 0
+    assert upstream.weight.grad is not None and upstream.weight.grad.norm() > 0
+    for name, parameter in module.named_parameters():
+        if name.startswith("local"):
+            assert parameter.grad is None  # inactive in full-reference mode
+        elif name != "gamma":
+            assert parameter.grad is not None
+            assert torch.count_nonzero(parameter.grad) == 0
+    with torch.no_grad():
+        module.gamma.fill_(0.1)
+    upstream.zero_grad(); module.zero_grad(); downstream.zero_grad()
+    downstream(module(upstream(x))).square().mean().backward()
+    assert module.difference[0].weight.grad.norm() > 0
+    assert module.gate.weight.grad.norm() > 0
+    assert module.query.weight.grad.norm() > 0
+
+
+def test_identity_train_skips_branch_and_bn_updates():
+    module = NBRDE(16, mode="identity_train").train()
+    before = module.difference[1].running_mean.clone()
+    x = torch.randn(2, 16, 9, 11, requires_grad=True)
+    y = module(x)
+    assert y is x
+    y.square().mean().backward()
+    assert x.grad is not None and x.grad.norm() > 0
+    assert all(p.grad is None for p in module.parameters())
+    assert torch.equal(before, module.difference[1].running_mean)
+
+
 @pytest.mark.parametrize(
     ("yaml_path", "expected_mode"),
     [

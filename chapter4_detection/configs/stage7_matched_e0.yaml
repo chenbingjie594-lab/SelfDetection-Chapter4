@@ -1,0 +1,6 @@
+experiment: M0
+run_name: matched_e0
+project: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/runs
+protocol: matched_initialization_full_image_resize
+imgsz: 1536
+checkpoint_selection: best.pt_by_full_image_validation_mAP50-95

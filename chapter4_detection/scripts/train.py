@@ -39,13 +39,14 @@ def require_data_gate(path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4"), required=True)
+    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4", "M0", "MID", "MFULL"), required=True)
     parser.add_argument("--seed", type=int, choices=(42, 3407, 2026), required=True)
     parser.add_argument("--common", type=Path, default=Path("chapter4_detection/configs/common.yaml"))
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--data", type=Path, help="Required E2 sliced data.yaml; E0/E1 use common data")
     parser.add_argument("--epochs", type=int, help="Smoke-only override; omit for formal protocol")
     parser.add_argument("--device", help="Runtime CUDA device override; does not change the experiment protocol")
+    parser.add_argument("--initialized", type=Path, help="Pre-audited matched initialization checkpoint for Stage 7")
     args = parser.parse_args()
     common, experiment = load_yaml(args.common), load_yaml(args.config)
     if experiment["experiment"] != args.experiment:
@@ -57,9 +58,24 @@ def main() -> int:
 
     run_prefix = experiment.get("run_name", args.experiment.lower())
     name = f"{run_prefix}_seed{args.seed}" + ("_smoke" if args.epochs else "")
-    run_dir = Path(common["project"]) / name
+    project = Path(experiment.get("project", common["project"]))
+    run_dir = project / name
     run_dir.mkdir(parents=True, exist_ok=False)
-    if args.experiment in {"E1", "E3", "E4"}:
+    if args.experiment in {"M0", "MID", "MFULL"}:
+        if args.initialized is None:
+            raise ValueError(f"{args.experiment} requires --initialized")
+        model = YOLO(str(args.initialized))
+        modes = [m.mode for m in model.model.modules() if m.__class__.__name__ == "NBRDE"]
+        expected = experiment.get("nbr_mode")
+        if expected is not None and modes != [expected]:
+            raise RuntimeError(f"Stage7 mode mismatch: expected {expected}, found {modes}")
+        if expected == "identity_train":
+            for module in model.model.modules():
+                if module.__class__.__name__ == "NBRDE":
+                    for parameter in module.parameters():
+                        parameter.requires_grad_(False)
+        transfer, initialized_checkpoint = {"stage7_matched_checkpoint": str(args.initialized.resolve())}, args.initialized
+    elif args.experiment in {"E1", "E3", "E4"}:
         model = YOLO(experiment["model"])
         if args.experiment == "E3" and experiment.get("nbr_mode"):
             modes = [
@@ -135,7 +151,7 @@ def main() -> int:
         # Safety is enforced by run_dir.mkdir(exist_ok=False) above before any
         # artifact is written. The trainer must reuse that freshly guarded
         # directory because E1/E3/E4 initialization checkpoints live inside it.
-        project=str(Path(common["project"])), name=name, exist_ok=True, pretrained=True,
+        project=str(project), name=name, exist_ok=True, pretrained=True,
         val=args.experiment != "E2", plots=args.experiment != "E2",
     )
     model.train(**kwargs)
