@@ -1,0 +1,136 @@
+{
+  "seed": 2026,
+  "baseline": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/initializations/matched_e0_init_seed2026.pt",
+  "output": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage8/initializations/e5_sfdfm_init_seed2026.pt",
+  "baseline_sha256": "52e199aba72f52531b2dc6d1603192ca68c6d770642ac7c7dc0f4e3797227f68",
+  "output_sha256": "5f41c889e4733d52e68c3e93a2dc3f82b0dd3f81d53e83f357c86e5c4f8ad224",
+  "copied_tensors": 499,
+  "copied_elements": 9458631,
+  "baseline_elements": 9458631,
+  "missing_source": [],
+  "shared_value_mismatches": [],
+  "new_parameter_keys": [
+    "model.22.p4_project.0.weight",
+    "model.22.p4_project.1.weight",
+    "model.22.p4_project.1.bias",
+    "model.22.p4_project.1.running_mean",
+    "model.22.p4_project.1.running_var",
+    "model.22.p4_project.1.num_batches_tracked",
+    "model.22.detail.0.weight",
+    "model.22.detail.1.weight",
+    "model.22.detail.1.bias",
+    "model.22.detail.1.running_mean",
+    "model.22.detail.1.running_var",
+    "model.22.detail.1.num_batches_tracked",
+    "model.22.diff.0.weight",
+    "model.22.diff.1.weight",
+    "model.22.diff.1.bias",
+    "model.22.diff.1.running_mean",
+    "model.22.diff.1.running_var",
+    "model.22.diff.1.num_batches_tracked",
+    "model.22.gate.0.weight",
+    "model.22.gate.1.weight",
+    "model.22.gate.1.bias",
+    "model.22.gate.1.running_mean",
+    "model.22.gate.1.running_var",
+    "model.22.gate.1.num_batches_tracked",
+    "model.22.fusion.weight"
+  ],
+  "initial_raw_output_relative_l2": 0.007224480155855417,
+  "initial_loss_baseline": 16.19363021850586,
+  "initial_loss_sfdfm": 16.124773025512695,
+  "new_branch_gradients": {
+    "p4_project.0.weight": {
+      "parameter_norm": 6.58573579788208,
+      "grad_none": false,
+      "grad_norm": 2.5880067348480225,
+      "grad_zero": false,
+      "finite": true
+    },
+    "p4_project.1.weight": {
+      "parameter_norm": 11.313708305358887,
+      "grad_none": false,
+      "grad_norm": 0.13188844919204712,
+      "grad_zero": false,
+      "finite": true
+    },
+    "p4_project.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.06111197918653488,
+      "grad_zero": false,
+      "finite": true
+    },
+    "detail.0.weight": {
+      "parameter_norm": 4.604006767272949,
+      "grad_none": false,
+      "grad_norm": 0.9548357129096985,
+      "grad_zero": false,
+      "finite": true
+    },
+    "detail.1.weight": {
+      "parameter_norm": 8.0,
+      "grad_none": false,
+      "grad_norm": 0.05489422380924225,
+      "grad_zero": false,
+      "finite": true
+    },
+    "detail.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.020573224872350693,
+      "grad_zero": false,
+      "finite": true
+    },
+    "diff.0.weight": {
+      "parameter_norm": 4.609857082366943,
+      "grad_none": false,
+      "grad_norm": 1.851281762123108,
+      "grad_zero": false,
+      "finite": true
+    },
+    "diff.1.weight": {
+      "parameter_norm": 8.0,
+      "grad_none": false,
+      "grad_norm": 0.1166745275259018,
+      "grad_zero": false,
+      "finite": true
+    },
+    "diff.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.04850933700799942,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.0.weight": {
+      "parameter_norm": 4.599948883056641,
+      "grad_none": false,
+      "grad_norm": 0.39027202129364014,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.1.weight": {
+      "parameter_norm": 8.0,
+      "grad_none": false,
+      "grad_norm": 0.006779312621802092,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.012406985275447369,
+      "grad_zero": false,
+      "finite": true
+    },
+    "fusion.weight": {
+      "parameter_norm": 11.314410209655762,
+      "grad_none": false,
+      "grad_norm": 116.38844299316406,
+      "grad_zero": false,
+      "finite": true
+    }
+  },
+  "all_new_trainable_gradients_nonzero": true
+}

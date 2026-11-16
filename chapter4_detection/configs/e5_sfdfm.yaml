@@ -1,0 +1,8 @@
+experiment: E5
+run_name: e5_sfdfm
+project: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage8/runs
+protocol: matched_initialization_sfdfm_neck_p3
+model: chapter4_detection/models/yolo11s_sfdfm.yaml
+pretrained: /mnt/sda/cbj/SelfDetection-main/yolo11s.pt
+imgsz: 1536
+checkpoint_selection: best.pt_by_full_image_validation_mAP50-95

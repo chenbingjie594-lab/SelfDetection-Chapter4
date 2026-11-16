@@ -13,4 +13,5 @@ wandb/
 runs/
 chapter4_detection/results/invalid_mode_runs/*_full_mode/
 chapter4_detection/results/stage7/initializations/*.pt
+chapter4_detection/results/stage8/initializations/*.pt
 chapter4_detection/results/stage7/dynamics_seed42/diagnostic_run/

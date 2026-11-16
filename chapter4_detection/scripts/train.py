@@ -15,10 +15,12 @@ from ultralytics import YOLO
 
 from chapter4_detection.models.nbr_de import register_nbr_de
 from chapter4_detection.models.nbr_de_r import register_nbr_de_r
+from chapter4_detection.models.sfdfm import register_sfdfm
 from chapter4_detection.scripts.model_audit import semantic_transfer, semantic_transfer_e3
 
 register_nbr_de()
 register_nbr_de_r()
+register_sfdfm()
 
 
 def load_yaml(path: Path) -> dict:
@@ -39,7 +41,7 @@ def require_data_gate(path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4", "M0", "MID", "MFULL"), required=True)
+    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4", "E5", "M0", "MID", "MFULL"), required=True)
     parser.add_argument("--seed", type=int, choices=(42, 3407, 2026), required=True)
     parser.add_argument("--common", type=Path, default=Path("chapter4_detection/configs/common.yaml"))
     parser.add_argument("--config", type=Path, required=True)
@@ -61,7 +63,7 @@ def main() -> int:
     project = Path(experiment.get("project", common["project"]))
     run_dir = project / name
     run_dir.mkdir(parents=True, exist_ok=False)
-    if args.experiment in {"M0", "MID", "MFULL"}:
+    if args.experiment in {"M0", "MID", "MFULL", "E5"}:
         if args.initialized is None:
             raise ValueError(f"{args.experiment} requires --initialized")
         model = YOLO(str(args.initialized))

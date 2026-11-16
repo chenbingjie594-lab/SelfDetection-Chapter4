@@ -1,0 +1,385 @@
+{
+  "protocol": "train_only_paired_ROI_source_group_bootstrap",
+  "manifest_protocol_sha256": "48054c137c8e093957c57eef6d761750cfac6f7b437e089cebe42053fb4b62ab",
+  "included": 171,
+  "excluded": [
+    {
+      "image": "img_1013_pre_part_1.jpg",
+      "index": 0,
+      "reason": "incomplete_context"
+    },
+    {
+      "image": "img_8747_pre_part_1.jpg",
+      "index": 0,
+      "reason": "incomplete_context"
+    },
+    {
+      "image": "img_3653_pre_part_1.jpg",
+      "index": 0,
+      "reason": "incomplete_context"
+    }
+  ],
+  "class_counts": {
+    "0": 81,
+    "1": 90
+  },
+  "bootstrap": {
+    "all": {
+      "e_ll": {
+        "paired_difference_mean": 0.05383524455522236,
+        "ci95": [
+          0.042571068892892236,
+          0.06599325655084667
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "e_lh": {
+        "paired_difference_mean": 0.001487691171190052,
+        "ci95": [
+          0.0013005380853413078,
+          0.0016758057995472145
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "e_hl": {
+        "paired_difference_mean": 0.0007110499669973023,
+        "ci95": [
+          0.0005802020426357203,
+          0.0008563154278292311
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "e_hh": {
+        "paired_difference_mean": 4.721751777688892e-05,
+        "ci95": [
+          3.59578378285786e-05,
+          5.878403600082597e-05
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "e_high": {
+        "paired_difference_mean": 0.002245958655964243,
+        "ci95": [
+          0.0019485196223934511,
+          0.0025591130330072883
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "haar_high_ratio": {
+        "paired_difference_mean": 0.0017626146672388718,
+        "ci95": [
+          0.0015551723207789143,
+          0.001965623158890544
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "fft_high_ratio": {
+        "paired_difference_mean": -0.22014519081883982,
+        "ci95": [
+          -0.24915399669450805,
+          -0.19478975794228998
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "fft_periodicity": {
+        "paired_difference_mean": -27.968717234873633,
+        "ci95": [
+          -52.11199552535534,
+          -5.827980274126176
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "sobel_mean": {
+        "paired_difference_mean": 0.15036841405675425,
+        "ci95": [
+          0.1381628723714625,
+          0.1635828320936735
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "laplacian_abs_mean": {
+        "paired_difference_mean": 0.03480713885299295,
+        "ci95": [
+          0.030168476570496525,
+          0.03960270592760732
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "texture_entropy": {
+        "paired_difference_mean": 1.216730236127475,
+        "ci95": [
+          1.124562098456983,
+          1.3079832832676366
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "mean_intensity": {
+        "paired_difference_mean": 0.0008610502669685765,
+        "ci95": [
+          -0.0005523975423966846,
+          0.0027024962610863964
+        ],
+        "source_groups": 134,
+        "rois": 171
+      },
+      "std_intensity": {
+        "paired_difference_mean": 0.07731764562079432,
+        "ci95": [
+          0.06836085763098157,
+          0.08675357982132882
+        ],
+        "source_groups": 134,
+        "rois": 171
+      }
+    },
+    "0": {
+      "e_ll": {
+        "paired_difference_mean": 0.05897389186753167,
+        "ci95": [
+          0.044750041216611865,
+          0.07653175443410873
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "e_lh": {
+        "paired_difference_mean": 0.0013100348544496767,
+        "ci95": [
+          0.0010769835075961963,
+          0.001554834726591809
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "e_hl": {
+        "paired_difference_mean": 0.00042370927249179164,
+        "ci95": [
+          0.0003263826961265059,
+          0.0005222315876289938
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "e_hh": {
+        "paired_difference_mean": 5.48015146862635e-05,
+        "ci95": [
+          3.6904834745161486e-05,
+          7.344674072377812e-05
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "e_high": {
+        "paired_difference_mean": 0.0017885456416277317,
+        "ci95": [
+          0.0014740936230315596,
+          0.002082793824679077
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "haar_high_ratio": {
+        "paired_difference_mean": 0.0012826967757581774,
+        "ci95": [
+          0.0010298471479569667,
+          0.0015498597675251049
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "fft_high_ratio": {
+        "paired_difference_mean": -0.22291993242860944,
+        "ci95": [
+          -0.2501905500071612,
+          -0.19518655080922018
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "fft_periodicity": {
+        "paired_difference_mean": -31.656968104986497,
+        "ci95": [
+          -72.11615657263164,
+          6.651657283514177
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "sobel_mean": {
+        "paired_difference_mean": 0.12461781630545486,
+        "ci95": [
+          0.10916556320651938,
+          0.14206918055895804
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "laplacian_abs_mean": {
+        "paired_difference_mean": 0.02202772680256102,
+        "ci95": [
+          0.01673460641663663,
+          0.02723681010217184
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "texture_entropy": {
+        "paired_difference_mean": 1.1739706810086843,
+        "ci95": [
+          1.0503331558686264,
+          1.2995860281531457
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "mean_intensity": {
+        "paired_difference_mean": 0.0046777184362764715,
+        "ci95": [
+          0.0023612885876426637,
+          0.007731268085815287
+        ],
+        "source_groups": 77,
+        "rois": 81
+      },
+      "std_intensity": {
+        "paired_difference_mean": 0.060166543211649964,
+        "ci95": [
+          0.05300671353976155,
+          0.06665401318192277
+        ],
+        "source_groups": 77,
+        "rois": 81
+      }
+    },
+    "1": {
+      "e_ll": {
+        "paired_difference_mean": 0.049210461974143985,
+        "ci95": [
+          0.03263272734839523,
+          0.06610469428709491
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "e_lh": {
+        "paired_difference_mean": 0.0016475818562563898,
+        "ci95": [
+          0.0013731103265274603,
+          0.0019416632359000956
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "e_hl": {
+        "paired_difference_mean": 0.0009696565920522618,
+        "ci95": [
+          0.0007330825644142899,
+          0.001219575935246478
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "e_hh": {
+        "paired_difference_mean": 4.039192055845181e-05,
+        "ci95": [
+          2.6168396498503302e-05,
+          5.638700617008287e-05
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "e_high": {
+        "paired_difference_mean": 0.0026576303688671033,
+        "ci95": [
+          0.0022036934826385212,
+          0.003163246823591521
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "haar_high_ratio": {
+        "paired_difference_mean": 0.002194540769571497,
+        "ci95": [
+          0.0019063505092022845,
+          0.002500810054582629
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "fft_high_ratio": {
+        "paired_difference_mean": -0.21764792337004715,
+        "ci95": [
+          -0.2664049684650382,
+          -0.17769848042448244
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "fft_periodicity": {
+        "paired_difference_mean": -24.649291451772054,
+        "ci95": [
+          -51.60419603622037,
+          7.4722366687327035
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "sobel_mean": {
+        "paired_difference_mean": 0.1735439520329237,
+        "ci95": [
+          0.1556055079650119,
+          0.19252686782876094
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "laplacian_abs_mean": {
+        "paired_difference_mean": 0.046308609698381686,
+        "ci95": [
+          0.03990509164229196,
+          0.05307779571805358
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "texture_entropy": {
+        "paired_difference_mean": 1.2552138357343867,
+        "ci95": [
+          1.1278332636147004,
+          1.38840697622239
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "mean_intensity": {
+        "paired_difference_mean": -0.0025739510854085284,
+        "ci95": [
+          -0.0035371461698969642,
+          -0.0016139526013284925
+        ],
+        "source_groups": 58,
+        "rois": 90
+      },
+      "std_intensity": {
+        "paired_difference_mean": 0.09275363778902425,
+        "ci95": [
+          0.07759158860749066,
+          0.10828356028717585
+        ],
+        "source_groups": 58,
+        "rois": 90
+      }
+    }
+  }
+}
