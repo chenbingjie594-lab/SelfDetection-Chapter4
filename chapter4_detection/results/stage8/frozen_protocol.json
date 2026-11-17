@@ -1,0 +1,10 @@
+{
+  "frozen_commit": "7b926c15b1527edf03a4d6eac2525bf8e7eec6f3",
+  "model_python_sha256": "be41e566edbe25e60da3da59834a2f8d7cff004697092f90a8cbf122bd037fce",
+  "model_yaml_sha256": "0fda64a291576a17d5d6070b58d781fea8f8485931813d8fc2712b63d14b9d5a",
+  "config_sha256": "6dbbbabb3027303f13116c9312e2be9c077ef7284cfe45812ad8049e9241afc8",
+  "train_entry_sha256": "07c47ee86b2243ddc855a5a4626a0b478211bc7ae850bcc18b2934a2c459f8fc",
+  "seeds": [42, 3407, 2026],
+  "selection": "best.pt_by_full_image_validation_mAP50-95",
+  "note": "Frozen before every formal Stage8 training run; no seed42-driven architecture changes permitted."
+}

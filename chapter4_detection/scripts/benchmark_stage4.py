@@ -16,6 +16,7 @@ from ultralytics.utils.torch_utils import get_flops
 
 from chapter4_detection.models.nbr_de import NBRDE, register_nbr_de
 from chapter4_detection.models.nbr_de_r import NBRDER, register_nbr_de_r
+from chapter4_detection.models.sfdfm import register_sfdfm
 
 
 def module_capacity(model: YOLO) -> dict:
@@ -50,7 +51,7 @@ def main() -> int:
     p.add_argument("--imgsz", type=int, default=1536)
     p.add_argument("--warmup", type=int, default=20)
     p.add_argument("--repeats", type=int, default=100)
-    a = p.parse_args(); register_nbr_de(); register_nbr_de_r()
+    a = p.parse_args(); register_nbr_de(); register_nbr_de_r(); register_sfdfm()
     if len(a.models) != len(a.names): raise ValueError("--models and --names lengths differ")
     image = cv2.imread(str(a.image))
     if image is None: raise RuntimeError(f"Unreadable image: {a.image}")
