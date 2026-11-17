@@ -1,0 +1,20 @@
+{
+  "e0_best_s42": {
+    "images": 138,
+    "cosine_mean": 0.037144205352123594,
+    "cosine_median": 0.03434409946203232,
+    "negative_fraction": 0.21739130434782608,
+    "near_zero": 0,
+    "cls_norm_mean": 0.09811360946438019,
+    "reg_norm_mean": 0.24817119679157285
+  },
+  "sfdfm_best_s42": {
+    "images": 138,
+    "cosine_mean": 0.06627243724237221,
+    "cosine_median": 0.050120847299695015,
+    "negative_fraction": 0.21739130434782608,
+    "near_zero": 0,
+    "cls_norm_mean": 0.07698901525050726,
+    "reg_norm_mean": 0.20390849830447763
+  }
+}

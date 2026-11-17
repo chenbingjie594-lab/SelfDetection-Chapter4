@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "baseline": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage7/initializations/matched_e0_init_seed42.pt",
+  "output": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage9/initializations/e6_cbcd_init_seed42.pt",
+  "transfer": {
+    "copied_keys": 121,
+    "new_keys": [
+      "cbcd.difference.0.weight",
+      "cbcd.difference.1.bias",
+      "cbcd.difference.1.num_batches_tracked",
+      "cbcd.difference.1.running_mean",
+      "cbcd.difference.1.running_var",
+      "cbcd.difference.1.weight",
+      "cbcd.gate.0.weight",
+      "cbcd.gate.1.bias",
+      "cbcd.gate.1.num_batches_tracked",
+      "cbcd.gate.1.running_mean",
+      "cbcd.gate.1.running_var",
+      "cbcd.gate.1.weight",
+      "cbcd.project.weight",
+      "cbcd.smooth.weight"
+    ],
+    "channels": [
+      128,
+      256,
+      512
+    ]
+  },
+  "raw_regression_equal_within_fp_tolerance": true,
+  "raw_regression_max_abs": 0.0,
+  "classification_relative_l2": 4.088209243491292e-05,
+  "new_gradients": {
+    "smooth.weight": {
+      "parameter_norm": 3.7712361812591553,
+      "grad_none": false,
+      "grad_norm": 0.005254792049527168,
+      "grad_zero": false,
+      "finite": true
+    },
+    "difference.0.weight": {
+      "parameter_norm": 3.2643535137176514,
+      "grad_none": false,
+      "grad_norm": 0.03161105141043663,
+      "grad_zero": false,
+      "finite": true
+    },
+    "difference.1.weight": {
+      "parameter_norm": 5.656854152679443,
+      "grad_none": false,
+      "grad_norm": 0.0014070965116843581,
+      "grad_zero": false,
+      "finite": true
+    },
+    "difference.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.000531136931385845,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.0.weight": {
+      "parameter_norm": 3.261781930923462,
+      "grad_none": false,
+      "grad_norm": 0.011624674312770367,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.1.weight": {
+      "parameter_norm": 5.656854152679443,
+      "grad_none": false,
+      "grad_norm": 0.00017216868582181633,
+      "grad_zero": false,
+      "finite": true
+    },
+    "gate.1.bias": {
+      "parameter_norm": 0.0,
+      "grad_none": false,
+      "grad_norm": 0.0003307484439574182,
+      "grad_zero": false,
+      "finite": true
+    },
+    "project.weight": {
+      "parameter_norm": 0.006465210113674402,
+      "grad_none": false,
+      "grad_norm": 11.605093002319336,
+      "grad_zero": false,
+      "finite": true
+    }
+  },
+  "all_new_gradients_nonzero": true,
+  "sha256": "104b71a6dfa746d8396b64c61704005d4c44001e5da01681374ebb2f99a05f28"
+}

@@ -1,0 +1,40 @@
+{
+  "0.5": {
+    "e0": 49,
+    "sfdfm": 52
+  },
+  "0.75": {
+    "e0": 29,
+    "sfdfm": 30
+  },
+  "0.9": {
+    "e0": 6,
+    "sfdfm": 4
+  },
+  "common50": {
+    "n": 49,
+    "e0_center_error": 0.05376784960148201,
+    "e0_width_error": 0.10380033849001964,
+    "e0_height_error": 0.1334744074778496,
+    "e0_area_error": 0.027151901098116913,
+    "e0_confidence": 0.553481161216635,
+    "sfdfm_center_error": 0.052401408833564915,
+    "sfdfm_width_error": 0.10368399472567161,
+    "sfdfm_height_error": 0.11499051959311786,
+    "sfdfm_area_error": 0.04270983020651681,
+    "sfdfm_confidence": 0.6049477252729085
+  },
+  "common75": {
+    "n": 26,
+    "e0_center_error": 0.03305656340482867,
+    "e0_width_error": 0.061523902333701426,
+    "e0_height_error": 0.07508051647123246,
+    "e0_area_error": -0.01251402497411607,
+    "e0_confidence": 0.6025183008840451,
+    "sfdfm_center_error": 0.03923797736414532,
+    "sfdfm_width_error": 0.0680877105209684,
+    "sfdfm_height_error": 0.05560945225169577,
+    "sfdfm_area_error": -0.013190779819496437,
+    "sfdfm_confidence": 0.6502253951934668
+  }
+}

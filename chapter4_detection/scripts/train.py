@@ -16,6 +16,7 @@ from ultralytics import YOLO
 from chapter4_detection.models.nbr_de import register_nbr_de
 from chapter4_detection.models.nbr_de_r import register_nbr_de_r
 from chapter4_detection.models.sfdfm import register_sfdfm
+from chapter4_detection.models.cbcd import CBCDDetect, CBCDTrainer
 from chapter4_detection.scripts.model_audit import semantic_transfer, semantic_transfer_e3
 
 register_nbr_de()
@@ -41,7 +42,7 @@ def require_data_gate(path: Path) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4", "E5", "M0", "MID", "MFULL"), required=True)
+    parser.add_argument("--experiment", choices=("E0", "E1", "E2", "E3", "E4", "E5", "E6", "M0", "MID", "MFULL"), required=True)
     parser.add_argument("--seed", type=int, choices=(42, 3407, 2026), required=True)
     parser.add_argument("--common", type=Path, default=Path("chapter4_detection/configs/common.yaml"))
     parser.add_argument("--config", type=Path, required=True)
@@ -63,10 +64,12 @@ def main() -> int:
     project = Path(experiment.get("project", common["project"]))
     run_dir = project / name
     run_dir.mkdir(parents=True, exist_ok=False)
-    if args.experiment in {"M0", "MID", "MFULL", "E5"}:
+    if args.experiment in {"M0", "MID", "MFULL", "E5", "E6"}:
         if args.initialized is None:
             raise ValueError(f"{args.experiment} requires --initialized")
         model = YOLO(str(args.initialized))
+        if args.experiment == "E6" and not isinstance(model.model.model[-1], CBCDDetect):
+            raise RuntimeError("E6 initialized checkpoint does not contain CBCDDetect")
         modes = [m.mode for m in model.model.modules() if m.__class__.__name__ == "NBRDE"]
         expected = experiment.get("nbr_mode")
         if expected is not None and modes != [expected]:
@@ -156,7 +159,7 @@ def main() -> int:
         project=str(project), name=name, exist_ok=True, pretrained=True,
         val=args.experiment != "E2", plots=args.experiment != "E2",
     )
-    model.train(**kwargs)
+    model.train(trainer=CBCDTrainer if args.experiment == "E6" else None, **kwargs)
     return 0
 
 

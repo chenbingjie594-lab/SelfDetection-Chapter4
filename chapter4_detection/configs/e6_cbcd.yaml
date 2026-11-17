@@ -1,0 +1,7 @@
+experiment: E6
+run_name: e6_cbcd
+project: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage9/runs
+protocol: matched_initialization_classification_only_p3
+imgsz: 1536
+checkpoint_selection: best.pt_by_full_image_validation_mAP50-95
+cbcd_hidden: 32
