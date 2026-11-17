@@ -25,6 +25,8 @@ def main() -> int:
     p.add_argument("--labels", type=Path, required=True)
     p.add_argument("--baseline-dir", type=Path, required=True)
     p.add_argument("--sfdfm-dir", type=Path, required=True)
+    p.add_argument("--candidate-prefix", default="e5_sfdfm")
+    p.add_argument("--candidate-name", default="SFDFM")
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--repeats", type=int, default=5000)
     p.add_argument("--seed", type=int, default=20261117)
@@ -40,7 +42,7 @@ def main() -> int:
     prepared = {}
     for model, directory, prefix in (
         ("Matched-E0", a.baseline_dir, "matched_e0"),
-        ("SFDFM", a.sfdfm_dir, "e5_sfdfm"),
+        (a.candidate_name, a.sfdfm_dir, a.candidate_prefix),
     ):
         for seed in SEEDS:
             payload = json.loads((directory / f"{prefix}_seed{seed}_predictions.json").read_text())
@@ -58,7 +60,7 @@ def main() -> int:
         multiplicity = {g: int(np.sum(sample == g)) for g in set(sample)}
         differences = []
         for seed in SEEDS:
-            delta = weighted_evaluate(prepared["SFDFM", seed], multiplicity) - weighted_evaluate(
+            delta = weighted_evaluate(prepared[a.candidate_name, seed], multiplicity) - weighted_evaluate(
                 prepared["Matched-E0", seed], multiplicity
             )
             distributions[str(seed)].append(delta)
@@ -78,7 +80,7 @@ def main() -> int:
         }
     result = {
         "protocol": {
-            "comparison": "SFDFM - Matched-E0",
+            "comparison": f"{a.candidate_name} - Matched-E0",
             "unit": "source_group",
             "groups": len(group_names),
             "images": sum(map(len, groups.values())),

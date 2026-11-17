@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/scripts/train.py", line 167, in <module>
+    raise SystemExit(main())
+  File "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/scripts/train.py", line 66, in main
+    run_dir.mkdir(parents=True, exist_ok=False)
+  File "/mnt/sda/cbj/miniconda3/envs/yolo11/lib/python3.10/pathlib.py", line 1175, in mkdir
+    self._accessor.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage9/runs/e6_cbcd_seed3407'
