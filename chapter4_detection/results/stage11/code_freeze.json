@@ -1,0 +1,14 @@
+{
+  "baseline_git_commit": "a0dd1b9641126b0710f28ce0efdcbd90807bd238",
+  "note": "Stage11 sources were content-hash frozen in the working tree; the baseline commit identifies the parent, not a false pre-training Stage11 commit.",
+  "source_sha256": {
+    "chapter4_detection/models/pcrf.py": "a050ba31f689cef5c8888587af3d14a5ab5e840b2016522126cfa6b087ef233e",
+    "chapter4_detection/configs/e7_pcrf.yaml": "0b824f6781d30fcb204a221d30f926133a3735487974f5622d5ce8a9e838c412",
+    "chapter4_detection/scripts/stage11_pcrf_cv_train.py": "c3c3e9e0c95d75cf0d9c74884b7d03fe11050340fa5edf0d3f03507cb004fa45"
+  },
+  "formal_checkpoint_sha256": {
+    "fold0_last.pt": "4670f0eb56ba77df59dfed61ae71f09a5e513534123e953ee7adfb8c2a63e12d",
+    "fold1_last.pt": "d99eebbfda36c481bf3376d957156257b11a796ed19cced486fce7dc5140667b",
+    "fold2_last.pt": "3d75f5729e45362df2d966e1b5adc5a2db20d568ede36fca51981e6d5b445d0b"
+  }
+}

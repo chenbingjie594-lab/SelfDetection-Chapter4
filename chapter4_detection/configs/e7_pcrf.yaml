@@ -1,0 +1,5 @@
+experiment: E7
+run_name: e7_pcrf
+protocol: stage10_group_cv_regression_only_p2_fusion
+imgsz: 1536
+checkpoint_selection: last.pt_epoch150_no_training_validation

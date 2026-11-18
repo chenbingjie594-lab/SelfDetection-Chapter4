@@ -1,0 +1,18 @@
+{
+  "instances": 174,
+  "reg_cls_input_max_abs": 0.0,
+  "levels": {
+    "P2": {
+      "edge_specificity_median": 2.2471549190160167,
+      "edge_specificity_gt1_fraction": 0.9942528735632183,
+      "edge_peak_center_offset_mean": 3.414767606501683,
+      "boundary_over_outer": 1.1769786618791254
+    },
+    "P3": {
+      "edge_specificity_median": 3.792938247462502,
+      "edge_specificity_gt1_fraction": 0.9885057471264368,
+      "edge_peak_center_offset_mean": 5.1834773117791935,
+      "boundary_over_outer": 1.1550627301222591
+    }
+  }
+}

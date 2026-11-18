@@ -1,0 +1,12 @@
+{
+  "protocol": "stage11_pcrf_group_cv_v1",
+  "fold": 0,
+  "seed": 42,
+  "epochs": 150,
+  "validation_during_training": false,
+  "checkpoint_selection": "last.pt_epoch150",
+  "initialization_sha256": "c096658dfce78e79c56a2f7b76072bcc6519d5b47f7b1042657e2988a10af468",
+  "git_commit": "a0dd1b9641126b0710f28ce0efdcbd90807bd238",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145"
+}

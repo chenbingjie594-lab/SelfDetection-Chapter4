@@ -1,0 +1,8 @@
+{
+  "shared_tensors": 499,
+  "shared_identical": true,
+  "classification_raw_max_abs": 0.0,
+  "regression_relative_l2": 0.0013741620350629091,
+  "output_sha256": "7f108f1a74df8e695c57da912342351410239d0b0fc25d4a186c3ff1c6a4e0a1",
+  "reload_custom_head": true
+}
