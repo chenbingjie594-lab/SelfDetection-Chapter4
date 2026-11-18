@@ -1,0 +1,3 @@
+# Box IoU sensitivity
+
+`iou_sensitivity.csv` simulates ±1/2/4 original-pixel center, width, height, and each individual edge perturbation for every frozen GT. At 1536 letterbox, one original pixel equals 0.375 input pixel. Median IoU after a 1/2/4 px horizontal center shift is 0.927/0.860/0.738; vertical is 0.926/0.857/0.733. Median Black boxes are about 24×23 original pixels (9.0×8.6 input pixels). For a 24 px-wide box, an isolated horizontal shift of about 3.4 px gives IoU 0.75 and 8 px gives IoU 0.50; simultaneous x/y or multiple-edge errors need smaller per-axis offsets. This is a geometric sensitivity experiment only, not evidence of real annotation error.

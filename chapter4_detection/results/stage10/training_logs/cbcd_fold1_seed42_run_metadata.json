@@ -1,0 +1,17 @@
+{
+  "protocol": "stage10_group_cv_v1",
+  "model": "cbcd",
+  "fold": 1,
+  "seed": 42,
+  "epochs": 150,
+  "validation_during_training": false,
+  "checkpoint_selection": "last.pt_epoch150",
+  "data": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/cv_protocol/fold1/data.yaml",
+  "initialization": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/initializations/cbcd_matched_e0_seed42.pt",
+  "initialization_sha256": "27d5634e57acbcc19433db30a350d3faf2b8999a31906b96b94c299f4441c7d4",
+  "git_commit": "fe1be528029002d12089e775ade178345bc24adf",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "checkpoint_sha256": "99b38741521bedd5def9e9311e780458a57bbf610db5e52134817d2ea4059234",
+  "completed": true
+}

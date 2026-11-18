@@ -1,0 +1,29 @@
+{
+  "protocol_sha256": "48054c137c8e093957c57eef6d761750cfac6f7b437e089cebe42053fb4b62ab",
+  "images": {
+    "val": 46,
+    "train": 138
+  },
+  "instances": {
+    "val": 58,
+    "train": 174
+  },
+  "class_train": {
+    "1": 93,
+    "0": 81
+  },
+  "thresholds": {
+    "input_area_median": 89.57724298444725,
+    "contrast_median": 0.05401676159811163,
+    "gradient_median": 0.08745257928967476
+  },
+  "input_lt8_any": 52,
+  "input_lt16_any": 173,
+  "p3_lt1_any": 52,
+  "issues": {},
+  "xml_trace": {
+    "UNKNOWN": 35,
+    "TRACED": 149
+  },
+  "fold_sha256": "fdab67cc391b7c8294ce160f1514b6c2f3293c00462960903ba5afdcc74b2321"
+}

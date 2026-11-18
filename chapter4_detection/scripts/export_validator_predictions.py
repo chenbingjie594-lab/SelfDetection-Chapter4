@@ -39,6 +39,7 @@ def main() -> int:
     p.add_argument("--weights", type=Path, required=True)
     p.add_argument("--data", type=Path, required=True)
     p.add_argument("--images", type=Path, required=True)
+    p.add_argument("--image-list", type=Path, help="Optional exact image list (e.g. grouped-CV holdout)")
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--imgsz", type=int, default=1536)
     p.add_argument("--device", default="0")
@@ -51,7 +52,9 @@ def main() -> int:
         conf=0.001, iou=0.7, max_det=300, plots=False,
     )
     records = {}
-    for image_path in sorted(x for x in a.images.iterdir() if x.suffix.lower() in {".jpg", ".jpeg", ".png"}):
+    image_paths = ([Path(x) for x in a.image_list.read_text().splitlines() if x.strip()] if a.image_list else
+                   sorted(x for x in a.images.iterdir() if x.suffix.lower() in {".jpg", ".jpeg", ".png"}))
+    for image_path in image_paths:
         image = cv2.imread(str(image_path))
         if image is None:
             raise RuntimeError(f"Unreadable image: {image_path}")
