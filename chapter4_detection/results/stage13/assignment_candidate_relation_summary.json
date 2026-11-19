@@ -1,0 +1,46 @@
+{
+  "e0": {
+    "raw0": {
+      "n": 2,
+      "generation_failure": 2,
+      "rate": 1.0
+    },
+    "raw1": {
+      "n": 70,
+      "generation_failure": 37,
+      "rate": 0.5285714285714286
+    },
+    "raw2plus": {
+      "n": 102,
+      "generation_failure": 43,
+      "rate": 0.4215686274509804
+    },
+    "lt8": {
+      "n": 52,
+      "generation_failure": 34,
+      "rate": 0.6538461538461539
+    }
+  },
+  "cbcd": {
+    "raw0": {
+      "n": 2,
+      "generation_failure": 2,
+      "rate": 1.0
+    },
+    "raw1": {
+      "n": 70,
+      "generation_failure": 35,
+      "rate": 0.5
+    },
+    "raw2plus": {
+      "n": 102,
+      "generation_failure": 39,
+      "rate": 0.38235294117647056
+    },
+    "lt8": {
+      "n": 52,
+      "generation_failure": 33,
+      "rate": 0.6346153846153846
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "0": {
+    "instances": 115,
+    "zero_positive": 0,
+    "zero_effective_weight": 0,
+    "positive_count_mean": 4.434782608695652,
+    "positive_iou_mean": 0.6423705297967662,
+    "target_score_sum_mean": 1.694040362212969
+  },
+  "1": {
+    "instances": 116,
+    "zero_positive": 0,
+    "zero_effective_weight": 0,
+    "positive_count_mean": 4.258620689655173,
+    "positive_iou_mean": 0.6810934117128109,
+    "target_score_sum_mean": 1.823798776700579
+  },
+  "2": {
+    "instances": 117,
+    "zero_positive": 0,
+    "zero_effective_weight": 0,
+    "positive_count_mean": 5.0256410256410255,
+    "positive_iou_mean": 0.5623262054645098,
+    "target_score_sum_mean": 1.6807609926431606
+  }
+}

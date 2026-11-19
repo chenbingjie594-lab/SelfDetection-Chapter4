@@ -1,0 +1,6 @@
+path: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/cv_protocol/fold2
+train: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/cv_protocol/fold2/train.txt
+val: /mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/cv_protocol/fold2/train.txt
+names:
+  0: Flash point
+  1: Big black spots

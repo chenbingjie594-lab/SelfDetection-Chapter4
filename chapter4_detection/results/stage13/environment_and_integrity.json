@@ -1,0 +1,21 @@
+{
+  "baseline_git_commit": "15be0abb56159bd5137fd55b3b74d627040143f1",
+  "ultralytics": "8.4.145",
+  "torch": "2.5.1+cu124",
+  "diagnostic_gpu": "NVIDIA GeForce RTX 3090 index 1",
+  "initialization_sha256": "8173afed51dc8367a0c22643a02d60184a646d551536196d03bcb037cedc76f9",
+  "diagnostic_last_checkpoint_sha256": "7a2073fc309922506be99ef54a57bc541edef35ae6f6f4cb777f8388cfb7ec2f",
+  "stage10_fold0_last_checkpoint_sha256": "1a971befc08ac4e629bbbffbe4255107b7bc5bd6747eb3ff1607c3d916e1afbd",
+  "state_dict_equivalence": {
+    "keys": 499,
+    "same_key_set": true,
+    "all_tensors_exact": true,
+    "max_absolute_difference": 0.0
+  },
+  "training_log_sha256": {
+    "args.yaml": "10639a3259cd1da2e1a1b3cdff13a80ed1e52454dc409f6715a51aa66d5d45d8",
+    "assignment_dynamics.csv": "b66adf5941e37ff6ff0446b407dc1bb0a81e78759b80510d2e79d4a3cfb4efe5",
+    "results.csv": "c4aa57fc3384a46f18ff4b7b2fa260c309c47ab58dcf83e8965487005ee6e326",
+    "run_metadata.json": "e4e0fa84a06a2b47bfdea5f9bade6a256908b8b5c01ddfd0a74943498c37fd3e"
+  }
+}

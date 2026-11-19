@@ -1,0 +1,156 @@
+{
+  "1": {
+    "all": {
+      "instances": 223,
+      "zero_positive": 12,
+      "zero_effective_weight": 15,
+      "positive_count_mean": 3.408071748878924,
+      "positive_iou_mean": 0.20604764552890673,
+      "target_score_mean": 0.4317698045017591,
+      "p3_fraction": 0.8907894736842106
+    },
+    "lt8": {
+      "instances": 126,
+      "zero_positive": 12,
+      "zero_effective_weight": 15,
+      "positive_count_mean": 2.5555555555555554,
+      "positive_iou_mean": 0.15583164564623872,
+      "target_score_mean": 0.2621084149294358,
+      "p3_fraction": 0.9347826086956522
+    },
+    "spearman_min_side_positive_count": 0.733532416243433,
+    "spearman_positive_iou_target_score": 0.9112313332737191
+  },
+  "3": {
+    "all": {
+      "instances": 252,
+      "zero_positive": 3,
+      "zero_effective_weight": 3,
+      "positive_count_mean": 4.214285714285714,
+      "positive_iou_mean": 0.3384277580799647,
+      "target_score_mean": 0.7812760846682645,
+      "p3_fraction": 0.8757062146892656
+    },
+    "lt8": {
+      "instances": 132,
+      "zero_positive": 3,
+      "zero_effective_weight": 3,
+      "positive_count_mean": 3.742424242424242,
+      "positive_iou_mean": 0.2663726454542935,
+      "target_score_mean": 0.546855815659607,
+      "p3_fraction": 0.917004048582996
+    },
+    "spearman_min_side_positive_count": 0.6118711175765186,
+    "spearman_positive_iou_target_score": 0.8820987174504469
+  },
+  "10": {
+    "all": {
+      "instances": 242,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.338842975206612,
+      "positive_iou_mean": 0.37073037423932353,
+      "target_score_mean": 0.845094699445296,
+      "p3_fraction": 0.9228571428571428
+    },
+    "lt8": {
+      "instances": 152,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.026315789473684,
+      "positive_iou_mean": 0.3299492694878657,
+      "target_score_mean": 0.6766591278964801,
+      "p3_fraction": 0.9705882352941176
+    },
+    "spearman_min_side_positive_count": 0.652789023274323,
+    "spearman_positive_iou_target_score": 0.7617780555036937
+  },
+  "25": {
+    "all": {
+      "instances": 218,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.39908256880734,
+      "positive_iou_mean": 0.48436898468147727,
+      "target_score_mean": 1.207963388173952,
+      "p3_fraction": 0.908237747653806
+    },
+    "lt8": {
+      "instances": 119,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.109243697478991,
+      "positive_iou_mean": 0.40966553491454166,
+      "target_score_mean": 0.8328004304100486,
+      "p3_fraction": 0.967280163599182
+    },
+    "spearman_min_side_positive_count": 0.6362491680875858,
+    "spearman_positive_iou_target_score": 0.8241886545713162
+  },
+  "50": {
+    "all": {
+      "instances": 227,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.4449339207048455,
+      "positive_iou_mean": 0.5088471677728686,
+      "target_score_mean": 1.2579198985110296,
+      "p3_fraction": 0.910802775024777
+    },
+    "lt8": {
+      "instances": 128,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.109375,
+      "positive_iou_mean": 0.44212108303327113,
+      "target_score_mean": 0.8756456652190536,
+      "p3_fraction": 0.9657794676806084
+    },
+    "spearman_min_side_positive_count": 0.6266040212118235,
+    "spearman_positive_iou_target_score": 0.79297103426767
+  },
+  "100": {
+    "all": {
+      "instances": 238,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.352941176470588,
+      "positive_iou_mean": 0.5322860899780478,
+      "target_score_mean": 1.3356623335921465,
+      "p3_fraction": 0.918918918918919
+    },
+    "lt8": {
+      "instances": 150,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.08,
+      "positive_iou_mean": 0.46683858369787534,
+      "target_score_mean": 0.898794810672601,
+      "p3_fraction": 0.9705882352941176
+    },
+    "spearman_min_side_positive_count": 0.6516969352825233,
+    "spearman_positive_iou_target_score": 0.812738696453106
+  },
+  "150": {
+    "all": {
+      "instances": 167,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.485029940119761,
+      "positive_iou_mean": 0.5818506943251558,
+      "target_score_mean": 1.5123868020708688,
+      "p3_fraction": 0.9372496662216289
+    },
+    "lt8": {
+      "instances": 71,
+      "zero_positive": 0,
+      "zero_effective_weight": 0,
+      "positive_count_mean": 4.098591549295775,
+      "positive_iou_mean": 0.5209079687024506,
+      "target_score_mean": 0.9580379875612931,
+      "p3_fraction": 0.9759450171821306
+    },
+    "spearman_min_side_positive_count": 0.6120106057822194,
+    "spearman_positive_iou_target_score": 0.6339859008317273
+  }
+}
