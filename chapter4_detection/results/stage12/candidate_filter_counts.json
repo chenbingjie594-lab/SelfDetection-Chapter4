@@ -1,0 +1,14 @@
+{
+  "e0": {
+    "anchors_total": 1846026,
+    "anchors_below_preconf": 1844929,
+    "class_pairs_above_conf": 1274,
+    "anchors_above_preconf": 1097
+  },
+  "cbcd": {
+    "anchors_total": 1846026,
+    "anchors_below_preconf": 1844981,
+    "class_pairs_above_conf": 1231,
+    "anchors_above_preconf": 1045
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "correlation_group_bootstrap": {
+    "e0": {
+      "spearman": 0.7117941050063074,
+      "group_bootstrap_ci95": [
+        0.6423502017920559,
+        0.7716311769488461
+      ]
+    },
+    "cbcd": {
+      "spearman": 0.7133228591635808,
+      "group_bootstrap_ci95": [
+        0.6385154077099651,
+        0.7767071064761497
+      ]
+    }
+  },
+  "interventions": {
+    "cbcd_nms0.5_predictions": {
+      "predictions": 431,
+      "per_image": 3.1231884057971016,
+      "background_iou_lt_0.1": 195,
+      "duplicate_iou50": 24,
+      "gt_matched_iou50": 157,
+      "gt_matched_iou75": 71
+    },
+    "cbcd_nms0.7_predictions": {
+      "predictions": 668,
+      "per_image": 4.840579710144928,
+      "background_iou_lt_0.1": 256,
+      "duplicate_iou50": 161,
+      "gt_matched_iou50": 163,
+      "gt_matched_iou75": 84
+    },
+    "cbcd_nms0.9_predictions": {
+      "predictions": 1039,
+      "per_image": 7.528985507246377,
+      "background_iou_lt_0.1": 350,
+      "duplicate_iou50": 386,
+      "gt_matched_iou50": 166,
+      "gt_matched_iou75": 94
+    },
+    "cbcd_no_nms_top300_predictions": {
+      "predictions": 1231,
+      "per_image": 8.920289855072463,
+      "background_iou_lt_0.1": 395,
+      "duplicate_iou50": 527,
+      "gt_matched_iou50": 166,
+      "gt_matched_iou75": 98
+    },
+    "e0_nms0.5_predictions": {
+      "predictions": 503,
+      "per_image": 3.6449275362318843,
+      "background_iou_lt_0.1": 261,
+      "duplicate_iou50": 34,
+      "gt_matched_iou50": 157,
+      "gt_matched_iou75": 70
+    },
+    "e0_nms0.7_predictions": {
+      "predictions": 744,
+      "per_image": 5.391304347826087,
+      "background_iou_lt_0.1": 322,
+      "duplicate_iou50": 175,
+      "gt_matched_iou50": 164,
+      "gt_matched_iou75": 80
+    },
+    "e0_nms0.9_predictions": {
+      "predictions": 1098,
+      "per_image": 7.956521739130435,
+      "background_iou_lt_0.1": 409,
+      "duplicate_iou50": 408,
+      "gt_matched_iou50": 166,
+      "gt_matched_iou75": 91
+    },
+    "e0_no_nms_top300_predictions": {
+      "predictions": 1274,
+      "per_image": 9.231884057971014,
+      "background_iou_lt_0.1": 450,
+      "duplicate_iou50": 536,
+      "gt_matched_iou50": 166,
+      "gt_matched_iou75": 92
+    }
+  }
+}

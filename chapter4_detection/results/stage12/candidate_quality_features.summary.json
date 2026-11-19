@@ -1,0 +1,18 @@
+{
+  "e0": {
+    "score": 0.7117941050063074,
+    "dfl_entropy_mean": 0.2658961239297575,
+    "dfl_variance_mean": 0.24268357481551683,
+    "dfl_maxprob_mean": -0.20481901691181978,
+    "distance_lr_asymmetry": -0.09938549349414337,
+    "distance_tb_asymmetry": -0.07945035083164761
+  },
+  "cbcd": {
+    "score": 0.7133228591635808,
+    "dfl_entropy_mean": 0.18837671204321463,
+    "dfl_variance_mean": 0.15218094453784417,
+    "dfl_maxprob_mean": -0.12043947333931597,
+    "distance_lr_asymmetry": -0.08543752827251655,
+    "distance_tb_asymmetry": -0.03412365235741592
+  }
+}

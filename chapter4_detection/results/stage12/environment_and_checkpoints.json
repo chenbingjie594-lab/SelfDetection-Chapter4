@@ -1,0 +1,17 @@
+{
+  "baseline_git_commit": "06112ddd3acae232e31856b6f9c2a926aa1d7270",
+  "python": "/mnt/sda/cbj/miniconda3/envs/yolo11/bin/python",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "gpu_status": "NVIDIA driver unavailable during Stage12; no inference or training required because frozen raw caches were reused",
+  "checkpoint_sha256": {
+    "e0_fold0_last.pt": "1a971befc08ac4e629bbbffbe4255107b7bc5bd6747eb3ff1607c3d916e1afbd",
+    "e0_fold1_last.pt": "b0009a6bddfa3c832fc3edeb4d2a6aaf2431037c43fb1d25fbd1729c74c09aa8",
+    "e0_fold2_last.pt": "2f52d11bddb99e080d750fb2d46e4631ae40e8723aae04315f63cc4252b366fa",
+    "cbcd_fold0_last.pt": "12307a7266def747d8aff15d99894b78dc8cbeb63199cdddf146cc643ec5cb19",
+    "cbcd_fold1_last.pt": "99b38741521bedd5def9e9311e780458a57bbf610db5e52134817d2ea4059234",
+    "cbcd_fold2_last.pt": "14a3ff6ec5233a5f2d14888c3c8683894bc09f8443673983753fc30385342634"
+  }
+}

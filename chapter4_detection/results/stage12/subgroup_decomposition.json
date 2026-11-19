@@ -1,0 +1,22 @@
+{
+  "definition": "training local_contrast <= Q25",
+  "threshold_train_q25": 0.6485527989508032,
+  "e0": {
+    "n": 44,
+    "categories": {
+      "A_generation_insufficient": 24,
+      "C_nms_suppression": 4,
+      "E_correctly_retained": 5,
+      "B_score_misranking": 11
+    }
+  },
+  "cbcd": {
+    "n": 44,
+    "categories": {
+      "A_generation_insufficient": 24,
+      "B_score_misranking": 9,
+      "E_correctly_retained": 4,
+      "C_nms_suppression": 7
+    }
+  }
+}
