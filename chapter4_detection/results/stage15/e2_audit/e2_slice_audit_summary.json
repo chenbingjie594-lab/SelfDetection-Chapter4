@@ -1,0 +1,12 @@
+{
+  "gt_count": 174,
+  "tile_count": 690,
+  "tiles_per_image": 5.0,
+  "background_tile_ratio": 0.7144927536231884,
+  "gt_all_fully_covered": true,
+  "gt_with_multiple_full_tiles": 59,
+  "gt_intersecting_boundary": 7,
+  "gt_with_kept_partial_label": 3,
+  "gt_with_dropped_partial_intersection": 4,
+  "labels_written": 236
+}

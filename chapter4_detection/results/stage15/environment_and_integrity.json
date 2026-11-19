@@ -1,0 +1,32 @@
+{
+  "baseline_commit": "3965364c08a0a2348093e8db85e384269e0dfce5",
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "data_protocol": "chapter4_real_only_v1",
+  "real_images_only": true,
+  "b0_fold0_exact_reproduction": {
+    "predictions": 228,
+    "maximum_coordinate_or_score_difference": 0.0,
+    "map50_difference": 0.0,
+    "map50_95_difference": 0.0
+  },
+  "formal_checkpoint_sha256": {
+    "fold0": "1a971befc08ac4e629bbbffbe4255107b7bc5bd6747eb3ff1607c3d916e1afbd",
+    "fold1": "b0009a6bddfa3c832fc3edeb4d2a6aaf2431037c43fb1d25fbd1729c74c09aa8",
+    "fold2": "2f52d11bddb99e080d750fb2d46e4631ae40e8723aae04315f63cc4252b366fa"
+  },
+  "artifact_sha256": {
+    "b1_oof_predictions": "b03deb92bf98792674f40f2915ba4767bd616c8b712494f7f76ff42db73fe990",
+    "b2_oof_predictions": "44255d7c6242136113ea4d6fb8ee1356831a54bb46adf4c713bf864230e9577b",
+    "candidate_quality_per_gt": "819b36dcab3f5e693d14d3838c2c4a0ac9cd47aebd26ccf4a1f1f82ba732a2af",
+    "source_group_bootstrap": "2d05f048dbbc8c4174fa1e41a3dbfc0f34768f56433420fcbb92d6b094d5a695",
+    "efficiency_benchmark": "6cb5dbe69411fbbb1af38699b074e41cb9cb1a424fb3df4ab4b85f9d0d5fefd5",
+    "information_loss_per_gt": "8a6c09370d9be5a058e6088d6ee346d11bd80a6d0481100ce9a926817a91af38",
+    "e2_slice_gt_audit": "8953dd69e779405575923aa7748f272e378bdc4d6986e85d9bab073014ba4b72"
+  },
+  "large_local_cache_manifest": "raw_candidate_cache_manifest.json",
+  "expert_annotation_review": "PENDING_EXPERT_REVIEW",
+  "e9_gate": "NOT_MET"
+}

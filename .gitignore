@@ -22,3 +22,4 @@ chapter4_detection/results/stage11/raw/**/*.npz
 chapter4_detection/results/stage9/raw/**/*.npz
 chapter4_detection/results/stage7/dynamics_seed42/diagnostic_run/
 chapter4_detection/results/stage14/invalid_runs/
+chapter4_detection/results/stage15/raw_candidates/

@@ -1,0 +1,21 @@
+{
+  "delta_contrast_gradient_mean": {
+    "spearman_with_B1_minus_B2_qmax": -0.035665170998041264,
+    "p_value_descriptive": 0.6403470135206468
+  },
+  "delta_contrast_laplacian_abs_mean": {
+    "spearman_with_B1_minus_B2_qmax": 0.032008753192453124,
+    "p_value_descriptive": 0.6750052058122572
+  },
+  "defect_psnr": {
+    "spearman_with_B1_minus_B2_qmax": 0.2421063607819177,
+    "p_value_descriptive": 0.0012881607585080962
+  },
+  "defect_ssim": {
+    "spearman_with_B1_minus_B2_qmax": 0.24307829109920243,
+    "p_value_descriptive": 0.001229587575691603
+  },
+  "mean_delta_qmax_b1_b2": 0.0008203836525847122,
+  "tiny_mean_delta_qmax_b1_b2": 0.029437472459246203,
+  "interpretation": "Descriptive association only; OOF was used in prior method development."
+}

@@ -1,0 +1,72 @@
+{
+  "B0": {
+    "gt": 174,
+    "qmax_mean": 0.7389205336530892,
+    "coverage50": 0.9540229885057471,
+    "coverage75": 0.5287356321839081,
+    "coverage90": 0.05172413793103448,
+    "tiny_coverage75": 0.34615384615384615,
+    "flash_coverage75": 0.43209876543209874,
+    "black_coverage75": 0.6129032258064516,
+    "center_error_mean": 8.861894785577345,
+    "width_relative_error_mean": 0.11618725526594506,
+    "height_relative_error_mean": 0.13097390076824938
+  },
+  "B1": {
+    "gt": 174,
+    "qmax_mean": 0.3870852297423603,
+    "coverage50": 0.3218390804597701,
+    "coverage75": 0.040229885057471264,
+    "coverage90": 0.0,
+    "tiny_coverage75": 0.09615384615384616,
+    "flash_coverage75": 0.037037037037037035,
+    "black_coverage75": 0.043010752688172046,
+    "center_error_mean": 113.69849281082074,
+    "width_relative_error_mean": 0.38845668645634157,
+    "height_relative_error_mean": 0.37849967422478026
+  },
+  "B2": {
+    "gt": 174,
+    "qmax_mean": 0.3862648460897755,
+    "coverage50": 0.3103448275862069,
+    "coverage75": 0.04597701149425287,
+    "coverage90": 0.011494252873563218,
+    "tiny_coverage75": 0.11538461538461539,
+    "flash_coverage75": 0.024691358024691357,
+    "black_coverage75": 0.06451612903225806,
+    "center_error_mean": 111.53143443285067,
+    "width_relative_error_mean": 0.38150028610427544,
+    "height_relative_error_mean": 0.3728880507212196
+  },
+  "final_predictions": {
+    "B0": {
+      "per_image": 5.391304347826087,
+      "background_per_image": 1.7536231884057971,
+      "nonmatched_or_duplicate_per_image": 2.4130434782608696
+    },
+    "B1": {
+      "per_image": 10.115942028985508,
+      "background_per_image": 8.130434782608695,
+      "nonmatched_or_duplicate_per_image": 9.659420289855072
+    },
+    "B2": {
+      "per_image": 13.471014492753623,
+      "background_per_image": 11.369565217391305,
+      "nonmatched_or_duplicate_per_image": 13.014492753623188
+    }
+  },
+  "efficiency": {
+    "B1": {
+      "seconds": 0.04103715617373751,
+      "preprocess_seconds": 0.013801890000004145,
+      "postprocess_seconds": 0.002117713152403957,
+      "peak_gpu_memory_bytes": 768507904
+    },
+    "B2": {
+      "seconds": 0.057599443768054516,
+      "preprocess_seconds": 0.02386432068105669,
+      "postprocess_seconds": 0.003938997217251133,
+      "peak_gpu_memory_bytes": 768512000
+    }
+  }
+}

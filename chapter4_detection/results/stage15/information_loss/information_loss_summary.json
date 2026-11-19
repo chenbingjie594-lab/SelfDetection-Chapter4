@@ -1,0 +1,43 @@
+{
+  "protocol": {
+    "downsample": "OpenCV INTER_AREA 4096x1024 -> 1536x384",
+    "upsample": "OpenCV INTER_LINEAR 1536x384 -> 4096x1024",
+    "roi": "GT-centered 3x box, minimum 32x32",
+    "background": "same-size deterministic non-overlapping offset"
+  },
+  "rows": 174,
+  "summary": {
+    "all": {
+      "defect_psnr": 36.282466654719876,
+      "background_psnr": 37.80348553380047,
+      "defect_ssim": 0.8683195137635764,
+      "background_ssim": 0.8656433623238243,
+      "delta_contrast_gradient_mean": -0.19304381546708455,
+      "delta_contrast_laplacian_abs_mean": -0.11153477068283588
+    },
+    "tiny": {
+      "defect_psnr": 35.98098471760448,
+      "background_psnr": 37.42747938776153,
+      "defect_ssim": 0.8625541740241325,
+      "background_ssim": 0.8592421893178421,
+      "delta_contrast_gradient_mean": -0.18959180087839209,
+      "delta_contrast_laplacian_abs_mean": -0.15268078905942664
+    },
+    "flash": {
+      "defect_psnr": 34.90510142012434,
+      "background_psnr": 36.086772944252246,
+      "defect_ssim": 0.8366662620358867,
+      "background_ssim": 0.8309042784101796,
+      "delta_contrast_gradient_mean": -0.2775507168231951,
+      "delta_contrast_laplacian_abs_mean": -0.1171165045410493
+    },
+    "black": {
+      "defect_psnr": 37.48210734291599,
+      "background_psnr": 39.29868682147149,
+      "defect_ssim": 0.8958884749457579,
+      "background_ssim": 0.8958999837969989,
+      "delta_contrast_gradient_mean": -0.11944103041498824,
+      "delta_contrast_laplacian_abs_mean": -0.1066732605482629
+    }
+  }
+}
