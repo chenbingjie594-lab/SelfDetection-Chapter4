@@ -1,0 +1,117 @@
+{
+  "trace_rows": 6625,
+  "trace_epochs": [
+    1,
+    3,
+    10,
+    25,
+    50,
+    100,
+    150
+  ],
+  "outside_positive_count": 4125,
+  "outside_positive_ratio": 0.6226415094339622,
+  "outside_weight_ratio": 0.37746513431805645,
+  "outside_negative_distance_ratio": 0.9997575757575757,
+  "outside_clipped_ratio": 0.9997575757575757,
+  "upper_clipped_positive_ratio": 0.0,
+  "representable_iou_lt_050_ratio": 0.0969056603773585,
+  "representable_iou_lt_075_ratio": 0.3212075471698113,
+  "outside_representable_iou_lt_050_ratio": 0.15563636363636363,
+  "outside_representable_iou_lt_075_ratio": 0.5158787878787878,
+  "weighted_representable_iou_lt_050_ratio": 0.004199039981760753,
+  "weighted_representable_iou_lt_075_ratio": 0.059242752535312075,
+  "augmented_gt_count": 1552,
+  "gt_with_outside_ratio": 0.8936855670103093,
+  "gt_all_outside_ratio": 0.20038659793814434,
+  "tiny_gt_all_outside_ratio": 0.35921205098493625,
+  "paired_augmented_gt_count": 1076,
+  "paired": {
+    "pred_iou_clamped": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.5562173321690992,
+      "outside_mean": 0.4059594732881089,
+      "mean_delta_outside_minus_inside": -0.15025785888099039,
+      "mean_delta_bootstrap_95ci": [
+        -0.16501257232222033,
+        -0.13531505329878402
+      ]
+    },
+    "target_score": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.491835172331971,
+      "outside_mean": 0.1400706184162887,
+      "mean_delta_outside_minus_inside": -0.3517645539156823,
+      "mean_delta_bootstrap_95ci": [
+        -0.37111796335819935,
+        -0.3316638906213026
+      ]
+    },
+    "dfl_loss_unweighted": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.7543415942558237,
+      "outside_mean": 0.7357172978829588,
+      "mean_delta_outside_minus_inside": -0.018624296372864845,
+      "mean_delta_bootstrap_95ci": [
+        -0.048643867815299426,
+        0.01176300472623749
+      ]
+    },
+    "dfl_loss_weighted": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.2905247077876109,
+      "outside_mean": 0.06440132994525213,
+      "mean_delta_outside_minus_inside": -0.2261233778423587,
+      "mean_delta_bootstrap_95ci": [
+        -0.2369741448319247,
+        -0.214925682525858
+      ]
+    },
+    "ciou_loss_weighted": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.1513980141452511,
+      "outside_mean": 0.04587128862090529,
+      "mean_delta_outside_minus_inside": -0.10552672552434579,
+      "mean_delta_bootstrap_95ci": [
+        -0.11135740529313745,
+        -0.09962952928701094
+      ]
+    },
+    "center_error_px": {
+      "paired_gt_count": 1076,
+      "inside_mean": 2.0312865533789823,
+      "outside_mean": 3.000088034599184,
+      "mean_delta_outside_minus_inside": 0.9688014812202018,
+      "mean_delta_bootstrap_95ci": [
+        0.7811261765342211,
+        1.1657775146194849
+      ]
+    },
+    "representable_iou_max": {
+      "paired_gt_count": 1076,
+      "inside_mean": 0.9999999999999831,
+      "outside_mean": 0.7533780877826026,
+      "mean_delta_outside_minus_inside": -0.24662191221738056,
+      "mean_delta_bootstrap_95ci": [
+        -0.25563114606627474,
+        -0.23744491327725537
+      ]
+    }
+  },
+  "edge_negative_counts": {
+    "l": 1362,
+    "t": 1474,
+    "r": 1381,
+    "b": 1350
+  },
+  "edge_upper_clip_counts": {
+    "l": 0,
+    "t": 0,
+    "r": 0,
+    "b": 0
+  },
+  "limitations": [
+    "Rows identify augmented GT by epoch/assignment_call/batch_index/gt_index.",
+    "Source image ID is not recoverable for mosaic-composed batches and was not inferred."
+  ]
+}

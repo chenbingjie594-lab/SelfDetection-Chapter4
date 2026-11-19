@@ -1,0 +1,25 @@
+{
+  "baseline_commit": "3ef94669e66a024ea3a5849b09247cca40142fc2",
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "formal_run": "e0_fold0_seed42_geometry_diagnostic",
+  "formal_run_completed": true,
+  "formal_checkpoint_sha256": "b6c093dbc8e3bc2c80d2dc7fa83117dc3b0c049a7f03d1dde75cfb3275892756",
+  "initialization_sha256": "8173afed51dc8367a0c22643a02d60184a646d551536196d03bcb037cedc76f9",
+  "fold0_data_yaml_sha256": "7b122faf9ec4d68ffb54b3857aa7227c71d248c2fb20c99120dda2f5475dbb7b",
+  "positive_trace_sha256": "b80f3eb111dde5404c4c38544e65e26873469712a121226886e9c186b2aa2ad7",
+  "geometry_summary_sha256": "0c5113a8a49adf96e62a6ddb9dc15b400eb7628411c6cd0a8f6677d1bd9fc3c6",
+  "monitor_checkpoint_comparison": {
+    "tensor_count": 499,
+    "different_tensor_count": 0,
+    "maximum_absolute_difference": 0.0
+  },
+  "monitor_results_csv_comparison": {
+    "rows": 150,
+    "compared_non_time_columns": 14,
+    "maximum_absolute_difference": 0.0
+  },
+  "expert_annotation_review": "PENDING_EXPERT_REVIEW"
+}
