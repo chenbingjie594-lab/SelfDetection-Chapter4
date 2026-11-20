@@ -1,0 +1,47 @@
+{
+  "resolution": 640,
+  "scope": "fold0 train only",
+  "gt": {
+    "n": 115,
+    "d_abs": 3.6298922020456064,
+    "d_signed": 2.633519077649259,
+    "variance": 0.011255564953645934,
+    "reliability": 0.9889927159184995,
+    "residual_abs": 5.929597805893939
+  },
+  "background": {
+    "n": 368,
+    "d_abs": 0.7917788485470025,
+    "d_signed": -0.04868448498841051,
+    "variance": 0.010737738475891883,
+    "reliability": 0.9894392514682334,
+    "residual_abs": 0.7181134363231452
+  },
+  "flash": {
+    "n": 54,
+    "d_abs": 4.014751134095369,
+    "d_signed": 2.9770122823063976,
+    "variance": 0.0118149156095805,
+    "reliability": 0.9884218783290298,
+    "residual_abs": 6.477528510270296
+  },
+  "black": {
+    "n": 61,
+    "d_abs": 3.28919740973926,
+    "d_signed": 2.329443125985563,
+    "variance": 0.010760402077900582,
+    "reliability": 0.9894980475550792,
+    "residual_abs": 5.444544395462412
+  },
+  "tiny": {
+    "n": 115,
+    "d_abs": 3.6298922020456064,
+    "d_signed": 2.633519077649259,
+    "variance": 0.011255564953645934,
+    "reliability": 0.9889927159184995,
+    "residual_abs": 5.929597805893939
+  },
+  "ring_overlap_proxy_rate": 0.0,
+  "reliability_saturation_gt_below_0.1": 0.0,
+  "reliability_saturation_gt_above_0.99": 0.4608695652173913
+}

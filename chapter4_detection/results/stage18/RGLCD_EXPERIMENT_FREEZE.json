@@ -1,0 +1,9 @@
+{
+  "status": "STOPPED_BEFORE_FORMAL_CV",
+  "holdout_metrics_read": false,
+  "reason": "alpha=1 reliability is near-identity and does not separate GT from background on Fold0 training features",
+  "design": {"ring": 7, "excluded_center": 3, "eps": 0.0001, "alpha": 1.0, "phi": "Conv2d(128,128,1,bias=False)", "gamma_init": 0.0},
+  "planned_protocol": {"folds": [0,1,2], "seed": 42, "imgsz": 1536, "batch": 1, "epochs": 150, "checkpoint": "last.pt", "early_stopping": false},
+  "formal_runs_started": false,
+  "gpu_blocker": "NVIDIA-SMI could not communicate with the NVIDIA driver"
+}

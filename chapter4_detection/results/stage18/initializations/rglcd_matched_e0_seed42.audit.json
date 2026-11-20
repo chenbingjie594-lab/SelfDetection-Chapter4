@@ -1,0 +1,15 @@
+{
+  "baseline": "chapter4_detection/results/stage7/initializations/matched_e0_init_seed42.pt",
+  "baseline_sha256": "8173afed51dc8367a0c22643a02d60184a646d551536196d03bcb037cedc76f9",
+  "output": "chapter4_detection/results/stage18/initializations/rglcd_matched_e0_seed42.pt",
+  "output_sha256": "772ca0cd9728c2b53c00eb2e6b3820119a0baf9a7d0978bd70802c7b6903de60",
+  "shared_tensors": 499,
+  "shared_identical": true,
+  "gamma": 0.0,
+  "phi_nonzero": true,
+  "new_tensors": [
+    "model.23.rglcd.gamma",
+    "model.23.rglcd.phi.weight",
+    "model.23.rglcd.ring_mask"
+  ]
+}

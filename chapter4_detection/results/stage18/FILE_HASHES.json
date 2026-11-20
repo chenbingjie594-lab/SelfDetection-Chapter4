@@ -1,0 +1,22 @@
+{
+  "algorithm": "SHA256",
+  "files": {
+    "chapter4_detection/results/stage18/RGLCD_DESIGN.md": "3f5b91dd5f59eeb587a2fae42a5516248c3ead8c35a9d7c9cb3b18d3402b1a42",
+    "chapter4_detection/results/stage18/RGLCD_EFFICIENCY.md": "e2be961f684e9042a74052ec674ba1d16c02ef4c2d9ec19882cf29cdc3002423",
+    "chapter4_detection/results/stage18/RGLCD_EXPERIMENT_FREEZE.json": "46fbcef8a086c2d199effbc00338155988438471512fa4fc2648f513db386ef3",
+    "chapter4_detection/results/stage18/RGLCD_GRADIENT_AUDIT.md": "240e99a21675ec27a83aaf30c98661114c0bf2681fa72898cddce570c938ff4d",
+    "chapter4_detection/results/stage18/RGLCD_GROUP_CV_RESULTS.md": "eb87e0bd5c1b4cb09a8eecd477f4cad554fc4c383c6f55a5a8c4eb1a2d063203",
+    "chapter4_detection/results/stage18/RGLCD_IMPLEMENTATION_AUDIT.md": "4e2a0ae8804af36621a9075644ae5e6e0b3ba837e39621461a68c37b65ade96a",
+    "chapter4_detection/results/stage18/RGLCD_INFERENCE_MECHANISM_ANALYSIS.md": "2d4c572e232c1b0934e73c15369999ba7c30ded4ca5e8ded073f47530f7f9d03",
+    "chapter4_detection/results/stage18/RGLCD_LITERATURE_AND_NOVELTY.md": "0f1f4b97df6447711f05cc5cfb664345420031612e19833306e7267b887151f5",
+    "chapter4_detection/results/stage18/RGLCD_MECHANISM_DIAGNOSIS.md": "4f46f113584acdea5cf93b2bd5d02d48312ed2c89d8a2e9df3294115012c25dd",
+    "chapter4_detection/results/stage18/RUN_COMMANDS.md": "4853f405843c64bf95d88ba49d92bed9ed3ccbab757627ed68f6f4f19820fd13",
+    "chapter4_detection/results/stage18/STAGE18_FINAL_SUMMARY.md": "0b3f7a01e4cd94ad0cd4367186c74919e7d5a9a039c4900ff9b973e9fc35cdfa",
+    "chapter4_detection/results/stage18/TEST_RESULTS.md": "5ef602d5bb16345ce17e76bb51f35331d02b3666a931c3d308944bad80e38ddd",
+    "chapter4_detection/results/stage18/initializations/rglcd_matched_e0_seed42.audit.json": "7a79b89e8c8415b2b2210faeedbe56909fc4bfc966f1ce26b5c0d1311ebcd463",
+    "chapter4_detection/results/stage18/initializations/rglcd_matched_e0_seed42.pt": "772ca0cd9728c2b53c00eb2e6b3820119a0baf9a7d0978bd70802c7b6903de60",
+    "chapter4_detection/results/stage18/rglcd_gradient_audit.json": "61c9e773db19afae358b82924b5b1b73cb8e193be010a7c336b302e6ab726851",
+    "chapter4_detection/results/stage18/rglcd_mechanism_summary.json": "6ad7990871d3564081ef75169c8d600a2b13185fcb8230069afb9a2189ae3681",
+    "chapter4_detection/results/stage18/rglcd_train_feature_samples.csv": "7ba5f49546de9fff5e7499f212637a44eb539dac916f92255e607fcbdfcd89b6"
+  }
+}
