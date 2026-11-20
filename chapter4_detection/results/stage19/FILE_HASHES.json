@@ -1,0 +1,30 @@
+{
+  "algorithm": "SHA256",
+  "files": {
+    "chapter4_detection/results/stage19/ENVIRONMENT_AND_CUDA_AUDIT.md": "224ba70f95ec154bbdb0f37d6126b70d65b88f1c5f1da9aed6ed0c7015f6a40a",
+    "chapter4_detection/results/stage19/HARD_BACKGROUND_REFERENCE_ANALYSIS.md": "74b262c617f7cf809a71add2eab7a4ea9185d3aabbc1d48d24f4510b8e8170c9",
+    "chapter4_detection/results/stage19/HARD_BACKGROUND_REVIEW.csv": "916e95f731fc8265ec8b3659ce72bcd9c1e6c0200eed08c4131c5f32fbf4e688",
+    "chapter4_detection/results/stage19/REFERENCE_RELIABILITY_VALIDATION.md": "28ad99d4996653f4986709c6445fb29557e32d3299327a10c0d7cb3f7be8a56a",
+    "chapter4_detection/results/stage19/RGLCD_1536_FEATURE_STATISTICS.md": "27b639aada113f89cf139205c9b57d340ff7fee1825a0c60aeff4046f21515fa",
+    "chapter4_detection/results/stage19/RGLCD_GATE_CONTRIBUTION.md": "ecb124499fa8ed33f9fc03f50bcbdcda36305b5eec3efdd6615d01e91404b51a",
+    "chapter4_detection/results/stage19/RGLCD_RUNTIME_CORRECTION.md": "14ea7a3bcb76ee77c6c9941dde71933c0716040012810480808b5f5a9525cd24",
+    "chapter4_detection/results/stage19/RUN_COMMANDS.md": "7d91501f82a4b63f3bda85f8c7ed9db201635ec5834de89b66f9241aa860e6dc",
+    "chapter4_detection/results/stage19/STAGE19_DECISION.md": "0a84eb3ae270a1a1fce27efbdc3b0620aebab595fe8ae609aef92cbefb43adf6",
+    "chapter4_detection/results/stage19/STAGE19_FINAL_SUMMARY.md": "31f00f42b9188684b91424a5c7a2e6a25ecff4044fbf5e5b13a5485c69c67bdb",
+    "chapter4_detection/results/stage19/TEST_RESULTS.md": "88b4ea72620ec763a9860be3036c1d8a6124cfa2bf03c8942125dedd462e0be1",
+    "chapter4_detection/results/stage19/hard_background_review/HB-01_blackinst_25.jpg": "451d9de50ba330e52243d7d33ee7888b7b0e4c209f28322441f35600eb3aa206",
+    "chapter4_detection/results/stage19/hard_background_review/HB-02_img_13538_pre_part_1.jpg": "8bb9cd3007b5896cd9753dffcc79b0585efcd269592605a03b54fb9affacc5ac",
+    "chapter4_detection/results/stage19/hard_background_review/HB-03_blackinst_27.jpg": "03489db89284b6397496993132816f8ae37971d11ab44d084a30c7e90813a2e0",
+    "chapter4_detection/results/stage19/hard_background_review/HB-04_img_1023_pre_part_0.jpg": "e2728c675d3cd983a46416c4fc59aa86a9e80a7e48fd1933bd021677854308ec",
+    "chapter4_detection/results/stage19/hard_background_review/HB-05_img_13538_pre_part_1.jpg": "4340baf6571c2adc26c0003dde8676a6f9905e7d814c4664d25e76fd96a20e21",
+    "chapter4_detection/results/stage19/hard_background_review/HB-06_img_15770_pre_part_1.jpg": "5038c0b7ad7d3cb751f0bb6df46d91ec0d6f7cbafdf572756814e54a53a2c599",
+    "chapter4_detection/results/stage19/hard_background_review/HB-07_img_1022_pre_part_1.jpg": "e9f70094d77d632495387503b938bcd7f7ab2ca73d1aa561998411912dc01680",
+    "chapter4_detection/results/stage19/hard_background_review/HB-08_img_20948_pre_part_1.jpg": "17f04236e57a26ddd4bdacd524f66d3c43393c47c00c06c5fba6f4c1bc17114c",
+    "chapter4_detection/results/stage19/hard_background_review/HB-09_img_9730_pre_part_1.jpg": "a70137e7467752f3129c357281770ff612e9c0e05b80404d64ab06bb147702e9",
+    "chapter4_detection/results/stage19/hard_background_review/HB-10_img_20948_pre_part_1.jpg": "2b10ba6a304d15dcdfbc41a12018b6f598cc123ac6f72a53bd88ef4f82a5ce4b",
+    "chapter4_detection/results/stage19/hard_background_review/HB-11_img_1022_pre_part_1.jpg": "9e13c29810c36657eb1b449e886e8b087db08ee3cc161655a9fdc55c028eeea1",
+    "chapter4_detection/results/stage19/hard_background_review/HB-12_img_24459_pre_part_1.jpg": "a4b1a576b90613ac361fd2e70cd20cf528e8da59108fa9f2b22f5e34cd40f98e",
+    "chapter4_detection/results/stage19/stage19_feature_instances.csv": "83382075483d0c9ce6d8e894ec1f4780c4bd645e61ccf8977430acae33e5f4ec",
+    "chapter4_detection/results/stage19/stage19_feature_summary.json": "65ed77a492976f3f731ecfc83c2f7c85b797c190aa77dab0f1200ef45bd34503"
+  }
+}

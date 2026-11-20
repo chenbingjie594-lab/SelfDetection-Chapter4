@@ -21,3 +21,8 @@ def test_identity_and_staged_gradient():
 
 def test_low_variance_is_finite_and_amp_compatible():
  m=RGLCD(3);x=torch.ones(1,3,8,8,dtype=torch.float16);y=m(x);assert y.dtype==x.dtype and torch.isfinite(y).all()
+
+def test_diagnostics_switch_preserves_output_loss_and_gradients():
+ torch.manual_seed(9);a=RGLCD(3);b=RGLCD(3);b.load_state_dict(a.state_dict());b.diagnostics_enabled=True
+ xa=torch.randn(2,3,9,9,requires_grad=True);xb=xa.detach().clone().requires_grad_(True);a.gamma.data.fill_(.2);b.gamma.data.fill_(.2)
+ ya,yb=a(xa),b(xb);assert torch.equal(ya,yb);la=ya.square().mean();lb=yb.square().mean();assert torch.equal(la,lb);la.backward();lb.backward();assert torch.equal(xa.grad,xb.grad);assert torch.equal(a.gamma.grad,b.gamma.grad);assert torch.equal(a.phi.weight.grad,b.phi.weight.grad);assert a.last_stats=={} and b.last_stats

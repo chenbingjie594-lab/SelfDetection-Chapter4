@@ -10,13 +10,13 @@ from ultralytics.models.yolo.detect.train import DetectionTrainer
 
 class RGLCD(nn.Module):
     """Fixed 7x7 minus 3x3 ring statistics and a zero-gated learned projection."""
-    def __init__(self, channels:int, eps:float=1e-4, alpha:float=1.0):
+    def __init__(self, channels:int, eps:float=1e-4, alpha:float=1.0, diagnostics_enabled:bool=False):
         super().__init__(); self.eps=float(eps); self.alpha=float(alpha)
         mask=torch.ones(1,1,7,7); mask[:,:,2:5,2:5]=0
         self.register_buffer('ring_mask',mask)
         self.phi=nn.Conv2d(channels,channels,1,bias=False)
         nn.init.kaiming_normal_(self.phi.weight,mode='fan_out',nonlinearity='linear')
-        self.gamma=nn.Parameter(torch.zeros(()))
+        self.gamma=nn.Parameter(torch.zeros(())); self.diagnostics_enabled=bool(diagnostics_enabled)
         self.last_stats={}
     def statistics(self,x):
         xf=x.float(); c=xf.shape[1]; k=self.ring_mask.float().expand(c,1,7,7)
@@ -29,7 +29,7 @@ class RGLCD(nn.Module):
     def forward(self,x):
         mean,var,d,r,count=self.statistics(x)
         residual=r*self.phi(d.to(self.phi.weight.dtype)).float()
-        if not torch.jit.is_scripting():
+        if getattr(self,'diagnostics_enabled',False) and not torch.jit.is_scripting():
             self.last_stats={'variance_mean':float(var.detach().mean()),'reliability_mean':float(r.detach().mean()),'contrast_abs_mean':float(d.detach().abs().mean()),'residual_abs_mean':float(residual.detach().abs().mean()),'valid_min':float(count.detach().min()),'valid_max':float(count.detach().max())}
         return (x.float()+self.gamma.float()*residual).to(x.dtype)
 
