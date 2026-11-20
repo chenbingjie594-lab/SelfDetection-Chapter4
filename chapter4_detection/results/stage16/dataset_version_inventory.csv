@@ -1,0 +1,72 @@
+dataset_version,image_count,label_file_count,xml_count,splits,class_instances,provenance_note
+PlasticBomo_detect2,672,672,0,"{""test"": 96, ""train"": 474, ""val"": 102}","{""0"": 108, ""1"": 51}",Directory inventory only; version name does not establish provenance or independence.
+PlasticBomo_detect2/metadata,0,0,672,{},{},Directory inventory only; version name does not establish provenance or independence.
+PlasticBomo_detect2/previews,3,0,0,"{""unspecified"": 3}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_fixed_v3_s42/fold_0,138,138,0,"{""train"": 91, ""val"": 47}","{""0"": 88, ""1"": 80}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_fixed_v3_s42/fold_1,138,138,0,"{""train"": 92, ""val"": 46}","{""0"": 88, ""1"": 80}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_fixed_v3_s42/fold_2,138,138,0,"{""train"": 93, ""val"": 45}","{""0"": 88, ""1"": 80}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_rebuild_s42/fold_0,113,113,0,"{""train"": 75, ""val"": 38}","{""0"": 88, ""1"": 30}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_rebuild_s42/fold_1,113,113,0,"{""train"": 75, ""val"": 38}","{""0"": 88, ""1"": 30}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_oof_rebuild_s42/fold_2,113,113,0,"{""train"": 76, ""val"": 37}","{""0"": 88, ""1"": 30}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_v2_final_s42/real_dwbg_v2,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_v2_final_s42/real_hybrid_flash_dwbg_black_random,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_v2_final_s42/real_only,184,184,0,"{""train"": 138, ""val"": 46}","{""0"": 108, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/DWBG_v2_final_s42/real_random_matched,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_rebuild_s42/real_dwbg,229,229,0,"{""train"": 193, ""val"": 36}","{""0"": 148, ""1"": 90}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_rebuild_s42/real_only,149,149,0,"{""train"": 113, ""val"": 36}","{""0"": 108, ""1"": 50}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_rebuild_s42/real_random,229,229,0,"{""train"": 193, ""val"": 36}","{""0"": 148, ""1"": 90}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_s42/real_dwbg,229,229,0,"{""train"": 193, ""val"": 36}","{""0"": 148, ""1"": 90}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_s42/real_only,149,149,0,"{""train"": 113, ""val"": 36}","{""0"": 108, ""1"": 50}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_40_40_s42/real_random,229,229,0,"{""train"": 193, ""val"": 36}","{""0"": 148, ""1"": 90}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_v2_40_40_fixed_s42/real_dwbg_v2,229,229,0,"{""train"": 193, ""val"": 36}","{""0"": 148, ""1"": 90}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_DWBG_v2_40_40_fixed_s42/real_only,149,149,0,"{""train"": 113, ""val"": 36}","{""0"": 108, ""1"": 50}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_detection_hgrr_v2_unique40_val20/real_baseline,189,189,0,"{""train"": 153, ""val"": 36}","{""0"": 128, ""1"": 70}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_detection_hgrr_v2_unique40_val20/real_carf,189,189,0,"{""train"": 153, ""val"": 36}","{""0"": 128, ""1"": 70}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_detection_hgrr_v2_unique40_val20/real_only,149,149,0,"{""train"": 113, ""val"": 36}","{""0"": 108, ""1"": 50}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_real_88flash_80black_s42/real_baseline,240,240,0,"{""train"": 194, ""val"": 46}","{""0"": 146, ""1"": 142}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_real_88flash_80black_s42/real_carf,240,240,0,"{""train"": 194, ""val"": 46}","{""0"": 146, ""1"": 142}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/GLRR_real_88flash_80black_s42/real_only,184,184,0,"{""train"": 138, ""val"": 46}","{""0"": 108, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/HGRR_v2_all_cut_empty_unique40_s42/Baseline,40,40,0,"{""unspecified"": 40}","{""1"": 20, ""2"": 20}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/HGRR_v2_all_cut_empty_unique40_s42/CARF,40,40,0,"{""unspecified"": 40}","{""1"": 20, ""2"": 20}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/PlasticBomo_yolo,166,166,0,"{""train"": 133, ""val"": 33}","{""1"": 108, ""2"": 51, ""4"": 19, ""7"": 1}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Plastic_Bomo_mask_robustness_s42,600,0,0,"{""unspecified"": 600}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Plastic_Bomo_mvtec_png,840,0,0,"{""unspecified"": 840}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Plastic_Bomo_mvtec_ready,840,0,0,"{""unspecified"": 840}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Plastic_Bomo_real_2cls_val20_s42,149,149,0,"{""train"": 113, ""val"": 36}","{""0"": 108, ""1"": 50}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Plastic_Bomo_split70_seed42,1158,0,0,"{""unspecified"": 1158}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/high_context_compatibility,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/high_fidelity,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/low_context_diagnostic,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/low_fidelity_diagnostic,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/random,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/real_repeat,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14A_generator_bottleneck_s42/valid_novel,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14B_fidelity_confirmation/high,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14B_fidelity_confirmation/low,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14B_fidelity_confirmation/random,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage14B_fidelity_confirmation/real_repeat,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage15A_class_conditional_morphology/M01,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage15A_class_conditional_morphology/M10,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage15B_morphology_dose/M50,218,218,0,"{""train"": 218}","{""0"": 128, ""1"": 120}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_detector_20261007_065502/RR,218,218,0,"{""train"": 218}","{""0"": 130, ""1"": 153}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_detector_20261007_065502/VA,218,218,0,"{""train"": 218}","{""0"": 129, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_detector_20261007_065502/VB,218,218,0,"{""train"": 218}","{""0"": 129, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_detector_20261007_065502/VC,218,218,0,"{""train"": 218}","{""0"": 129, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_normals_isolated_v1_20261006_064503,174,0,0,"{""unspecified"": 174}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_trainonly_20261006_022714,168,0,0,"{""unspecified"": 168}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_trainonly_20261006_022714/black,80,0,0,"{""unspecified"": 80}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/Stage17A_trainonly_20261006_022714/flash,88,0,0,"{""unspecified"": 88}",{},Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_component_ablation/marginal_guard,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_downstream/bootstrap_guard,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_downstream/dwbg,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_downstream/random,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_downstream/real_only,184,184,0,"{""train"": 138, ""val"": 46}","{""0"": 108, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_exact_joint_ablation/exact_marginal,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_frcnn_pilot/bootstrap_guard,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_frcnn_pilot/diversity_quality,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_frcnn_pilot/random,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_frcnn_pilot/real_only,184,184,0,"{""train"": 138, ""val"": 46}","{""0"": 108, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/bootstrap_guard_isolation_downstream/diversity_quality,264,264,0,"{""train"": 218, ""val"": 46}","{""0"": 148, ""1"": 164}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/chapter4_real_only_v1,184,184,0,"{""train"": 138, ""val"": 46}","{""0"": 108, ""1"": 124}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/chapter4_real_only_v1_slices_1024_o128,690,690,0,"{""train"": 690}","{""0"": 103, ""1"": 133}",Directory inventory only; version name does not establish provenance or independence.
+Plastic_Bomo/empty_images_v2_p0,522,0,0,"{""unspecified"": 522}",{},Directory inventory only; version name does not establish provenance or independence.

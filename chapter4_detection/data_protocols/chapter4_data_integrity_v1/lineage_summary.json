@@ -1,0 +1,23 @@
+{
+  "scanned_roots": [
+    "/mnt/sda/cbj/dataset/Plastic_Bomo",
+    "/mnt/sda/cbj/dataset/PlasticBomo_detect2"
+  ],
+  "image_files_scanned": 17594,
+  "dataset_versions": 71,
+  "current_records": 184,
+  "current_split_counts": {
+    "val": 46,
+    "train": 138
+  },
+  "current_source_group_intersection": [],
+  "current_canonical_id_intersection": [],
+  "xml_trace_unknown": 35,
+  "historical_reconstruction_recovered": 25,
+  "still_unknown": 10,
+  "exact_duplicate_relation_rows": 9059,
+  "limitations": [
+    "pHash alone is not used to assert lineage.",
+    "Crop/near-duplicate relations without documentary or local-match confirmation remain UNKNOWN."
+  ]
+}

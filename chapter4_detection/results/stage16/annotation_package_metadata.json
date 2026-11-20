@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "chapter4_detection/results/stage10/MANUAL_REVIEW_TABLE.csv": "390028004a5452a9151ddb22ef8cb6f9cd7d2888e11aac90661af263182f3fa7",
+    "chapter4_detection/results/stage10/xml_trace.csv": "1935d28f2f88eddb69dee581bf3598115baadffc3d715d3682eb5a60d9379f67",
+    "/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/split_manifest.json": "cbbd617ba26d86f8a1afe7349045d43ddd157f1477384dd70b17a92f24f8b728"
+  },
+  "review_items": 25,
+  "plates": 25,
+  "expert_conclusions_completed": 0,
+  "status": "PENDING_EXPERT_REVIEW"
+}

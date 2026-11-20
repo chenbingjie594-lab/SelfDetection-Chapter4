@@ -1,0 +1,21 @@
+{
+  "verdict": "NO_VERIFIED_INDEPENDENT_TEST_SET",
+  "candidate_images": 777,
+  "status_counts": {
+    "LABELS_UNVERIFIED": 681,
+    "PROVENANCE_UNKNOWN": 75,
+    "OVERLAP_WITH_TRAIN": 16,
+    "OVERLAP_WITH_VAL": 5
+  },
+  "eligible_images": 0,
+  "admission_requirements": [
+    "new real production/acquisition batch",
+    "never used in model or generator development",
+    "original unmodified images and complete human detection labels",
+    "acquisition time and batch provenance",
+    "traceable canonical image IDs and source groups",
+    "hash/source-group non-overlap evidence against all development data",
+    "one-time evaluation only after method and hyperparameters are frozen"
+  ],
+  "note": "A folder named test is not accepted as evidence of independence."
+}
