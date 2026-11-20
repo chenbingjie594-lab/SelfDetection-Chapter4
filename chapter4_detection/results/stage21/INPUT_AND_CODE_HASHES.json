@@ -1,0 +1,10 @@
+{
+  "chapter4_detection/results/stage10/e0_oof_seed42_predictions.json": "541625763bc5c63bae16bdfeb6431dcb11f037d723e0606874a3b2713d3d0a00",
+  "chapter4_detection/results/stage10/gt_statistics.csv": "25695a17ac65835b143f37bdf13c224be44658dd5f769222781f3a126fc9524d",
+  "chapter4_detection/results/stage12/candidate_quality_features.csv": "856968797697a181fd7c8e91d2143036386e1a2cb0f308e0bcd58b40cfddaddc",
+  "chapter4_detection/results/stage10/cv_protocol/fold0/train.txt": "77778bd1b3cd95e7f37228578c34b561d27b37e08e5265303f2f9ea83342ebd2",
+  "chapter4_detection/scripts/stage21_annotation_sensitivity.py": "357a4386ba0598c870b87e7c5dff2b7cd9b2f314c00caccae6db8166abf49187",
+  "chapter4_detection/scripts/stage21_scale_learnability.py": "5f3399a1567777b88fdd6d4d2fbcaa237d3150c99f6cb8e6c829149a08419729",
+  "chapter4_detection/scripts/stage21_finalize.py": "8097276bf67bf5e9a56870e42087c0ae300e17ec493cc739f5077f94f2c613ea",
+  "chapter4_detection/tests/test_stage21.py": "de736298c873ced6fb29812dab8f9725885d8ca7b52649d3c59e3376eef1c222"
+}

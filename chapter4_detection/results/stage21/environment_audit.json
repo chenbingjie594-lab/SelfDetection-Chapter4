@@ -1,0 +1,8 @@
+{
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "cuda_tensor_test": "FAIL: RuntimeError('No CUDA GPUs are available')"
+}

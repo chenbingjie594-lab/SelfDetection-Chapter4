@@ -1,0 +1,17 @@
+{
+  "chapter4_detection/results/stage21/scale_learnability_summary.json": "e14d6b5d7bcb6a09bc035d6067b2dae97c67084809f64de7e3f5b76f19728a37",
+  "chapter4_detection/results/stage21/signed_scale_residual_predictions.png": "16b20c42741d3a444b5745c03e0775d22b0e8a01eee73fc57594938f6beadba7",
+  "chapter4_detection/results/stage21/ANNOTATION_UNCERTAINTY_VS_REGRESSION_ERROR.md": "362a659cdbc7b06de7d61eca049c741cd8db1ec27b20ef71c1c6de5931fcc5a1",
+  "chapter4_detection/results/stage21/signed_scale_residual_predictions.csv": "b29ec0186655e2bc1d46f9c7103025aeff0eda58931bf28c1f46ef723a5b8370",
+  "chapter4_detection/results/stage21/STAGE21_MECHANISM_DECISION.md": "e3d41fc3e7c0eaa085ae321d6f3b099dd65bff82ae5ff7a74aa32f09071c05f8",
+  "chapter4_detection/results/stage21/scale_group_bootstrap.csv": "ab8862b3de3ed965ee5511896ab1ff060ca1b3fde398a0286e48328e99a2910d",
+  "chapter4_detection/results/stage21/ANNOTATION_BOUNDARY_SENSITIVITY.md": "ded061214d49afc1911168cfc2d027ce89608af76f9643b880a220e251afb266",
+  "chapter4_detection/results/stage21/annotation_sensitivity_summary.json": "543dfa206049098e3f4ab9a397985d489fc40622942822baa96eca5f66388341",
+  "chapter4_detection/results/stage21/RUN_COMMANDS.md": "304cbfca526abe00ca4dc49e84df94ee8ba55ebf44afad2097ee736e3e19a9d1",
+  "chapter4_detection/results/stage21/scale_group_cv_results.csv": "9e1512528b91dd3efd9776e2ef6869f51d16654707d9cc54db3c96e68c957a22",
+  "chapter4_detection/results/stage21/SIGNED_SCALE_RESIDUAL_LEARNABILITY.md": "a7e651cc412f962a4a0fd8ebe312ccde7d41e7ff8d7ca0e0c4716b84e7081085",
+  "chapter4_detection/results/stage21/annotation_boundary_sensitivity.png": "1942456fa9147ec13341cb00b2450aaf0690b16c5e4f2d9c7824a3e519362809",
+  "chapter4_detection/results/stage21/annotation_perturbation_results.csv": "f0fb93cd746a245f2530ae86f847cdcb5ed67c16cce6cc65141d1ef4caec0b86",
+  "chapter4_detection/results/stage21/STAGE21_FINAL_SUMMARY.md": "cad0a3c191876dd7f57df1ecedb2e428b36d65c9db6dd6d5b3cc91a967e05bba",
+  "chapter4_detection/results/stage21/environment_audit.json": "d0474980b61a924d2e6725b8e0742ef5bfd0ede4e3637db2ad2702e9456db2c7"
+}
