@@ -1,0 +1,148 @@
+{
+  "scope": "Fold0 train only",
+  "weights": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage10/runs/e0_fold0_seed42/weights/last.pt",
+  "weights_sha256": "1a971befc08ac4e629bbbffbe4255107b7bc5bd6747eb3ff1607c3d916e1afbd",
+  "imgsz": 1536,
+  "images": 92,
+  "instances": 115,
+  "tiny_instances": 37,
+  "oracle_iou_median": 0.8305072340885759,
+  "p3_box_size_median": [
+    1.220184326171875,
+    1.153717041015625
+  ],
+  "edges": {
+    "left": {
+      "error_abs_median_p3": 0.044918060302734375,
+      "defect_contrast_median": 15.143611907958984,
+      "background_contrast_median": 1.263939619064331,
+      "defect_vs_background_median_ratio": 11.981277965760352,
+      "abs_error_contrast_correlation": 0.11084419141531783,
+      "center_edge_cosine_median": 0.9189161062240601
+    },
+    "top": {
+      "error_abs_median_p3": 0.0387115478515625,
+      "defect_contrast_median": 16.16575813293457,
+      "background_contrast_median": 1.9344130754470825,
+      "defect_vs_background_median_ratio": 8.356931793996468,
+      "abs_error_contrast_correlation": -0.0015412145264449002,
+      "center_edge_cosine_median": 0.9039022326469421
+    },
+    "right": {
+      "error_abs_median_p3": 0.04354095458984375,
+      "defect_contrast_median": 16.15861701965332,
+      "background_contrast_median": 1.2347835302352905,
+      "defect_vs_background_median_ratio": 13.086194157903268,
+      "abs_error_contrast_correlation": 0.045780745659038266,
+      "center_edge_cosine_median": 0.8665139079093933
+    },
+    "bottom": {
+      "error_abs_median_p3": 0.0529632568359375,
+      "defect_contrast_median": 15.531076431274414,
+      "background_contrast_median": 1.9915190935134888,
+      "defect_vs_background_median_ratio": 7.798607847573429,
+      "abs_error_contrast_correlation": -0.13495256854752843,
+      "center_edge_cosine_median": 0.9048495888710022
+    }
+  },
+  "opposite_edge_cosine_median": {
+    "left_right": 0.5959653258323669,
+    "top_bottom": 0.5894370079040527
+  },
+  "subgroups": {
+    "Flash": {
+      "n": 54,
+      "oracle_iou_median": 0.8210701978564396,
+      "edge_contrast_median": {
+        "left": 18.452970504760742,
+        "top": 18.393503189086914,
+        "right": 16.947534561157227,
+        "bottom": 16.436105728149414
+      },
+      "center_edge_cosine_median": {
+        "left": 0.9015182852745056,
+        "top": 0.8738985061645508,
+        "right": 0.8381299376487732,
+        "bottom": 0.8807085156440735
+      }
+    },
+    "Black": {
+      "n": 61,
+      "oracle_iou_median": 0.8396056316194134,
+      "edge_contrast_median": {
+        "left": 12.612618446350098,
+        "top": 14.8050537109375,
+        "right": 14.49940013885498,
+        "bottom": 14.770649909973145
+      },
+      "center_edge_cosine_median": {
+        "left": 0.9260922074317932,
+        "top": 0.912819504737854,
+        "right": 0.8725054264068604,
+        "bottom": 0.9255757331848145
+      }
+    },
+    "tiny": {
+      "n": 37,
+      "oracle_iou_median": 0.762532036264426,
+      "edge_contrast_median": {
+        "left": 13.93358039855957,
+        "top": 14.8050537109375,
+        "right": 13.880645751953125,
+        "bottom": 15.531076431274414
+      },
+      "center_edge_cosine_median": {
+        "left": 0.9604008793830872,
+        "top": 0.9116871953010559,
+        "right": 0.9312661290168762,
+        "bottom": 0.97069251537323
+      }
+    }
+  },
+  "group_cv_ridge": {
+    "center_only": {
+      "available": true,
+      "n": 115,
+      "groups": 92,
+      "mae": {
+        "left": 0.06308854427998481,
+        "top": 0.06308044453111032,
+        "right": 0.07343613192763017,
+        "bottom": 0.07256883279541912
+      },
+      "median_baseline_mae": {
+        "left": 0.06081752155138099,
+        "top": 0.056441730001698366,
+        "right": 0.0692745416060738,
+        "bottom": 0.0641876220703125
+      },
+      "mean_mae": 0.0680434883835361,
+      "mean_baseline_mae": 0.06268035380736642
+    },
+    "center_plus_boundary": {
+      "available": true,
+      "n": 115,
+      "groups": 92,
+      "mae": {
+        "left": 0.06615852293274972,
+        "top": 0.06985234489421481,
+        "right": 0.08212068064502724,
+        "bottom": 0.0779051435260993
+      },
+      "median_baseline_mae": {
+        "left": 0.06081752155138099,
+        "top": 0.056441730001698366,
+        "right": 0.0692745416060738,
+        "bottom": 0.0641876220703125
+      },
+      "mean_mae": 0.07400917299952277,
+      "mean_baseline_mae": 0.06268035380736642
+    }
+  },
+  "predeclared_gate": {
+    "rule": "implement only if boundary probe reduces group-CV MAE by >=10% and median defect/background contrast ratio >1.10",
+    "probe_mae_improvement": -0.08767458514707971,
+    "median_contrast_ratio": 10.169104879878411,
+    "pass": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "date_utc": "2026-11-20",
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "cuda_tensor_test": "FAIL: RuntimeError('No CUDA GPUs are available')",
+  "nvidia_smi": "FAIL: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver",
+  "formal_training": "NOT_STARTED: mechanism gate failed; CUDA additionally unavailable"
+}
