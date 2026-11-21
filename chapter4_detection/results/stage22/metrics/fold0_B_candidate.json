@@ -1,0 +1,19 @@
+{
+  "gt": 59,
+  "mean_iou_before": 0.7159790914506904,
+  "mean_iou_after": 0.7096729894335208,
+  "coverage75_before": 0.4576271186440678,
+  "coverage75_after": 0.423728813559322,
+  "tiny_coverage75_before": 0.4666666666666667,
+  "tiny_coverage75_after": 0.4666666666666667,
+  "gain75": 4,
+  "lose75": 6,
+  "background_candidates_before_after": [
+    59,
+    59
+  ],
+  "duplicate_gt_before_after": [
+    46,
+    45
+  ]
+}

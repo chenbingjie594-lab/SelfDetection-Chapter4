@@ -1,0 +1,26 @@
+{
+  "A": {
+    "parameters": 74340,
+    "checkpoint_bytes": 305402,
+    "mean_train_seconds_cpu": 24.830185095469158,
+    "mean_inference_seconds_per_image_cpu": 0.11705587912296904
+  },
+  "B": {
+    "parameters": 74340,
+    "checkpoint_bytes": 305402,
+    "mean_train_seconds_cpu": 130.64281717936197,
+    "mean_inference_seconds_per_image_cpu": 0.09230731190114781
+  },
+  "C": {
+    "parameters": 90724,
+    "checkpoint_bytes": 370938,
+    "mean_train_seconds_cpu": 140.40730667114258,
+    "mean_inference_seconds_per_image_cpu": 0.07018414614857107
+  },
+  "C-noDiff": {
+    "parameters": 90724,
+    "checkpoint_bytes": 370938,
+    "mean_train_seconds_cpu": 139.1537336508433,
+    "mean_inference_seconds_per_image_cpu": 0.07808115862417912
+  }
+}

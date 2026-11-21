@@ -1,0 +1,86 @@
+{
+  "A": {
+    "n": 174,
+    "mean_iou_before": 0.7183612301205978,
+    "mean_iou_after": 0.7119347529949004,
+    "coverage75_before": 0.45977011494252873,
+    "coverage75_after": 0.42528735632183906,
+    "tiny_coverage75_before": 0.3269230769230769,
+    "tiny_coverage75_after": 0.34615384615384615,
+    "gain75": 15,
+    "lose75": 21,
+    "Flash_tiny_delta": {
+      "n": 12,
+      "iou_delta": -0.031150174602787,
+      "coverage75_delta": 0.0
+    },
+    "Black_tiny_delta": {
+      "n": 40,
+      "iou_delta": 0.009340747174535752,
+      "coverage75_delta": 0.025000000000000022
+    }
+  },
+  "B": {
+    "n": 174,
+    "mean_iou_before": 0.7183612301205978,
+    "mean_iou_after": 0.7160226228585034,
+    "coverage75_before": 0.45977011494252873,
+    "coverage75_after": 0.4367816091954023,
+    "tiny_coverage75_before": 0.3269230769230769,
+    "tiny_coverage75_after": 0.3269230769230769,
+    "gain75": 13,
+    "lose75": 17,
+    "Flash_tiny_delta": {
+      "n": 12,
+      "iou_delta": -0.03162036458297906,
+      "coverage75_delta": -0.08333333333333333
+    },
+    "Black_tiny_delta": {
+      "n": 40,
+      "iou_delta": 0.012129173272194729,
+      "coverage75_delta": 0.025000000000000022
+    }
+  },
+  "C": {
+    "n": 174,
+    "mean_iou_before": 0.7183612301205978,
+    "mean_iou_after": 0.7182393387571068,
+    "coverage75_before": 0.45977011494252873,
+    "coverage75_after": 0.43103448275862066,
+    "tiny_coverage75_before": 0.3269230769230769,
+    "tiny_coverage75_after": 0.3269230769230769,
+    "gain75": 14,
+    "lose75": 19,
+    "Flash_tiny_delta": {
+      "n": 12,
+      "iou_delta": -0.02848679901148206,
+      "coverage75_delta": 0.0
+    },
+    "Black_tiny_delta": {
+      "n": 40,
+      "iou_delta": 0.013251506789208861,
+      "coverage75_delta": 0.0
+    }
+  },
+  "C-noDiff": {
+    "n": 174,
+    "mean_iou_before": 0.7183612301205978,
+    "mean_iou_after": 0.7136332092341775,
+    "coverage75_before": 0.45977011494252873,
+    "coverage75_after": 0.42528735632183906,
+    "tiny_coverage75_before": 0.3269230769230769,
+    "tiny_coverage75_after": 0.34615384615384615,
+    "gain75": 14,
+    "lose75": 20,
+    "Flash_tiny_delta": {
+      "n": 12,
+      "iou_delta": -0.031912410242002844,
+      "coverage75_delta": 0.0
+    },
+    "Black_tiny_delta": {
+      "n": 40,
+      "iou_delta": 0.010382019983674213,
+      "coverage75_delta": 0.025000000000000022
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# CIR literature positioning
+
+CIR is a prediction-conditioned local box refiner: it preserves the frozen YOLO11s candidate class, score and count, samples the same physical ROI from original pixels and a faithfully downsampled/reconstructed counterpart, and tests whether their explicit feature difference improves four-parameter box refinement.
+
+- [ReDHF](https://arxiv.org/abs/2611.07994) revives discarded high-resolution backbone features inside DETR-like detectors through cross-scale deformable fusion, auxiliary shallow supervision and full-scale query interaction. CIR instead uses original-image pixels after a frozen CNN detector and never modifies its backbone, feature pyramid, queries or detection loss.
+- [MRU-YOLO](https://doi.org/10.3390/rs18162680) ranks candidate regions by expected marginal detection utility, reruns a detector on selected crops and fuses new local detections. CIR does not select among a fixed regional budget or create/fuse detections; every existing post-NMS candidate receives a small learned geometry correction.
+- [AFWD-Net](https://doi.org/10.3390/s26196157) jointly learns density-driven differentiable foveation, wavelet detail recovery and sparse detection. CIR freezes ROI centers to predictions, has no density selector/wavelet branch and isolates native-versus-reconstructed resolution through A/B/C/C-noDiff controls.
+- [GOIS](https://doi.org/10.1016/j.neucom.2025.130327) is a two-stage adaptive inference-slicing framework that reallocates detector inference to ROIs. CIR is not a slicing detector and cannot recover missing candidates; it refines only boxes already proposed by E0.
+
+ROI cropping, two-stage refinement, shared encoders and feature differencing are not individually novel. The only Stage22-specific research claim under test is whether an explicitly controlled native-minus-reconstructed resolution signal adds localization value beyond ordinary low- or high-resolution ROI refinement. Novelty is not assumed in advance and depends on the frozen ablation results.

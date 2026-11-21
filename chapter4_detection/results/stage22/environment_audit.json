@@ -1,0 +1,9 @@
+{
+  "date_utc": "2026-11-21",
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "execution_device": "CPU"
+}

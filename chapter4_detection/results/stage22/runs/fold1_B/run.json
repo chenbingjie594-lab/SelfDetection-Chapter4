@@ -1,0 +1,12 @@
+{
+  "variant": "B",
+  "device": "cpu",
+  "samples": 251,
+  "parameters": 74340,
+  "initial_residual_max": 0.0,
+  "final_loss": 0.19335082980741067,
+  "elapsed_seconds": 24.3644962310791,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage22/runs/fold1_B/last.pt",
+  "checkpoint_sha256": "5dcbbd5bf7a13e59d385e5d61fca02705d6fc53be6b452ab103c696c6168b76c",
+  "checkpoint_bytes": 305402
+}

@@ -1,0 +1,3 @@
+# CIR training protocol
+
+Each outer fold uses its own Stage10 E0 `last.pt`. Training candidates are inferred only from that fold training list; holdout candidates come from its frozen OOF prediction export. Candidate rule is conf=.001, class-aware NMS=.7, max_det=300; class-consistent greedy positive matching uses IoU≥.30, candidates overlapping any GT by >.10 but unmatched are ignored, and trustworthy negatives receive a 0.05 zero-residual penalty. All groups use seed42, 40 epochs, batch32, AdamW lr=.001, weight decay=.0001, SmoothL1 + IoU loss, no holdout validation/early stopping, and `last.pt`.

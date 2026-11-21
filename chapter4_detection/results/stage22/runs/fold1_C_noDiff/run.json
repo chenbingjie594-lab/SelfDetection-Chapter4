@@ -1,0 +1,12 @@
+{
+  "variant": "C-noDiff",
+  "device": "cpu",
+  "samples": 251,
+  "parameters": 90724,
+  "initial_residual_max": 0.0,
+  "final_loss": 0.191896340880261,
+  "elapsed_seconds": 33.072850465774536,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage22/runs/fold1_C_noDiff/last.pt",
+  "checkpoint_sha256": "8d900332a730ef8ece24b4043f5ed8e75b7353195964c6251c355d6a6c36ea86",
+  "checkpoint_bytes": 370938
+}

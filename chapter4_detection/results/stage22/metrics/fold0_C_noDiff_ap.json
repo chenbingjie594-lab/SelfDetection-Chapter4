@@ -1,0 +1,328 @@
+{
+  "precision": 0.8074100641226589,
+  "recall": 0.8332273853724045,
+  "map50": 0.815063640145103,
+  "map50_95": 0.37204910257804485,
+  "map75": 0.2771865167188727,
+  "per_class_map50_95": {
+    "0": 0.2571648599040821,
+    "1": 0.4869333452520075
+  },
+  "per_class": {
+    "0": {
+      "name": "Flash point",
+      "precision": 0.7109182942868767,
+      "recall": 0.728954770744809,
+      "ap50": 0.6773356136235393,
+      "ap50_95": 0.2571648599040821
+    },
+    "1": {
+      "name": "Big black spots",
+      "precision": 0.9039018339584413,
+      "recall": 0.9375,
+      "ap50": 0.9527916666666666,
+      "ap50_95": 0.4869333452520075
+    }
+  },
+  "mean_seconds_per_original": null,
+  "parameters": null,
+  "gflops_per_tile_at_1024": null,
+  "peak_gpu_memory_bytes": null,
+  "size_diagnostic_rows": [
+    {
+      "image": "blackinst_14.jpg",
+      "class_id": 1,
+      "area_px": 1888.744140625
+    },
+    {
+      "image": "blackinst_14.jpg",
+      "class_id": 1,
+      "area_px": 1331.175048828125
+    },
+    {
+      "image": "blackinst_14.jpg",
+      "class_id": 1,
+      "area_px": 1379.6258544921875
+    },
+    {
+      "image": "blackinst_16.jpg",
+      "class_id": 1,
+      "area_px": 1300.7628173828125
+    },
+    {
+      "image": "blackinst_16.jpg",
+      "class_id": 1,
+      "area_px": 928.2166137695312
+    },
+    {
+      "image": "blackinst_16.jpg",
+      "class_id": 1,
+      "area_px": 1403.6978759765625
+    },
+    {
+      "image": "blackinst_19.jpg",
+      "class_id": 1,
+      "area_px": 545.9257202148438
+    },
+    {
+      "image": "blackinst_19.jpg",
+      "class_id": 1,
+      "area_px": 413.9830017089844
+    },
+    {
+      "image": "blackinst_24.jpg",
+      "class_id": 1,
+      "area_px": 534.282958984375
+    },
+    {
+      "image": "blackinst_24.jpg",
+      "class_id": 1,
+      "area_px": 505.5848693847656
+    },
+    {
+      "image": "blackinst_24.jpg",
+      "class_id": 1,
+      "area_px": 873.6526489257812
+    },
+    {
+      "image": "blackinst_30.jpg",
+      "class_id": 1,
+      "area_px": 561.5841064453125
+    },
+    {
+      "image": "blackinst_30.jpg",
+      "class_id": 1,
+      "area_px": 529.8814697265625
+    },
+    {
+      "image": "blackinst_32.jpg",
+      "class_id": 1,
+      "area_px": 418.858642578125
+    },
+    {
+      "image": "blackinst_32.jpg",
+      "class_id": 1,
+      "area_px": 567.7572021484375
+    },
+    {
+      "image": "blackinst_36.jpg",
+      "class_id": 1,
+      "area_px": 420.9865417480469
+    },
+    {
+      "image": "blackinst_36.jpg",
+      "class_id": 1,
+      "area_px": 712.3220825195312
+    },
+    {
+      "image": "img_10056_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 1367.975830078125
+    },
+    {
+      "image": "img_1016_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 207.98220825195312
+    },
+    {
+      "image": "img_1020_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 203.9837646484375
+    },
+    {
+      "image": "img_1020_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 306.0408935546875
+    },
+    {
+      "image": "img_1099_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 754.005126953125
+    },
+    {
+      "image": "img_15101_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 1553.9776611328125
+    },
+    {
+      "image": "img_1512_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 228.01986694335938
+    },
+    {
+      "image": "img_15170_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 971.98681640625
+    },
+    {
+      "image": "img_15545_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 599.955810546875
+    },
+    {
+      "image": "img_15890_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 1574.970947265625
+    },
+    {
+      "image": "img_15923_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 575.0464477539062
+    },
+    {
+      "image": "img_16871_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 675.0547485351562
+    },
+    {
+      "image": "img_19133_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 2091.062255859375
+    },
+    {
+      "image": "img_19133_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 479.96240234375
+    },
+    {
+      "image": "img_19140_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 1188.98828125
+    },
+    {
+      "image": "img_2028_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 575.0520629882812
+    },
+    {
+      "image": "img_2034_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 620.9694213867188
+    },
+    {
+      "image": "img_2037_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 784.013671875
+    },
+    {
+      "image": "img_2075_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 991.9248046875
+    },
+    {
+      "image": "img_2075_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 483.98614501953125
+    },
+    {
+      "image": "img_2075_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 482.98370361328125
+    },
+    {
+      "image": "img_2118_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 390.96734619140625
+    },
+    {
+      "image": "img_2195_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 380.02001953125
+    },
+    {
+      "image": "img_22731_pre_part_0.jpg",
+      "class_id": 1,
+      "area_px": 676.047607421875
+    },
+    {
+      "image": "img_2273_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 598.0360717773438
+    },
+    {
+      "image": "img_23459_pre_part_0.jpg",
+      "class_id": 1,
+      "area_px": 650.0350341796875
+    },
+    {
+      "image": "img_24610_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 1367.9775390625
+    },
+    {
+      "image": "img_2500_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 1089.0625
+    },
+    {
+      "image": "img_2900_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 784.013671875
+    },
+    {
+      "image": "img_3523_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 724.9921264648438
+    },
+    {
+      "image": "img_3539_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 380.019775390625
+    },
+    {
+      "image": "img_4321_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 323.03094482421875
+    },
+    {
+      "image": "img_4657_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 749.9737548828125
+    },
+    {
+      "image": "img_5181_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 1156.029052734375
+    },
+    {
+      "image": "img_525_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 399.01104736328125
+    },
+    {
+      "image": "img_639_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 575.0464477539062
+    },
+    {
+      "image": "img_671_pre_part_1.jpg",
+      "class_id": 1,
+      "area_px": 380.0201721191406
+    },
+    {
+      "image": "img_693_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 991.953125
+    },
+    {
+      "image": "img_8316_pre_part_0.jpg",
+      "class_id": 0,
+      "area_px": 702.0352783203125
+    },
+    {
+      "image": "img_900_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 527.958984375
+    },
+    {
+      "image": "img_9157_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 898.9791870117188
+    },
+    {
+      "image": "img_9686_pre_part_1.jpg",
+      "class_id": 0,
+      "area_px": 1260.000244140625
+    }
+  ]
+}
