@@ -1,0 +1,12 @@
+{
+  "variant": "C",
+  "device": "cpu",
+  "samples": 167,
+  "parameters": 90724,
+  "initial_residual_max": 0.0,
+  "final_loss": 0.1849834064166703,
+  "elapsed_seconds": 23.706795930862427,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage23/crossfit/fold0/inner2/cir/last.pt",
+  "checkpoint_sha256": "18c2b1b335b93e87499e99eede892a9119912f18c66a275c8a56341e9a6b21d0",
+  "checkpoint_bytes": 370938
+}

@@ -1,0 +1,6 @@
+{
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "cuda_available": false,
+  "device": "CPU"
+}

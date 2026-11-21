@@ -1,0 +1,32 @@
+{
+  "E0": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  },
+  "C": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  },
+  "C-Half": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  },
+  "C-GateGeo": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  },
+  "C-GateFull": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  },
+  "Oracle-Gate": {
+    "same_candidate_count": true,
+    "same_class_order": true,
+    "same_scores": true
+  }
+}

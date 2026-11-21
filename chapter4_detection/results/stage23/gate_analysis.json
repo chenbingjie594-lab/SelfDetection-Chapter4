@@ -1,0 +1,26 @@
+{
+  "geo": {
+    "n": 410,
+    "gate_mean": 0.40176983134048744,
+    "gate_std": 0.05808203800118074,
+    "useful_n": 158,
+    "useful_gate_mean": 0.4108430852618399,
+    "harmful_n": 157,
+    "harmful_gate_mean": 0.39939429805536936,
+    "high_quality_gate_mean": 0.4053193361244418,
+    "Flash_gate_mean": 0.4335232673438041,
+    "Black_gate_mean": 0.376422790320296
+  },
+  "full": {
+    "n": 410,
+    "gate_mean": 0.3972560598265107,
+    "gate_std": 0.13739062388485268,
+    "useful_n": 158,
+    "useful_gate_mean": 0.4104523693411788,
+    "harmful_n": 157,
+    "harmful_gate_mean": 0.3717381654271654,
+    "high_quality_gate_mean": 0.38755458665334364,
+    "Flash_gate_mean": 0.42647836316417864,
+    "Black_gate_mean": 0.3739294843552144
+  }
+}

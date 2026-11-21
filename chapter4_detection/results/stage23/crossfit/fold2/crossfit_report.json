@@ -1,0 +1,45 @@
+{
+  "outer_fold": 2,
+  "protocol": "3-fold source-group inner CIR cross-fit; outer holdout absent",
+  "candidates": 227,
+  "positive": 117,
+  "background": 110,
+  "useful": 59,
+  "harmful": 35,
+  "neutral": 23,
+  "Flash": 54,
+  "Black": 63,
+  "tiny": 36,
+  "inner_folds": [
+    {
+      "inner_fold": 0,
+      "train_candidates": 168,
+      "hold_candidates": 59,
+      "train_groups": 60,
+      "hold_groups": 31,
+      "useful": 22,
+      "harmful": 12,
+      "neutral": 9
+    },
+    {
+      "inner_fold": 1,
+      "train_candidates": 122,
+      "hold_candidates": 105,
+      "train_groups": 61,
+      "hold_groups": 30,
+      "useful": 17,
+      "harmful": 12,
+      "neutral": 9
+    },
+    {
+      "inner_fold": 2,
+      "train_candidates": 164,
+      "hold_candidates": 63,
+      "train_groups": 61,
+      "hold_groups": 30,
+      "useful": 20,
+      "harmful": 11,
+      "neutral": 5
+    }
+  ]
+}

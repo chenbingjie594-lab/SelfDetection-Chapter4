@@ -1,0 +1,32 @@
+{
+  "E0": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 107,
+    "total_candidates": 744
+  },
+  "C": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 104,
+    "total_candidates": 744
+  },
+  "C-Half": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 104,
+    "total_candidates": 744
+  },
+  "C-GateGeo": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 105,
+    "total_candidates": 744
+  },
+  "C-GateFull": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 106,
+    "total_candidates": 744
+  },
+  "Oracle-Gate": {
+    "background_style_candidates_iou_lt_0.10": 322,
+    "gt_with_duplicate_iou_ge_0.50": 111,
+    "total_candidates": 744
+  }
+}

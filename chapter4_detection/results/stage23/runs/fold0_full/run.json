@@ -1,0 +1,10 @@
+{
+  "mode": "full",
+  "samples": 243,
+  "parameters": 6625,
+  "final_loss": 0.6779064702889557,
+  "elapsed_seconds": 1.3302147388458252,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage23/runs/fold0_full/last.pt",
+  "checkpoint_sha256": "a1cd3ea0a71a28bce5939678e3ebec3d565c0e892eafc203280e6c39927d939c",
+  "checkpoint_bytes": 28600
+}

@@ -1,0 +1,10 @@
+{
+  "mode": "geo",
+  "samples": 227,
+  "parameters": 481,
+  "final_loss": 0.8162993163789422,
+  "elapsed_seconds": 0.926508903503418,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage23/runs/fold2_geo/last.pt",
+  "checkpoint_sha256": "7c47abf1f45b46435e73572e2d4e05f4ed468786c69afddd016305bc21519914",
+  "checkpoint_bytes": 4024
+}

@@ -1,0 +1,15 @@
+{
+  "records": 251,
+  "unique_candidates": 251,
+  "outer_holdout_overlap": 0,
+  "inner_folds": [
+    0,
+    1,
+    2
+  ],
+  "quality_label_counts": {
+    "useful": 51,
+    "not_useful": 64,
+    "background": 136
+  }
+}
