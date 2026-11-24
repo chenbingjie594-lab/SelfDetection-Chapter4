@@ -1,0 +1,16 @@
+{
+  "mode": "fixed",
+  "samples": 12244,
+  "positive": 468,
+  "background": 11776,
+  "parameters": 16449,
+  "trainable_parameters": 16449,
+  "initial_identity_max_abs": 0.0,
+  "final_gamma": 0.2596062123775482,
+  "final_loss": 0.008542499789004863,
+  "mean_abs_p3_logit_change": 0.8471531867980957,
+  "elapsed_seconds": 507.70751571655273,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage24/runs/fold2_fixed/last.pt",
+  "checkpoint_sha256": "9e69d4bdac3a66b3048a087934a9d806eea0fe3ad2683d02409176eb1b690743",
+  "checkpoint_bytes": 85845
+}

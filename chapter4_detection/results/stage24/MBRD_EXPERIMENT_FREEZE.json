@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "imgsz": 1536,
+  "K": 32,
+  "topk": 4,
+  "tau": 0.1,
+  "hidden": 32,
+  "epochs": 40,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "checkpoint": "last.pt",
+  "E0": "Stage10 fold-specific last.pt",
+  "training": "cached P3 patches with frozen exact E0 TAL targets",
+  "inference": "full online YOLO+MBRD"
+}

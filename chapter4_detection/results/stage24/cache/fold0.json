@@ -1,0 +1,17 @@
+{
+  "fold": 0,
+  "images": 92,
+  "samples": 12234,
+  "positive": 458,
+  "background": 11776,
+  "prototype_candidates": 11776,
+  "p3_shape": [
+    128,
+    192,
+    192
+  ],
+  "elapsed_seconds": 175.91364741325378,
+  "cache": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage24/cache/fold0.pt",
+  "cache_sha256": "73e550b8a222e6d98b867c7be53490662dc244048eb6595c1d21d9ddda2985ec",
+  "cache_bytes": 157822074
+}

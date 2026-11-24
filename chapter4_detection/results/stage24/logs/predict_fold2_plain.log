@@ -1,0 +1,57 @@
+/mnt/sda/cbj/miniconda3/envs/yolo11/lib/python3.10/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+blackinst_18.jpg 17 7
+blackinst_21.jpg 52 47
+blackinst_22.jpg 17 12
+blackinst_23.jpg 15 10
+blackinst_26.jpg 50 30
+blackinst_28.jpg 33 24
+blackinst_7.jpg 27 25
+img_1013_pre_part_1.jpg 51 36
+img_10510_pre_part_1.jpg 40 35
+img_1083_pre_part_0.jpg 12 5
+img_11099_pre_part_0.jpg 5 3
+img_11478_pre_part_1.jpg 28 24
+img_12458_pre_part_1.jpg 31 26
+img_13538_pre_part_1.jpg 71 64
+img_1515_pre_part_1.jpg 43 37
+img_15770_pre_part_1.jpg 31 22
+img_16161_pre_part_1.jpg 44 41
+img_16781_pre_part_1.jpg 29 22
+img_19135_pre_part_1.jpg 139 112
+img_20553_pre_part_1.jpg 20 17
+img_21287_pre_part_0.jpg 11 8
+img_21637_pre_part_1.jpg 31 28
+img_21979_pre_part_1.jpg 12 12
+img_22343_pre_part_1.jpg 176 128
+img_22666_pre_part_1.jpg 22 19
+img_23458_pre_part_0.jpg 18 13
+img_24459_pre_part_1.jpg 41 31
+img_24729_pre_part_1.jpg 17 12
+img_2786_pre_part_1.jpg 32 30
+img_3207_pre_part_1.jpg 17 12
+img_3292_pre_part_1.jpg 15 11
+img_3626_pre_part_1.jpg 17 14
+img_4108_pre_part_1.jpg 26 22
+img_4249_pre_part_1.jpg 52 37
+img_4350_pre_part_0.jpg 8 5
+img_5148_pre_part_1.jpg 20 17
+img_5647_pre_part_1.jpg 14 10
+img_5891_pre_part_1.jpg 16 13
+img_6125_pre_part_1.jpg 24 19
+img_6576_pre_part_1.jpg 12 9
+img_7765_pre_part_1.jpg 19 12
+img_8308_pre_part_1.jpg 41 29
+img_8363_pre_part_1.jpg 11 5
+img_9389_pre_part_1.jpg 15 6
+img_9438_pre_part_0.jpg 10 5
+img_9730_pre_part_1.jpg 13 9
+{
+  "p3_box_logits_max_abs": 0.0,
+  "p4p5_box_logits_max_abs": 0.0,
+  "p3_cls_logits_mean_abs": 0.7429726719856262,
+  "p4p5_cls_logits_max_abs": 0.0,
+  "gamma": 0.2549166679382324,
+  "regression_tower_frozen": true,
+  "p4p5_frozen": true
+}

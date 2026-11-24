@@ -1,0 +1,15 @@
+{
+  "fold": 1,
+  "k": 32,
+  "samples": 11776,
+  "min_cluster": 108,
+  "max_cluster": 1885,
+  "mean_images_per_prototype": 75.09375,
+  "max_dominant_image_fraction": 0.099601593625498,
+  "prototype_cosine_mean": 0.6322934031486511,
+  "prototype_cosine_max": 0.9783709645271301,
+  "prototype_sha256": "c042bd943bd4b1921cb547cb540ed980d52840fd1b614c6256ff3a92e03bd447",
+  "prototype_bytes": 19154,
+  "conservative_candidate_background": true,
+  "expert_confirmed": false
+}

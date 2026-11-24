@@ -1,0 +1,1 @@
+/mnt/sda/cbj/dataset/Plastic_Bomo/chapter4_real_only_v1/images/train/blackinst_15.jpg

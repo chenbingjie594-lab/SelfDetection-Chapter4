@@ -1,0 +1,32 @@
+[
+  {
+    "fold": 0,
+    "queries": 12234,
+    "prototypes_used": 32,
+    "top1_count_min": 73,
+    "top1_count_max": 2868,
+    "usage_entropy": 3.000617742538452,
+    "matched_similarity_positive_mean": 0.7430137991905212,
+    "matched_similarity_background_mean": 0.9615171551704407
+  },
+  {
+    "fold": 1,
+    "queries": 12242,
+    "prototypes_used": 32,
+    "top1_count_min": 127,
+    "top1_count_max": 1892,
+    "usage_entropy": 3.186549663543701,
+    "matched_similarity_positive_mean": 0.7433005571365356,
+    "matched_similarity_background_mean": 0.9519630670547485
+  },
+  {
+    "fold": 2,
+    "queries": 12244,
+    "prototypes_used": 32,
+    "top1_count_min": 93,
+    "top1_count_max": 2592,
+    "usage_entropy": 3.1035242080688477,
+    "matched_similarity_positive_mean": 0.687188446521759,
+    "matched_similarity_background_mean": 0.9479575157165527
+  }
+]

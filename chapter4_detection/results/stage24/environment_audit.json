@@ -1,0 +1,8 @@
+{
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "ultralytics": "8.4.145",
+  "cuda_available": false,
+  "device": "CPU",
+  "protocol": "cached frozen-E0 P3/TAL training; full online YOLO+MBRD inference"
+}

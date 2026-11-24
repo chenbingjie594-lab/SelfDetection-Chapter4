@@ -1,0 +1,23 @@
+[
+  {
+    "fold": 0,
+    "cache_images": 92,
+    "equals_fold_train": true,
+    "holdout_overlap": [],
+    "weights_sha256": "1a971befc08ac4e629bbbffbe4255107b7bc5bd6747eb3ff1607c3d916e1afbd"
+  },
+  {
+    "fold": 1,
+    "cache_images": 92,
+    "equals_fold_train": true,
+    "holdout_overlap": [],
+    "weights_sha256": "b0009a6bddfa3c832fc3edeb4d2a6aaf2431037c43fb1d25fbd1729c74c09aa8"
+  },
+  {
+    "fold": 2,
+    "cache_images": 92,
+    "equals_fold_train": true,
+    "holdout_overlap": [],
+    "weights_sha256": "2f52d11bddb99e080d750fb2d46e4631ae40e8723aae04315f63cc4252b366fa"
+  }
+]
