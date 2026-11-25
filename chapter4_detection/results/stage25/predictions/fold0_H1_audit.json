@@ -1,0 +1,9 @@
+{
+  "p3_box_logits_max_abs": 0.0,
+  "p4p5_box_logits_max_abs": 0.0,
+  "p3_cls_logits_mean_abs": 1.371132731437683,
+  "p4p5_cls_logits_max_abs": 0.0,
+  "gamma": -0.28558653593063354,
+  "regression_tower_frozen": true,
+  "p4p5_frozen": true
+}

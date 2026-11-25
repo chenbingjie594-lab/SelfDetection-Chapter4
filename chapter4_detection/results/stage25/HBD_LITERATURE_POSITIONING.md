@@ -1,0 +1,5 @@
+# HBD literature positioning
+
+Hard-example selection itself is established by [Online Hard Example Mining](https://openaccess.thecvf.com/content_cvpr_2016/html/Shrivastava_Training_Region-Based_Object_CVPR_2016_paper.html). Learned class prototypes are established by [Prototypical Networks](https://proceedings.neurips.cc/paper/2017/hash/cb8da6767461f2812ae4290eac7cbc42-Abstract.html), and supervised contrastive objectives by [Supervised Contrastive Learning](https://proceedings.neurips.cc/paper/2020/hash/d89a66c7c80a29b1bdbab0f2a1a94af8-Abstract.html). None is claimed as novel here.
+
+The tested research hypothesis is narrower: whether class-conditioned discrimination between a defect representation formed with a background-reference residual and fold-local hard-background candidates adds value beyond (a) ordinary hard-negative BCE, (b) a fixed reference, and (c) generic contrastive supervision. H1–H4 directly isolate these alternatives. Because no candidate had independent human confirmation (A=0), Stage25 cannot establish trusted-background learning even if an OOF point estimate were favourable.

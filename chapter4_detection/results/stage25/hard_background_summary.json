@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "0": {
+      "B": 15,
+      "C": 3,
+      "A": 0
+    },
+    "1": {
+      "B": 12,
+      "C": 1,
+      "A": 0
+    },
+    "2": {
+      "B": 15,
+      "C": 1,
+      "A": 0
+    }
+  },
+  "policy": "A=human-confirmed (none available); B=weak unconfirmed weight .25; C=excluded suspected defect/ambiguity",
+  "plates": 47
+}

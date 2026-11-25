@@ -1,0 +1,65 @@
+{
+  "E0": {
+    "positive_gt": 174,
+    "background_predictions": 242,
+    "positive_score_mean": 0.6081432048974013,
+    "background_score_mean": 0.022322794061234944,
+    "roc_auc": 0.9685095468794529,
+    "pr_auc": 0.9731147823097611,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "M2": {
+    "positive_gt": 174,
+    "background_predictions": 1930,
+    "positive_score_mean": 0.6804084547624077,
+    "background_score_mean": 0.01620658004633513,
+    "roc_auc": 0.9724822821749748,
+    "pr_auc": 0.9521420001678379,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "M3": {
+    "positive_gt": 174,
+    "background_predictions": 2211,
+    "positive_score_mean": 0.6787770386389189,
+    "background_score_mean": 0.01702966841325469,
+    "roc_auc": 0.9617430090924688,
+    "pr_auc": 0.9430459369142685,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "H1": {
+    "positive_gt": 174,
+    "background_predictions": 4911,
+    "positive_score_mean": 0.6669579732590408,
+    "background_score_mean": 0.01793478368168021,
+    "roc_auc": 0.9495760163086855,
+    "pr_auc": 0.8808712019717432,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "H2": {
+    "positive_gt": 174,
+    "background_predictions": 3405,
+    "positive_score_mean": 0.6590690508045941,
+    "background_score_mean": 0.017272057263802862,
+    "roc_auc": 0.9631255591000388,
+    "pr_auc": 0.9125570171577689,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "H3": {
+    "positive_gt": 174,
+    "background_predictions": 4122,
+    "positive_score_mean": 0.659850339908367,
+    "background_score_mean": 0.014764801313723756,
+    "roc_auc": 0.9587564902652992,
+    "pr_auc": 0.9081435739181385,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  },
+  "H4": {
+    "positive_gt": 174,
+    "background_predictions": 6866,
+    "positive_score_mean": 0.6800911489729609,
+    "background_score_mean": 0.019056201433203246,
+    "roc_auc": 0.9681832183238414,
+    "pr_auc": 0.9038310315153284,
+    "limitation": "post-NMS candidate-dependent negative set; diagnostic only"
+  }
+}

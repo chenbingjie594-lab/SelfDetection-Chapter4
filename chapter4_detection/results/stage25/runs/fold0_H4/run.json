@@ -1,0 +1,28 @@
+{
+  "variant": "H4",
+  "mode": "matched",
+  "loss_kind": "generic",
+  "samples": 6361,
+  "positive": 458,
+  "easy": 5888,
+  "hard_B": 15,
+  "human_confirmed_A": 0,
+  "trainable_parameters": 20545,
+  "inference_adapter_parameters": 16449,
+  "projection_parameters_training_only": 4096,
+  "initial_identity_max_abs": 0.0,
+  "final_gamma": -0.2607884705066681,
+  "final_loss": 0.09853669769700041,
+  "final_classification_loss": 0.09853179999266269,
+  "final_discrimination_loss": 4.896786830542217e-05,
+  "mean_abs_p3_logit_change": 2.6437931060791016,
+  "feature_collapse_audit": {
+    "dimension_std_mean": 0.15572631359100342,
+    "mean_pair_cosine": 0.14866647124290466
+  },
+  "nan": false,
+  "elapsed_seconds": 382.0624055862427,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage25/runs/fold0_H4/last.pt",
+  "checkpoint_sha256": "0ab076b9aebc99fbc2d7d3ab6febcb021d7f3d438f388ea5e43bfde3e6ad345b",
+  "checkpoint_bytes": 102734
+}

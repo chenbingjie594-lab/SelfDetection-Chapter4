@@ -1,0 +1,14 @@
+{
+  "fold": 0,
+  "images": 92,
+  "positive": 458,
+  "easy": 5888,
+  "hard_B": 15,
+  "candidate_B": 15,
+  "candidate_C": 3,
+  "human_confirmed_A": 0,
+  "cache": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage25/cache/fold0.pt",
+  "cache_sha256": "dff8ed198fff7187b046adf50020a6c75e17e3b11c5e848d81b38a65c23be98f",
+  "cache_bytes": 80660276,
+  "elapsed_seconds": 107.46615839004517
+}

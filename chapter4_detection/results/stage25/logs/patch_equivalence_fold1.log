@@ -1,0 +1,10 @@
+{
+  "fold": 1,
+  "images_checked": 3,
+  "positions_checked": 192,
+  "bn_mode": "eval",
+  "patch_padding": "zero; matches full classification tower at P3 boundaries",
+  "fresh_patch_fullmap_max_abs": 1.049041748046875e-05,
+  "fp16_cache_fullmap_max_abs": 0.004727363586425781,
+  "fp16_cache_fullmap_mean_abs": 0.0003633073065429926
+}

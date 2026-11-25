@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "folds": "Stage10 source-group 3-fold",
+  "imgsz": 1536,
+  "epochs": 40,
+  "batch": 256,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "checkpoint": "last.pt",
+  "margin": 0.1,
+  "tau": 0.1,
+  "lambda": 0.1,
+  "projection_dim": 32,
+  "B_weight": 0.25,
+  "A_confirmed": 0,
+  "C_excluded": true
+}
