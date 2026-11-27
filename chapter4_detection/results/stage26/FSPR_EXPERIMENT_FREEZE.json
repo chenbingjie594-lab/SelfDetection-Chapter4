@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "folds": "Stage10 source-group 3-fold",
+  "imgsz": 1536,
+  "epochs": 40,
+  "batch": 256,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "checkpoint": "last.pt",
+  "positive_radius": 1,
+  "score_min": 0.05,
+  "topk_per_class": 100,
+  "fspr_nms": 0.7,
+  "cross_source_iou": 0.7,
+  "loss": "focal + IoU + offset + .5 edge"
+}

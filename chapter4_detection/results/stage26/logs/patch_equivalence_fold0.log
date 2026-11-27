@@ -1,0 +1,8 @@
+{
+  "fold": 0,
+  "variant": "F2",
+  "positions": 192,
+  "fresh_max_abs": 2.384185791015625e-06,
+  "cache_max_abs": 0.0009307861328125,
+  "cache_mean_abs": 9.232644960219559e-05
+}

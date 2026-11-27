@@ -1,0 +1,11 @@
+{
+  "fold": 2,
+  "images": 92,
+  "samples": 6941,
+  "positive": 1053,
+  "negative": 5888,
+  "cache": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage26/cache/fold2.pt",
+  "sha256": "0333cf1d39157474981b40e96b8b68e20641112d7afcc115c7736eb28487009e",
+  "bytes": 228733224,
+  "seconds": 206.85792469978333
+}

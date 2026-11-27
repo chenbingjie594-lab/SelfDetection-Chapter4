@@ -1,0 +1,57 @@
+{
+  "coverage": {
+    "E0": {
+      "coverage50": 0.9425287356321839,
+      "coverage75": 0.45977011494252873,
+      "coverage90": 0.040229885057471264,
+      "tiny_coverage75": 0.3269230769230769
+    },
+    "F0": {
+      "coverage50": 0.9770114942528736,
+      "coverage75": 0.5114942528735632,
+      "coverage90": 0.040229885057471264,
+      "tiny_coverage75": 0.40384615384615385,
+      "independent_coverage75": 0.3850574712643678,
+      "stage12_A_recovered75": 6,
+      "tiny_new_recovered75": 4
+    },
+    "F1": {
+      "coverage50": 0.9655172413793104,
+      "coverage75": 0.5517241379310345,
+      "coverage90": 0.04597701149425287,
+      "tiny_coverage75": 0.4423076923076923,
+      "independent_coverage75": 0.47126436781609193,
+      "stage12_A_recovered75": 14,
+      "tiny_new_recovered75": 6
+    },
+    "F2": {
+      "coverage50": 0.9655172413793104,
+      "coverage75": 0.5517241379310345,
+      "coverage90": 0.040229885057471264,
+      "tiny_coverage75": 0.4230769230769231,
+      "independent_coverage75": 0.4540229885057471,
+      "stage12_A_recovered75": 14,
+      "tiny_new_recovered75": 5
+    }
+  },
+  "candidates": {
+    "F0": {
+      "total": 22439,
+      "same_class_iou50": 397,
+      "same_class_iou75": 78,
+      "background_style": 21456
+    },
+    "F1": {
+      "total": 24512,
+      "same_class_iou50": 467,
+      "same_class_iou75": 92,
+      "background_style": 23273
+    },
+    "F2": {
+      "total": 23991,
+      "same_class_iou50": 486,
+      "same_class_iou75": 90,
+      "background_style": 22727
+    }
+  }
+}
