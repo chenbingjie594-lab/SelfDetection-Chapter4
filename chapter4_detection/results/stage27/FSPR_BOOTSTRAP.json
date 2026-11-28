@@ -1,0 +1,5 @@
+{
+  "status": "NOT_RUN",
+  "reason": "Fold0 gate failed; full source-group OOF predictions do not exist",
+  "requested_repeats": 5000
+}

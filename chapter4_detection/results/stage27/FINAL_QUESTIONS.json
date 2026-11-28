@@ -1,0 +1,14 @@
+{
+  "1": "Substantial but not total: R1 raw fusion improves markedly over historical F1, while still failing deployment without calibration.",
+  "2": "Yes; sampled training priors and dense inference priors differ by orders of magnitude.",
+  "3": "No on fold 0; N256 R2/R3 reduced useful candidate quality.",
+  "4": "Yes for R1 raw ranking, but not enough for deployable fusion.",
+  "5": "No; separate Platt fits are required.",
+  "6": "Yes, background ranking is strongly suppressed.",
+  "7": "R1 nearly restores E0 (gap -0.0083); R2/R3 do not.",
+  "8": "Not at useful FPPI; R1 retains almost none.",
+  "9": "No stable evidence beyond E0 on fold 0.",
+  "10": "F1/R1 is less harmful than F2/R3.",
+  "11": "No.",
+  "12": "Dense structured-background responses dominate; calibration can suppress them only by also discarding new candidates."
+}

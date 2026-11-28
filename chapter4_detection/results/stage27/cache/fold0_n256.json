@@ -1,0 +1,26 @@
+{
+  "fold": 0,
+  "negative_per_image": 256,
+  "samples": 24587,
+  "positive": 1035,
+  "negative": 23552,
+  "unique_negative_locations": 23552,
+  "duplicates": 0,
+  "per_image_negative_min": 256,
+  "per_image_negative_max": 256,
+  "cache_sha256": "c2646b388f0a971b15216540e9b3842b10018433c056a9917bd9e19a052c4cd9",
+  "protocol": {
+    "imgsz": 1536,
+    "stride": 4,
+    "patch": 8,
+    "patch_origin": "even aligned",
+    "positive_radius": 1,
+    "negative_per_image": 256,
+    "negative_e0_score_max": 0.05,
+    "gt_protection_expand": 2.0,
+    "stage": 27,
+    "negative_sampling": "unique_spatial_stratified_4x8",
+    "hard_e0_regions": "excluded_pending_review",
+    "natural_sampling_required": true
+  }
+}

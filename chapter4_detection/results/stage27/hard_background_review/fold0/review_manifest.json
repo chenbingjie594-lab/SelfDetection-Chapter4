@@ -1,0 +1,246 @@
+{
+  "count": 15,
+  "policy": "UNREVIEWED candidates are forbidden as trusted negatives",
+  "records": [
+    {
+      "image": "blackinst_25.jpg",
+      "crop": "blackinst_25_001.jpg",
+      "class_id": 1,
+      "confidence": 0.47795355319976807,
+      "xyxy": [
+        2416.2802734375,
+        946.9535522460938,
+        2430.00048828125,
+        960.188720703125
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1013_pre_part_1.jpg",
+      "crop": "img_1013_pre_part_1_000.jpg",
+      "class_id": 1,
+      "confidence": 0.08747035264968872,
+      "xyxy": [
+        1368.0712890625,
+        411.0586853027344,
+        1393.2197265625,
+        437.9644470214844
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1022_pre_part_1.jpg",
+      "crop": "img_1022_pre_part_1_000.jpg",
+      "class_id": 0,
+      "confidence": 0.2931596636772156,
+      "xyxy": [
+        3380.889404296875,
+        641.3494873046875,
+        3403.61474609375,
+        663.25830078125
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1022_pre_part_1.jpg",
+      "crop": "img_1022_pre_part_1_002.jpg",
+      "class_id": 1,
+      "confidence": 0.08498725295066833,
+      "xyxy": [
+        2933.265380859375,
+        217.62374877929688,
+        2950.495849609375,
+        233.48291015625
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1022_pre_part_1.jpg",
+      "crop": "img_1022_pre_part_1_003.jpg",
+      "class_id": 1,
+      "confidence": 0.08048956841230392,
+      "xyxy": [
+        2937.219482421875,
+        219.74496459960938,
+        2955.035888671875,
+        233.7833709716797
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1023_pre_part_0.jpg",
+      "crop": "img_1023_pre_part_0_001.jpg",
+      "class_id": 1,
+      "confidence": 0.1706790328025818,
+      "xyxy": [
+        2985.49462890625,
+        926.9318237304688,
+        3002.3916015625,
+        943.1476440429688
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1023_pre_part_0.jpg",
+      "crop": "img_1023_pre_part_0_002.jpg",
+      "class_id": 1,
+      "confidence": 0.09126842021942139,
+      "xyxy": [
+        2986.0478515625,
+        926.3366088867188,
+        3002.61181640625,
+        949.3792724609375
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_1515_pre_part_1.jpg",
+      "crop": "img_1515_pre_part_1_001.jpg",
+      "class_id": 1,
+      "confidence": 0.08904212713241577,
+      "xyxy": [
+        612.45458984375,
+        949.0550537109375,
+        629.47705078125,
+        964.0348510742188
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_15770_pre_part_1.jpg",
+      "crop": "img_15770_pre_part_1_001.jpg",
+      "class_id": 0,
+      "confidence": 0.5937624573707581,
+      "xyxy": [
+        2952.58154296875,
+        47.952972412109375,
+        2968.978515625,
+        62.57299041748047
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_17300_pre_part_1.jpg",
+      "crop": "img_17300_pre_part_1_001.jpg",
+      "class_id": 1,
+      "confidence": 0.36065638065338135,
+      "xyxy": [
+        1113.32666015625,
+        785.4615478515625,
+        1131.32470703125,
+        802.7103881835938
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_17300_pre_part_1.jpg",
+      "crop": "img_17300_pre_part_1_002.jpg",
+      "class_id": 1,
+      "confidence": 0.09401907026767731,
+      "xyxy": [
+        1112.92529296875,
+        778.6492919921875,
+        1132.721923828125,
+        803.7900390625
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_20948_pre_part_1.jpg",
+      "crop": "img_20948_pre_part_1_001.jpg",
+      "class_id": 0,
+      "confidence": 0.12707802653312683,
+      "xyxy": [
+        1678.8983154296875,
+        103.01219177246094,
+        1696.272705078125,
+        117.99517822265625
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_24459_pre_part_1.jpg",
+      "crop": "img_24459_pre_part_1_001.jpg",
+      "class_id": 0,
+      "confidence": 0.686312735080719,
+      "xyxy": [
+        3110.921875,
+        486.62542724609375,
+        3135.151123046875,
+        509.023681640625
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_3207_pre_part_1.jpg",
+      "crop": "img_3207_pre_part_1_002.jpg",
+      "class_id": 0,
+      "confidence": 0.05962848663330078,
+      "xyxy": [
+        494.36810302734375,
+        4.7312469482421875,
+        512.193359375,
+        22.174190521240234
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    },
+    {
+      "image": "img_8507_pre_part_1.jpg",
+      "crop": "img_8507_pre_part_1_001.jpg",
+      "class_id": 0,
+      "confidence": 0.08953627943992615,
+      "xyxy": [
+        2942.403076171875,
+        515.857177734375,
+        2962.064453125,
+        536.008544921875
+      ],
+      "max_gt_iou": 0.0,
+      "gt_distance": "unmatched_iou_lt_0.1",
+      "review_status": "UNREVIEWED",
+      "used_as_negative": false
+    }
+  ]
+}

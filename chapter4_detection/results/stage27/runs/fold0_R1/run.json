@@ -1,0 +1,56 @@
+{
+  "experiment": "R1",
+  "variant": "F1",
+  "samples": 5564,
+  "positive": 828,
+  "negative": 4736,
+  "natural_positive_fraction": 0.14881379902362823,
+  "inner_calibration_images_excluded": [
+    "blackinst_18.jpg",
+    "blackinst_31.jpg",
+    "blackinst_6.jpg",
+    "img_10510_pre_part_1.jpg",
+    "img_12458_pre_part_1.jpg",
+    "img_1515_pre_part_1.jpg",
+    "img_19135_pre_part_1.jpg",
+    "img_20553_pre_part_1.jpg",
+    "img_2538_pre_part_1.jpg",
+    "img_2786_pre_part_1.jpg",
+    "img_3122_pre_part_1.jpg",
+    "img_3292_pre_part_1.jpg",
+    "img_3626_pre_part_1.jpg",
+    "img_4249_pre_part_1.jpg",
+    "img_4350_pre_part_0.jpg",
+    "img_5148_pre_part_1.jpg",
+    "img_5647_pre_part_1.jpg",
+    "img_6075_pre_part_1.jpg"
+  ],
+  "samples_per_epoch": 19772,
+  "optimizer_steps": 3120,
+  "exposure": {
+    "min": 131,
+    "max": 153,
+    "mean": 142.14234924316406,
+    "repeated_samples": 5564
+  },
+  "gt_participation_locations": {
+    "min": 9,
+    "max": 9,
+    "mean": 9.0
+  },
+  "parameters": 9032,
+  "final": {
+    "epoch": 40,
+    "loss": 0.10675093372739232,
+    "cls": 0.005192702449570859,
+    "iou": 0.09770216180104706,
+    "offset": 0.0021063485884658,
+    "edge": 0.0034994416512993953,
+    "samples": 19772,
+    "positive": 2936,
+    "negative": 16836
+  },
+  "seconds": 77.60160613059998,
+  "checkpoint": "/mnt/sda/cbj/SelfDetection-main/chapter4_detection/results/stage27/runs/fold0_R1/last.pt",
+  "checkpoint_sha256": "89e880bc5a3fea775ddcfafb4e991a9aec1a0f2f0237c08fa0f978dbfc934c65"
+}

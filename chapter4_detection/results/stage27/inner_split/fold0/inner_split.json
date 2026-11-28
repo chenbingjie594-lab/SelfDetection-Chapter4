@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "fraction": 0.2,
+  "outer_images": 92,
+  "source_groups": 92,
+  "fit_images": 74,
+  "calibration_images": 18,
+  "fit_groups": 74,
+  "calibration_groups": 18,
+  "calibration_source_groups": [
+    "black_source_18",
+    "black_source_31",
+    "black_source_6",
+    "src_06af48b256e31d8c",
+    "src_1c9a1e1fe73ef8f9",
+    "src_3ab5e011697232bf",
+    "src_5e18f43ee10e019b",
+    "src_65504b35366bd3b7",
+    "src_72a61adbf65849da",
+    "src_7ed3035b0fc54c9d",
+    "src_7f2e56787d22c8a3",
+    "src_9c9c83ff7d54cd99",
+    "src_9f9fa64786b37af5",
+    "src_a24cf8776dc2c8b8",
+    "src_b44424a1e5384db8",
+    "src_c2b71bcd37e794aa",
+    "src_c97536ce04a92fe9",
+    "src_d5506fb41d9c8c89"
+  ],
+  "overlap": [],
+  "sha256": "38291bf9344d082e07ae84a2ad006e1838c90a1c70bfa513c5db93856673eede"
+}

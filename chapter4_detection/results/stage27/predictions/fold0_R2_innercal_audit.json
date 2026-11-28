@@ -1,0 +1,10 @@
+{
+  "variant": "F1",
+  "e0_predictions_sha256_before": "1d40bc76e4ac5c9c7edb693b6cb296deea1309d43f7672230769870c79b8297b",
+  "e0_predictions_sha256_after": "1d40bc76e4ac5c9c7edb693b6cb296deea1309d43f7672230769870c79b8297b",
+  "e0_unchanged": true,
+  "mean_cpu_seconds_full_e0_plus_fspr": 0.5601643191443549,
+  "fspr_parameters": 9032,
+  "training_projection_absent": true,
+  "gt_used_in_inference": false
+}
